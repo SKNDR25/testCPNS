@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulasi CAT CPNS - SKD & SKB Multi-Instansi IT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Topbar Header -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="badge-logo">CAT CPNS</div>
+      <div class="title-group">
+        <h1 id="exam-title">Simulasi Computer Assisted Test (CAT) BKN</h1>
+        <p>Seleksi Calon Pegawai Negeri Sipil • Kemampuan Dasar & Bidang Spesifik Instansi</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <!-- Tools Font Zoom & Fullscreen -->
+      <div class="topbar-tools">
+        <span style="font-size: 0.75rem; color: #cbd5e1; font-weight:600;">Font:</span>
+        <button id="btn-font-dec" class="btn-tool" title="Perkecil Teks">A-</button>
+        <button id="btn-font-reset" class="btn-tool" title="Ukuran Normal">A</button>
+        <button id="btn-font-inc" class="btn-tool" title="Perbesar Teks">A+</button>
+        <button id="btn-fullscreen" class="btn-tool" title="Mode Layar Penuh">⛶ Layar Penuh</button>
+      </div>
+
+      <div id="timer-container" class="timer-box" style="display: none;">
+        <span class="timer-label">Sisa Waktu:</span>
+        <span id="timer-display" class="timer-value">00:00</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Banner Resume Sesi Ujian (Jika ada) -->
+    <div id="resume-banner" class="resume-banner" style="display: none;">
+      <div class="resume-banner-text">
+        <strong>⚠️ Sesi Ujian Sebelumnya Ditemukan!</strong><br>
+        <span id="resume-info-text">Anda memiliki sesi ujian yang belum selesai dengan sisa waktu tertentu.</span>
+      </div>
+      <div class="resume-banner-actions">
+        <button id="btn-resume-session" class="btn-nav" style="background:var(--primary); color:#fff; border:none;">Lanjutkan Ujian »</button>
+        <button id="btn-discard-session" class="btn-nav" style="background:#fff; color:#b91c1c; border-color:#fca5a5;">Buang Sesi</button>
+      </div>
+    </div>
+
+    <!-- Screen 1: Welcome & Dashboard Tabs -->
+    <section id="screen-welcome" class="welcome-card">
+      <div class="welcome-header">
+        <h2>Simulasi CAT Ujian CPNS</h2>
+        <p>Pilih kategori ujian dan instansi impian Anda sebelum memulai simulasi dengan standar resmi CAT BKN.</p>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="tabs-nav">
+        <button class="tab-btn active" data-tab="tab-packets">📋 Pilih Paket & Instansi</button>
+        <button class="tab-btn" data-tab="tab-history">📊 Riwayat & Statistik</button>
+        <button class="tab-btn" data-tab="tab-manage">⚙️ Kelola Bank Soal</button>
+      </nav>
+
+      <!-- TAB 1: PILIH PAKET & INSTANSI -->
+      <div id="tab-packets" class="tab-content active">
+
+        <!-- Kategori Switcher: SKD vs SKB Spesifik Instansi -->
+        <div class="category-toggle-group">
+          <button type="button" id="btn-cat-skd" class="btn-category-toggle active">🌟 1. SKD Nasional (110 Soal Penuh)</button>
+          <button type="button" id="btn-cat-skb" class="btn-category-toggle">🏛️ 2. SKB Spesifik Instansi (IT / Pranata Komputer)</button>
+        </div>
+
+        <!-- Tampilan Kategori 1: SKD Nasional -->
+        <div id="view-cat-skd">
+          <div class="packet-selection" style="grid-template-columns: 1fr;">
+            <div class="packet-card selected" data-packet="skd">
+              <div class="packet-title">Seleksi Kompetensi Dasar (SKD) Nasional - 110 Soal Penuh</div>
+              <div class="packet-desc">Mencakup 3 pilar uji standar CAT BKN untuk seluruh kementerian dan pemda: 30 Soal TWK (No. 1-30), 35 Soal TIU (No. 31-65), dan 45 Soal TKP (No. 66-110). Lengkap dengan aturan skor 1-5 di TKP dan evaluasi Passing Grade otomatis.</div>
+              <div class="packet-meta">
+                <span>⏱ 100 Menit</span>
+                <span>📝 110 Soal Penuh</span>
+                <span>🎯 Ambang Batas Resmi BKN</span>
+                <span>🇮🇩 Seluruh Instansi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tampilan Kategori 2: SKB Spesifik Instansi -->
+        <div id="view-cat-skb" style="display: none;">
+          <div style="margin-bottom: 14px;">
+            <label style="font-weight: 700; font-size: 0.95rem; color: var(--primary);">Pilih Instansi yang Anda Lamar:</label>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;">Setiap instansi memiliki materi teknis dan studi kasus spesifik sesuai tugas fungsi lembaganya.</p>
+          </div>
+
+          <div class="instansi-cards-grid">
+            <!-- 1. Kemenkeu -->
+            <div class="instansi-card" data-packet="skb_kemenkeu">
+              <div class="instansi-icon">🏛️</div>
+              <div class="instansi-card-title">Kementerian Keuangan</div>
+              <div class="instansi-card-desc">Sistem Perbendaharaan (SPAN), Core Tax Administration (CTAS), Transaksi ACID, Audit TI, dan Enkripsi Finansial.</div>
+              <div class="instansi-card-meta">
+                <span>⏱ 90 Menit</span>
+                <span>💻 Finansial & Pajak</span>
+              </div>
+            </div>
+
+            <!-- 2. BSSN -->
+            <div class="instansi-card" data-packet="skb_bssn">
+              <div class="instansi-icon">🛡️</div>
+              <div class="instansi-card-title">Badan Siber & Sandi Negara</div>
+              <div class="instansi-card-desc">Keamanan Siber, CSIRT (NIST SP 800-61), Forensik Digital (Volatility), Kriptografi Asimetris BSrE, dan NGFW.</div>
+              <div class="instansi-card-meta">
+                <span>⏱ 90 Menit</span>
+                <span>🔒 Cybersecurity</span>
+              </div>
+            </div>
+
+            <!-- 3. Kemkomdigi -->
+            <div class="instansi-card" data-packet="skb_kemkomdigi">
+              <div class="instansi-icon">📡</div>
+              <div class="instansi-card-title">Kementerian Komunikasi & Digital (100 Soal Penuh)</div>
+              <div class="instansi-card-desc">Simulasi riil 100 soal CAT BKN dengan sitasi pasal/standar resmi: Arsitektur SPBE Nasional, Pusat Data Nasional (PDN Cloud), UU PDP No. 27/2022, 5G & DNS Filtering.</div>
+              <div class="instansi-card-meta">
+                <span>⏱ 90 Menit</span>
+                <span>📝 100 Soal Penuh</span>
+                <span>🌐 Sitasi Resmi Teruji</span>
+              </div>
+            </div>
+
+            <!-- 4. BKN -->
+            <div class="instansi-card" data-packet="skb_bkn">
+              <div class="instansi-icon">🏢</div>
+              <div class="instansi-card-title">Badan Kepegawaian Negara</div>
+              <div class="instansi-card-desc">Arsitektur Sistem CAT BKN (Jaringan Kiosk VPN), SIASN Terpadu, Database ASN Nasional, dan MyASN SSO.</div>
+              <div class="instansi-card-meta">
+                <span>⏱ 90 Menit</span>
+                <span>👥 Sistem CAT & SIASN</span>
+              </div>
+            </div>
+
+            <!-- 5. Kemenkumham -->
+            <div class="instansi-card" data-packet="skb_kemenkumham">
+              <div class="instansi-icon">⚖️</div>
+              <div class="instansi-card-title">Kementerian Hukum & HAM</div>
+              <div class="instansi-card-desc">SIMKIM (Autogate & Paspor Biometrik), Database Pemasyarakatan (SDP Audit Trail), AHU Online, dan DJKI.</div>
+              <div class="instansi-card-meta">
+                <span>⏱ 90 Menit</span>
+                <span>🛂 Imigrasi & Hukum</span>
+              </div>
+            </div>
+
+            <!-- 6. Pemda -->
+            <div class="instansi-card" data-packet="skb_pemda">
+              <div class="instansi-icon">🏙️</div>
+              <div class="instansi-card-title">Pemerintah Daerah (Pemda)</div>
+              <div class="instansi-card-desc">SIPD Kemendagri, Smart City Command Center (IoT), SIAK Terpusat Dukcapil, dan SuperApp Daerah (Microservices).</div>
+              <div class="instansi-card-meta">
+                <span>⏱ 90 Menit</span>
+                <span>📍 Pemprov/Pemkab/Kota</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Opsi Simulasi (Acak Soal / Opsi) -->
+        <div class="exam-options-panel">
+          <label class="checkbox-label">
+            <input type="checkbox" id="opt-shuffle-questions">
+            <span>🔀 Acak Urutan Soal (Shuffle Questions)</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="opt-shuffle-options">
+            <span>🔀 Acak Pilihan Opsi A - E</span>
+          </label>
+        </div>
+
+        <div class="rules-box">
+          <h3>Ketentuan & Petunjuk Ujian:</h3>
+          <ul>
+            <li>Gunakan tombol <strong>Simpan & Lanjutkan</strong> untuk menyimpan jawaban dan berpindah ke soal berikutnya.</li>
+            <li>Gunakan tombol <strong>Ragu-Ragu</strong> (kuning) jika Anda belum yakin dengan jawaban yang dipilih.</li>
+            <li>Warna pada grid nomor soal: <strong>Hijau</strong> (Sudah dijawab), <strong>Kuning</strong> (Ragu-ragu), <strong>Abu-abu</strong> (Belum dijawab).</li>
+            <li>Progres pengerjaan Anda otomatis disimpan. Jika browser tertutup tidak sengaja, ujian dapat dilanjutkan kembali.</li>
+          </ul>
+        </div>
+
+        <button id="btn-start" class="btn-start">Mulai Simulasi CAT Sekarang »</button>
+      </div>
+
+      <!-- TAB 2: RIWAYAT & STATISTIK -->
+      <div id="tab-history" class="tab-content">
+        <div class="stats-summary-grid">
+          <div class="stat-box">
+            <div class="stat-box-title">Total Ujian</div>
+            <div id="stat-total-exams" class="stat-box-value">0</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-title">Rata-rata Skor</div>
+            <div id="stat-avg-score" class="stat-box-value">0</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-title">Lolos Passing Grade</div>
+            <div id="stat-pass-rate" class="stat-box-value">0%</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-title">Skor Tertinggi</div>
+            <div id="stat-highest-score" class="stat-box-value">0</div>
+          </div>
+        </div>
+
+        <div class="history-table-container">
+          <table class="history-table">
+            <thead>
+              <tr>
+                <th>Waktu & Tanggal</th>
+                <th>Paket / Instansi</th>
+                <th>TWK</th>
+                <th>TIU</th>
+                <th>TKP</th>
+                <th>Total Skor</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="history-table-body">
+              <tr>
+                <td colspan="7" style="text-align:center; color:#94a3b8; padding: 24px;">Belum ada riwayat pengerjaan ujian.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="display:flex; justify-content:flex-end;">
+          <button id="btn-clear-history" class="btn-nav" style="color:#b91c1c; border-color:#fca5a5;">Hapus Seluruh Riwayat</button>
+        </div>
+      </div>
+
+      <!-- TAB 3: KELOLA BANK SOAL -->
+      <div id="tab-manage" class="tab-content">
+        <div style="margin-bottom: 20px; line-height: 1.6;">
+          <h3 style="color:var(--primary); font-size:1.1rem; margin-bottom: 6px;">Kelola & Tambah Bank Soal Multi-Instansi</h3>
+          <p style="font-size:0.9rem; color:var(--text-muted);">
+            Anda dapat menambahkan soal baru, mencadangkan bank soal dalam format JSON, atau mengimpor bank soal dari rekan/modul lain.
+          </p>
+        </div>
+
+        <div style="display:flex; gap:12px; margin-bottom: 24px; flex-wrap:wrap;">
+          <button id="btn-open-add-modal" class="btn-nav" style="background:var(--primary); color:#fff; border:none;">+ Tambah Soal Baru</button>
+          <button id="btn-export-json" class="btn-nav">📥 Ekspor Bank Soal (JSON)</button>
+          <label class="btn-nav" style="cursor:pointer; display:inline-flex; align-items:center;">
+            📤 Impor Soal (JSON)
+            <input type="file" id="input-import-json" accept=".json" style="display:none;">
+          </label>
+        </div>
+
+        <!-- Ringkasan Bank Soal Saat Ini -->
+        <div style="background:#f8fafc; border:1px solid var(--border); border-radius:10px; padding:18px;">
+          <h4 style="font-size:0.95rem; color:var(--primary); margin-bottom:10px;">Ringkasan Bank Soal Terpasang:</h4>
+          <ul id="bank-summary-list" style="padding-left:20px; font-size:0.88rem; color:#475569; line-height:1.7;">
+            <!-- Rendered by JS -->
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Screen 2: Exam View -->
+    <section id="screen-exam" class="exam-layout" style="display: none;">
+      <!-- Left: Question & Options -->
+      <div class="question-card">
+        <div class="question-meta-bar">
+          <span id="q-index-badge" class="question-number-badge">Soal No. 1</span>
+          <div class="question-tags">
+            <span id="q-instansi-tag" class="tag tag-instansi">🏛️ Nasional</span>
+            <span id="q-category-tag" class="tag tag-twk">TWK</span>
+            <span id="q-subcategory-tag" class="tag">Pilar Negara</span>
+          </div>
+        </div>
+
+        <div id="q-text" class="question-text">
+          Teks soal akan dimuat di sini...
+        </div>
+
+        <div id="options-container" class="options-list">
+          <!-- Options A-E rendered via JS -->
+        </div>
+
+        <div class="exam-actions">
+          <button id="btn-prev" class="btn-nav">« Sebelumnya</button>
+          <button id="btn-doubt" class="btn-nav btn-doubt">⚠ Ragu-Ragu</button>
+          <button id="btn-next" class="btn-nav btn-save-next">Simpan & Lanjutkan »</button>
+        </div>
+      </div>
+
+      <!-- Right: Navigation Sidebar -->
+      <aside class="nav-sidebar">
+        <div class="nav-sidebar-title">Daftar Nomor Soal</div>
+
+        <!-- Quick Jump Categories for SKD -->
+        <div id="quick-jump-container" style="display:flex; gap:6px; margin-bottom:12px;">
+          <button type="button" class="btn-nav" id="jump-twk" style="padding:4px 8px; font-size:0.75rem; flex:1;">TWK (1-30)</button>
+          <button type="button" class="btn-nav" id="jump-tiu" style="padding:4px 8px; font-size:0.75rem; flex:1;">TIU (31-65)</button>
+          <button type="button" class="btn-nav" id="jump-tkp" style="padding:4px 8px; font-size:0.75rem; flex:1;">TKP (66-110)</button>
+        </div>
+
+        <div class="nav-legend">
+          <div class="legend-item">
+            <span class="legend-box box-answered"></span>
+            <span>Sudah Dijawab</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-box box-doubt"></span>
+            <span>Ragu-Ragu</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-box box-unanswered"></span>
+            <span>Belum Dijawab</span>
+          </div>
+        </div>
+
+        <div id="question-grid" class="question-grid">
+          <!-- Grid numbers rendered via JS -->
+        </div>
+
+        <button id="btn-finish" class="btn-finish">Selesai Ujian</button>
+        <button id="btn-abort-session" class="btn-abort-exam" style="width:100%; margin-top:8px; padding:10px; background:#fff; color:#64748b; border:1px solid #cbd5e1; border-radius:6px; font-weight:700; font-size:0.88rem; cursor:pointer; transition:all 0.15s;">⏹ Hentikan Sesi (Keluar)</button>
+      </aside>
+    </section>
+
+    <!-- Screen 3: Results & Explanations -->
+    <section id="screen-result" style="display: none;">
+      <div id="result-container">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal Konfirmasi Selesai Ujian -->
+  <div id="modal-finish" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-title">Konfirmasi Selesai Ujian</div>
+      <div class="modal-body">
+        Apakah Anda yakin ingin mengakhiri sesi ujian ini? Setelah diakhiri, Anda tidak dapat mengubah jawaban lagi.
+        <div class="modal-recap">
+          <div class="modal-recap-row">
+            <span>Sudah dijawab:</span>
+            <strong id="recap-answered" style="color: var(--success);">0</strong>
+          </div>
+          <div class="modal-recap-row">
+            <span>Masih ragu-ragu:</span>
+            <strong id="recap-doubt" style="color: var(--warning);">0</strong>
+          </div>
+          <div class="modal-recap-row">
+            <span>Belum dijawab:</span>
+            <strong id="recap-unanswered" style="color: var(--danger);">0</strong>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="btn-modal-cancel" class="btn-nav">Kembali Mengerjakan</button>
+        <button id="btn-modal-confirm" class="btn-finish" style="width: auto; padding: 10px 20px;">Ya, Selesaikan</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Konfirmasi Hentikan Sesi -->
+  <div id="modal-abort" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-title" style="color: var(--danger);">Hentikan Sesi Ujian?</div>
+      <div class="modal-body">
+        Apakah Anda yakin ingin menghentikan dan membatalkan sesi ujian yang sedang berjalan ini?
+        <div style="background:#fef2f2; border:1px solid #fee2e2; border-radius:8px; padding:12px; margin-top:12px; color:#991b1b; font-size:0.85rem; line-height:1.5;">
+          • Jawaban pada sesi ini tidak akan disimpan ke riwayat skor.<br>
+          • Progres sesi akan dihapus dan Anda langsung kembali ke menu dashboard utama.
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="btn-modal-abort-cancel" class="btn-nav">Lanjutkan Ujian</button>
+        <button id="btn-modal-abort-confirm" class="btn-finish" style="width: auto; padding: 10px 20px; background: #dc2626;">Ya, Hentikan Sesi</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Tambah Soal Baru -->
+  <div id="modal-add-question" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-title">+ Tambah Soal Baru ke Bank Soal</div>
+      <form id="form-add-question">
+        <div class="form-group">
+          <label for="input-target-packet">Paket Sasaran / Instansi:</label>
+          <select id="input-target-packet" class="form-control">
+            <option value="skd">SKD Nasional (TWK / TIU / TKP)</option>
+            <option value="skb_kemenkeu">SKB Kemenkeu (Sistem Finansial & Pajak)</option>
+            <option value="skb_bssn">SKB BSSN (Cybersecurity & Sandi)</option>
+            <option value="skb_kemkomdigi">SKB Kemkomdigi (SPBE, Jaringan & PDP)</option>
+            <option value="skb_bkn">SKB BKN (Sistem CAT & SIASN)</option>
+            <option value="skb_kemenkumham">SKB Kemenkumham (Imigrasi & AHU)</option>
+            <option value="skb_pemda">SKB Pemda (SIPD & Smart City)</option>
+          </select>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
+          <div class="form-group">
+            <label for="input-category">Kategori / Sub-tes:</label>
+            <select id="input-category" class="form-control">
+              <option value="TWK">TWK</option>
+              <option value="TIU">TIU</option>
+              <option value="TKP">TKP</option>
+              <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+              <option value="Manajemen Basis Data">Manajemen Basis Data</option>
+              <option value="Jaringan Komputer">Jaringan Komputer</option>
+              <option value="Keamanan Informasi & Siber">Keamanan Siber</option>
+              <option value="Tata Kelola TI & SPBE">Tata Kelola & SPBE</option>
+              <option value="Sistem Informasi Keuangan">Sistem Informasi Keuangan (Kemenkeu)</option>
+              <option value="Incident Response & Forensik">Incident Response & Forensik (BSSN)</option>
+              <option value="Arsitektur CAT & SIASN">Arsitektur CAT & SIASN (BKN)</option>
+              <option value="Sistem Keimigrasian & SDP">Sistem Keimigrasian & SDP (Kumham)</option>
+              <option value="SIPD & Smart City">SIPD & Smart City (Pemda)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="input-subcategory">Topik / Subkategori:</label>
+            <input type="text" id="input-subcategory" class="form-control" placeholder="Contoh: Integritas / Deret / SPAN">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="input-question-text">Teks Pertanyaan / Studi Kasus:</label>
+          <textarea id="input-question-text" class="form-control" placeholder="Tuliskan butir soal di sini..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Pilihan Jawaban (A s.d. E):</label>
+          <input type="text" id="input-opt-a" class="form-control" style="margin-bottom:6px;" placeholder="Pilihan A" required>
+          <input type="text" id="input-opt-b" class="form-control" style="margin-bottom:6px;" placeholder="Pilihan B" required>
+          <input type="text" id="input-opt-c" class="form-control" style="margin-bottom:6px;" placeholder="Pilihan C" required>
+          <input type="text" id="input-opt-d" class="form-control" style="margin-bottom:6px;" placeholder="Pilihan D" required>
+          <input type="text" id="input-opt-e" class="form-control" placeholder="Pilihan E" required>
+        </div>
+
+        <div id="section-answer-standard" class="form-group">
+          <label for="input-correct-opt">Kunci Jawaban Benar (Opsi):</label>
+          <select id="input-correct-opt" class="form-control">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select>
+        </div>
+
+        <div id="section-answer-tkp" class="form-group" style="display: none;">
+          <label>Bobot Skor TKP (Skala 1 - 5 untuk tiap opsi):</label>
+          <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap:6px;">
+            <input type="number" id="tkp-pts-a" class="form-control" min="1" max="5" value="5" placeholder="A">
+            <input type="number" id="tkp-pts-b" class="form-control" min="1" max="5" value="4" placeholder="B">
+            <input type="number" id="tkp-pts-c" class="form-control" min="1" max="5" value="3" placeholder="C">
+            <input type="number" id="tkp-pts-d" class="form-control" min="1" max="5" value="2" placeholder="D">
+            <input type="number" id="tkp-pts-e" class="form-control" min="1" max="5" value="1" placeholder="E">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="input-explanation">Pembahasan & Trik Jawaban:</label>
+          <textarea id="input-explanation" class="form-control" placeholder="Tuliskan pembahasan lengkap di sini..."></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="btn-cancel-add-q" class="btn-nav">Batal</button>
+          <button type="submit" class="btn-nav" style="background:var(--primary); color:#fff;">Simpan ke Bank Soal</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data_soal.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

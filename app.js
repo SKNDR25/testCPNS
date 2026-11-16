@@ -1,0 +1,1202 @@
+/**
+ * Logika Simulasi CAT CPNS (Pembaruan Multi-Instansi)
+ * Mendukung SKD Nasional (110 Soal) dan SKB Spesifik Instansi (Kemenkeu, BSSN, Kemkomdigi, BKN, Kumham, Pemda)
+ */
+
+(function () {
+  // Key Penyimpanan LocalStorage
+  const STORAGE_KEY_SESSION = 'cpns_cat_active_session';
+  const STORAGE_KEY_HISTORY = 'cpns_cat_history';
+  const STORAGE_KEY_CUSTOM_QUESTIONS = 'cpns_cat_custom_questions';
+
+  // State Aplikasi
+  const state = {
+    packetKey: 'skd',
+    packetData: null,
+    activeQuestions: [], // Daftar soal yang sedang diujikan (bisa hasil shuffle)
+    currentIndex: 0,
+    answers: {},         // { [questionId]: 'A' | 'B' | ... }
+    doubts: new Set(),   // Set of questionId
+    timerSeconds: 0,
+    timerId: null,
+    startTime: null,
+    reviewFilter: 'all', // 'all' | 'wrong' | 'correct' | 'doubt'
+    reviewSearchQuery: '',
+    fontSize: 16
+  };
+
+  // Cache DOM Elements
+  const el = {
+    // Topbar Controls
+    fontSizeDec: document.getElementById('btn-font-dec'),
+    fontSizeReset: document.getElementById('btn-font-reset'),
+    fontSizeInc: document.getElementById('btn-font-inc'),
+    btnFullscreen: document.getElementById('btn-fullscreen'),
+    timerContainer: document.getElementById('timer-container'),
+    timerDisplay: document.getElementById('timer-display'),
+    examTitle: document.getElementById('exam-title'),
+
+    // Screens & Banners
+    resumeBanner: document.getElementById('resume-banner'),
+    resumeInfoText: document.getElementById('resume-info-text'),
+    btnResumeSession: document.getElementById('btn-resume-session'),
+    btnDiscardSession: document.getElementById('btn-discard-session'),
+    screenWelcome: document.getElementById('screen-welcome'),
+    screenExam: document.getElementById('screen-exam'),
+    screenResult: document.getElementById('screen-result'),
+
+    // Tabs
+    tabBtns: document.querySelectorAll('.tab-btn'),
+    tabContents: document.querySelectorAll('.tab-content'),
+
+    // Category Switcher (SKD vs SKB)
+    btnCatSkd: document.getElementById('btn-cat-skd'),
+    btnCatSkb: document.getElementById('btn-cat-skb'),
+    viewCatSkd: document.getElementById('view-cat-skd'),
+    viewCatSkb: document.getElementById('view-cat-skb'),
+
+    // Packet & Instansi Selection
+    packetCards: document.querySelectorAll('.packet-card'),
+    instansiCards: document.querySelectorAll('.instansi-card'),
+    optShuffleQuestions: document.getElementById('opt-shuffle-questions'),
+    optShuffleOptions: document.getElementById('opt-shuffle-options'),
+    btnStart: document.getElementById('btn-start'),
+
+    // Tab 2 (Riwayat & Statistik)
+    statTotalExams: document.getElementById('stat-total-exams'),
+    statAvgScore: document.getElementById('stat-avg-score'),
+    statPassRate: document.getElementById('stat-pass-rate'),
+    statHighestScore: document.getElementById('stat-highest-score'),
+    historyTableBody: document.getElementById('history-table-body'),
+    btnClearHistory: document.getElementById('btn-clear-history'),
+
+    // Tab 3 (Kelola Bank Soal)
+    bankSummaryList: document.getElementById('bank-summary-list'),
+    btnOpenAddModal: document.getElementById('btn-open-add-modal'),
+    btnExportJson: document.getElementById('btn-export-json'),
+    inputImportJson: document.getElementById('input-import-json'),
+
+    // Exam View
+    qIndexBadge: document.getElementById('q-index-badge'),
+    qInstansiTag: document.getElementById('q-instansi-tag'),
+    qCategoryTag: document.getElementById('q-category-tag'),
+    qSubcategoryTag: document.getElementById('q-subcategory-tag'),
+    qText: document.getElementById('q-text'),
+    optionsContainer: document.getElementById('options-container'),
+    btnPrev: document.getElementById('btn-prev'),
+    btnNext: document.getElementById('btn-next'),
+    btnDoubt: document.getElementById('btn-doubt'),
+    btnFinish: document.getElementById('btn-finish'),
+    btnAbortSession: document.getElementById('btn-abort-session'),
+    quickJumpContainer: document.getElementById('quick-jump-container'),
+    jumpTwk: document.getElementById('jump-twk'),
+    jumpTiu: document.getElementById('jump-tiu'),
+    jumpTkp: document.getElementById('jump-tkp'),
+    questionGrid: document.getElementById('question-grid'),
+
+    // Modal Selesai
+    modalFinish: document.getElementById('modal-finish'),
+    btnModalCancel: document.getElementById('btn-modal-cancel'),
+    btnModalConfirm: document.getElementById('btn-modal-confirm'),
+    recapAnswered: document.getElementById('recap-answered'),
+    recapDoubt: document.getElementById('recap-doubt'),
+    recapUnanswered: document.getElementById('recap-unanswered'),
+
+    // Modal Hentikan Sesi
+    modalAbort: document.getElementById('modal-abort'),
+    btnModalAbortCancel: document.getElementById('btn-modal-abort-cancel'),
+    btnModalAbortConfirm: document.getElementById('btn-modal-abort-confirm'),
+
+    // Modal Tambah Soal
+    modalAddQuestion: document.getElementById('modal-add-question'),
+    formAddQuestion: document.getElementById('form-add-question'),
+    btnCancelAddQ: document.getElementById('btn-cancel-add-q'),
+    inputTargetPacket: document.getElementById('input-target-packet'),
+    inputCategory: document.getElementById('input-category'),
+    inputSubcategory: document.getElementById('input-subcategory'),
+    inputQuestionText: document.getElementById('input-question-text'),
+    inputOptA: document.getElementById('input-opt-a'),
+    inputOptB: document.getElementById('input-opt-b'),
+    inputOptC: document.getElementById('input-opt-c'),
+    inputOptD: document.getElementById('input-opt-d'),
+    inputOptE: document.getElementById('input-opt-e'),
+    sectionAnswerStandard: document.getElementById('section-answer-standard'),
+    sectionAnswerTkp: document.getElementById('section-answer-tkp'),
+    inputCorrectOpt: document.getElementById('input-correct-opt'),
+    tkpPtsA: document.getElementById('tkp-pts-a'),
+    tkpPtsB: document.getElementById('tkp-pts-b'),
+    tkpPtsC: document.getElementById('tkp-pts-c'),
+    tkpPtsD: document.getElementById('tkp-pts-d'),
+    tkpPtsE: document.getElementById('tkp-pts-e'),
+    inputExplanation: document.getElementById('input-explanation'),
+
+    // Result View
+    resultContainer: document.getElementById('result-container')
+  };
+
+  // ==========================================
+  // INISIALISASI
+  // ==========================================
+  function init() {
+    loadCustomQuestionsIntoBank();
+    setupAccessibilityControls();
+    setupTabNavigation();
+    setupCategoryAndInstansiSelection();
+    setupExamActionHandlers();
+    setupAddQuestionModal();
+    setupImportExport();
+
+    renderHistoryDashboard();
+    renderBankSummary();
+    checkSavedSession();
+  }
+
+  // ==========================================
+  // FITUR AKSESIBILITAS & TAMPILAN
+  // ==========================================
+  function setupAccessibilityControls() {
+    el.fontSizeInc.addEventListener('click', () => {
+      if (state.fontSize < 24) {
+        state.fontSize += 2;
+        document.documentElement.style.setProperty('--font-base-size', `${state.fontSize}px`);
+      }
+    });
+
+    el.fontSizeDec.addEventListener('click', () => {
+      if (state.fontSize > 13) {
+        state.fontSize -= 2;
+        document.documentElement.style.setProperty('--font-base-size', `${state.fontSize}px`);
+      }
+    });
+
+    el.fontSizeReset.addEventListener('click', () => {
+      state.fontSize = 16;
+      document.documentElement.style.setProperty('--font-base-size', '16px');
+    });
+
+    el.btnFullscreen.addEventListener('click', () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch((err) => {
+          console.warn('Gagal masuk mode fullscreen:', err);
+        });
+      } else {
+        document.exitFullscreen().catch((err) => {
+          console.warn('Gagal keluar mode fullscreen:', err);
+        });
+      }
+    });
+  }
+
+  // ==========================================
+  // SISTEM TAB DASHBOARD
+  // ==========================================
+  function setupTabNavigation() {
+    el.tabBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        el.tabBtns.forEach((b) => b.classList.remove('active'));
+        el.tabContents.forEach((c) => c.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetId = btn.dataset.tab;
+        const targetContent = document.getElementById(targetId);
+        if (targetContent) targetContent.classList.add('active');
+
+        if (targetId === 'tab-history') renderHistoryDashboard();
+        if (targetId === 'tab-manage') renderBankSummary();
+      });
+    });
+  }
+
+  // ==========================================
+  // PEMILIHAN KATEGORI & INSTANSI
+  // ==========================================
+  function setupCategoryAndInstansiSelection() {
+    // Toggle SKD vs SKB
+    el.btnCatSkd.addEventListener('click', () => {
+      el.btnCatSkd.classList.add('active');
+      el.btnCatSkb.classList.remove('active');
+      el.viewCatSkd.style.display = 'block';
+      el.viewCatSkb.style.display = 'none';
+      state.packetKey = 'skd';
+    });
+
+    el.btnCatSkb.addEventListener('click', () => {
+      el.btnCatSkb.classList.add('active');
+      el.btnCatSkd.classList.remove('active');
+      el.viewCatSkd.style.display = 'none';
+      el.viewCatSkb.style.display = 'block';
+
+      // Pastikan ada instansi yang terpilih default
+      let selectedInstansi = document.querySelector('.instansi-card.selected');
+      if (!selectedInstansi) {
+        selectedInstansi = el.instansiCards[0];
+        if (selectedInstansi) selectedInstansi.classList.add('selected');
+      }
+      if (selectedInstansi) state.packetKey = selectedInstansi.dataset.packet;
+    });
+
+    // Pilihan Kartu SKD
+    el.packetCards.forEach((card) => {
+      card.addEventListener('click', () => {
+        el.packetCards.forEach((c) => c.classList.remove('selected'));
+        card.classList.add('selected');
+        state.packetKey = card.dataset.packet;
+      });
+    });
+
+    // Pilihan Kartu Instansi SKB
+    el.instansiCards.forEach((card) => {
+      card.addEventListener('click', () => {
+        el.instansiCards.forEach((c) => c.classList.remove('selected'));
+        card.classList.add('selected');
+        state.packetKey = card.dataset.packet;
+      });
+    });
+
+    // Tombol Mulai
+    el.btnStart.addEventListener('click', () => {
+      startNewExam(state.packetKey, {
+        shuffleQuestions: el.optShuffleQuestions.checked,
+        shuffleOptions: el.optShuffleOptions.checked
+      });
+    });
+  }
+
+  // ==========================================
+  // AUTO-SAVE & RESUME SESSION
+  // ==========================================
+  function checkSavedSession() {
+    const raw = localStorage.getItem(STORAGE_KEY_SESSION);
+    if (!raw) {
+      el.resumeBanner.style.display = 'none';
+      return;
+    }
+
+    try {
+      const saved = JSON.parse(raw);
+      if (saved && saved.activeQuestions && saved.activeQuestions.length > 0 && saved.timerSeconds > 0) {
+        const remainingMin = Math.ceil(saved.timerSeconds / 60);
+        el.resumeInfoText.textContent = `Paket: ${saved.packetTitle || 'Ujian'} • Sisa Waktu: ${remainingMin} Menit • Terjawab: ${Object.keys(saved.answers || {}).length}/${saved.activeQuestions.length} Soal.`;
+        el.resumeBanner.style.display = 'flex';
+
+        el.btnResumeSession.onclick = () => resumeExamSession(saved);
+        el.btnDiscardSession.onclick = () => {
+          localStorage.removeItem(STORAGE_KEY_SESSION);
+          el.resumeBanner.style.display = 'none';
+        };
+      } else {
+        el.resumeBanner.style.display = 'none';
+      }
+    } catch (e) {
+      console.error('Sesi tersimpan tidak valid:', e);
+      el.resumeBanner.style.display = 'none';
+    }
+  }
+
+  function saveCurrentSession() {
+    if (!state.activeQuestions || state.activeQuestions.length === 0) return;
+    const sessionData = {
+      packetKey: state.packetKey,
+      packetTitle: state.packetData ? state.packetData.title : 'Ujian',
+      activeQuestions: state.activeQuestions,
+      currentIndex: state.currentIndex,
+      answers: state.answers,
+      doubts: Array.from(state.doubts),
+      timerSeconds: state.timerSeconds,
+      startTime: state.startTime,
+      updatedAt: new Date().toISOString()
+    };
+    localStorage.setItem(STORAGE_KEY_SESSION, JSON.stringify(sessionData));
+  }
+
+  function clearCurrentSession() {
+    localStorage.removeItem(STORAGE_KEY_SESSION);
+    el.resumeBanner.style.display = 'none';
+  }
+
+  function resumeExamSession(saved) {
+    state.packetKey = saved.packetKey;
+    state.packetData = window.BANK_SOAL[saved.packetKey];
+    state.activeQuestions = saved.activeQuestions;
+    state.currentIndex = saved.currentIndex || 0;
+    state.answers = saved.answers || {};
+    state.doubts = new Set(saved.doubts || []);
+    state.timerSeconds = saved.timerSeconds;
+    state.startTime = saved.startTime || new Date().toISOString();
+
+    el.resumeBanner.style.display = 'none';
+    el.screenWelcome.style.display = 'none';
+    el.screenResult.style.display = 'none';
+    el.screenExam.style.display = 'grid';
+    el.timerContainer.style.display = 'flex';
+    el.examTitle.textContent = state.packetData ? state.packetData.title : 'Simulasi Ujian';
+
+    if (el.quickJumpContainer) {
+      el.quickJumpContainer.style.display = state.packetKey === 'skd' ? 'flex' : 'none';
+    }
+
+    renderGrid();
+    loadQuestion(state.currentIndex);
+    startTimer();
+  }
+
+  // ==========================================
+  // MULAI UJIAN BARU
+  // ==========================================
+  function startNewExam(packetKey, options = {}) {
+    state.packetKey = packetKey;
+    state.packetData = window.BANK_SOAL[packetKey];
+    if (!state.packetData) return;
+
+    let clonedQuestions = JSON.parse(JSON.stringify(state.packetData.questions));
+
+    // Acak Urutan Soal bila diminta
+    if (options.shuffleQuestions) {
+      if (packetKey === 'skd') {
+        const twk = clonedQuestions.filter((q) => q.category === 'TWK');
+        const tiu = clonedQuestions.filter((q) => q.category === 'TIU');
+        const tkp = clonedQuestions.filter((q) => q.category === 'TKP');
+        shuffleArray(twk);
+        shuffleArray(tiu);
+        shuffleArray(tkp);
+        clonedQuestions = [...twk, ...tiu, ...tkp];
+      } else {
+        shuffleArray(clonedQuestions);
+      }
+    }
+
+    // Acak Pilihan Opsi A-E bila diminta
+    if (options.shuffleOptions) {
+      clonedQuestions.forEach((q) => {
+        q.options = shuffleQuestionOptions(q);
+      });
+    }
+
+    state.activeQuestions = clonedQuestions;
+    state.currentIndex = 0;
+    state.answers = {};
+    state.doubts.clear();
+    state.timerSeconds = state.packetData.timeMinutes * 60;
+    state.startTime = new Date().toISOString();
+
+    el.resumeBanner.style.display = 'none';
+    el.screenWelcome.style.display = 'none';
+    el.screenResult.style.display = 'none';
+    el.screenExam.style.display = 'grid';
+    el.timerContainer.style.display = 'flex';
+    el.examTitle.textContent = state.packetData.title;
+
+    if (el.quickJumpContainer) {
+      el.quickJumpContainer.style.display = state.packetKey === 'skd' ? 'flex' : 'none';
+    }
+
+    renderGrid();
+    loadQuestion(state.currentIndex);
+    startTimer();
+    saveCurrentSession();
+  }
+
+  function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  function shuffleQuestionOptions(q) {
+    const letters = ['A', 'B', 'C', 'D', 'E'];
+    const currentEntries = letters.map((k) => ({
+      key: k,
+      text: q.options[k],
+      point: q.points ? q.points[k] : (k === q.answer ? 5 : 0)
+    }));
+
+    shuffleArray(currentEntries);
+
+    const newOptions = {};
+    const newPoints = {};
+    let newCorrectKey = 'A';
+
+    currentEntries.forEach((entry, idx) => {
+      const newKey = letters[idx];
+      newOptions[newKey] = entry.text;
+      newPoints[newKey] = entry.point;
+      if (entry.key === q.answer) {
+        newCorrectKey = newKey;
+      }
+    });
+
+    q.points = newPoints;
+    q.answer = newCorrectKey;
+    return newOptions;
+  }
+
+  // ==========================================
+  // NAVIGASI & PENYAJIAN SOAL
+  // ==========================================
+  function setupExamActionHandlers() {
+    el.btnPrev.addEventListener('click', () => navigateQuestion(-1));
+    el.btnNext.addEventListener('click', () => navigateQuestion(1));
+    el.btnDoubt.addEventListener('click', toggleDoubt);
+
+    el.btnFinish.addEventListener('click', showModalFinish);
+    el.btnModalCancel.addEventListener('click', hideModalFinish);
+    el.btnModalConfirm.addEventListener('click', () => {
+      hideModalFinish();
+      finishExam();
+    });
+
+    // Hentikan Sesi
+    if (el.btnAbortSession) {
+      el.btnAbortSession.addEventListener('click', showModalAbort);
+    }
+    if (el.btnModalAbortCancel) {
+      el.btnModalAbortCancel.addEventListener('click', hideModalAbort);
+    }
+    if (el.btnModalAbortConfirm) {
+      el.btnModalAbortConfirm.addEventListener('click', () => {
+        hideModalAbort();
+        abortCurrentSession();
+      });
+    }
+
+    if (el.jumpTwk) el.jumpTwk.addEventListener('click', () => jumpToCategoryIndex('TWK'));
+    if (el.jumpTiu) el.jumpTiu.addEventListener('click', () => jumpToCategoryIndex('TIU'));
+    if (el.jumpTkp) el.jumpTkp.addEventListener('click', () => jumpToCategoryIndex('TKP'));
+  }
+
+  function showModalAbort() {
+    if (el.modalAbort) el.modalAbort.style.display = 'flex';
+  }
+
+  function hideModalAbort() {
+    if (el.modalAbort) el.modalAbort.style.display = 'none';
+  }
+
+  function abortCurrentSession() {
+    if (state.timerId) clearInterval(state.timerId);
+    clearCurrentSession();
+    el.screenExam.style.display = 'none';
+    el.timerContainer.style.display = 'none';
+    el.screenWelcome.style.display = 'block';
+    renderBankSummary();
+    renderHistoryDashboard();
+  }
+
+  function jumpToCategoryIndex(category) {
+    const idx = state.activeQuestions.findIndex((q) => q.category === category);
+    if (idx !== -1) loadQuestion(idx);
+  }
+
+  function renderGrid() {
+    el.questionGrid.innerHTML = '';
+    const questions = state.activeQuestions;
+
+    questions.forEach((q, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'grid-btn';
+      btn.textContent = idx + 1;
+      btn.dataset.index = idx;
+
+      btn.addEventListener('click', () => {
+        loadQuestion(idx);
+      });
+
+      el.questionGrid.appendChild(btn);
+    });
+
+    updateGridStatus();
+  }
+
+  function updateGridStatus() {
+    const buttons = el.questionGrid.querySelectorAll('.grid-btn');
+    const questions = state.activeQuestions;
+
+    buttons.forEach((btn, idx) => {
+      const q = questions[idx];
+      btn.classList.remove('current', 'answered', 'doubt');
+
+      if (idx === state.currentIndex) {
+        btn.classList.add('current');
+      }
+
+      if (state.doubts.has(q.id)) {
+        btn.classList.add('doubt');
+      } else if (state.answers[q.id]) {
+        btn.classList.add('answered');
+      }
+    });
+  }
+
+  function loadQuestion(index) {
+    const questions = state.activeQuestions;
+    if (index < 0 || index >= questions.length) return;
+
+    state.currentIndex = index;
+    const q = questions[index];
+
+    // Info header soal
+    el.qIndexBadge.textContent = `Soal No. ${index + 1} dari ${questions.length}`;
+    
+    // Tag Instansi
+    const instansiName = q.instansi || (state.packetData ? state.packetData.instansi : 'Nasional');
+    if (el.qInstansiTag) {
+      el.qInstansiTag.textContent = `🏛️ ${instansiName}`;
+    }
+
+    el.qCategoryTag.textContent = q.category;
+    el.qSubcategoryTag.textContent = q.subcategory || '';
+
+    el.qCategoryTag.className = 'tag';
+    if (q.category === 'TWK') el.qCategoryTag.classList.add('tag-twk');
+    else if (q.category === 'TIU') el.qCategoryTag.classList.add('tag-tiu');
+    else if (q.category === 'TKP') el.qCategoryTag.classList.add('tag-tkp');
+    else el.qCategoryTag.classList.add('tag-skb');
+
+    el.qText.textContent = q.question;
+
+    el.optionsContainer.innerHTML = '';
+    const selectedAnswer = state.answers[q.id];
+
+    ['A', 'B', 'C', 'D', 'E'].forEach((optKey) => {
+      if (!q.options[optKey]) return;
+      const optItem = document.createElement('div');
+      optItem.className = 'option-item';
+      if (selectedAnswer === optKey) {
+        optItem.classList.add('selected');
+      }
+
+      optItem.innerHTML = `
+        <span class="option-letter">${optKey}</span>
+        <span class="option-text">${q.options[optKey]}</span>
+      `;
+
+      optItem.addEventListener('click', () => {
+        state.answers[q.id] = optKey;
+        loadQuestion(state.currentIndex);
+        updateGridStatus();
+        saveCurrentSession();
+      });
+
+      el.optionsContainer.appendChild(optItem);
+    });
+
+    el.btnPrev.disabled = index === 0;
+    el.btnNext.textContent = index === questions.length - 1 ? 'Simpan' : 'Simpan & Lanjutkan »';
+
+    if (state.doubts.has(q.id)) {
+      el.btnDoubt.classList.add('active');
+      el.btnDoubt.textContent = '★ Tandai Yakin';
+    } else {
+      el.btnDoubt.classList.remove('active');
+      el.btnDoubt.textContent = '⚠ Ragu-Ragu';
+    }
+
+    updateGridStatus();
+  }
+
+  function navigateQuestion(direction) {
+    const newIdx = state.currentIndex + direction;
+    if (newIdx >= 0 && newIdx < state.activeQuestions.length) {
+      loadQuestion(newIdx);
+      saveCurrentSession();
+    }
+  }
+
+  function toggleDoubt() {
+    const q = state.activeQuestions[state.currentIndex];
+    if (state.doubts.has(q.id)) {
+      state.doubts.delete(q.id);
+    } else {
+      state.doubts.add(q.id);
+    }
+    loadQuestion(state.currentIndex);
+    saveCurrentSession();
+  }
+
+  // ==========================================
+  // PENGELOLA WAKTU (TIMER)
+  // ==========================================
+  function startTimer() {
+    if (state.timerId) clearInterval(state.timerId);
+
+    function tick() {
+      const minutes = Math.floor(state.timerSeconds / 60);
+      const seconds = state.timerSeconds % 60;
+      el.timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+      if (state.timerSeconds <= 300) {
+        el.timerDisplay.classList.add('timer-danger');
+      } else {
+        el.timerDisplay.classList.remove('timer-danger');
+      }
+
+      if (state.timerSeconds <= 0) {
+        clearInterval(state.timerId);
+        alert('Waktu ujian telah berakhir! Jawaban Anda akan dihitung secara otomatis.');
+        finishExam();
+      } else {
+        state.timerSeconds--;
+        if (state.timerSeconds % 5 === 0) {
+          saveCurrentSession();
+        }
+      }
+    }
+
+    tick();
+    state.timerId = setInterval(tick, 1000);
+  }
+
+  // ==========================================
+  // MODAL SELESAI UJIAN
+  // ==========================================
+  function showModalFinish() {
+    const questions = state.activeQuestions;
+    let answeredCount = 0;
+    let doubtCount = 0;
+    let unansweredCount = 0;
+
+    questions.forEach((q) => {
+      const isAnswered = !!state.answers[q.id];
+      const isDoubt = state.doubts.has(q.id);
+
+      if (isDoubt) doubtCount++;
+      if (isAnswered) answeredCount++;
+      if (!isAnswered) unansweredCount++;
+    });
+
+    el.recapAnswered.textContent = answeredCount;
+    el.recapDoubt.textContent = doubtCount;
+    el.recapUnanswered.textContent = unansweredCount;
+
+    el.modalFinish.style.display = 'flex';
+  }
+
+  function hideModalFinish() {
+    el.modalFinish.style.display = 'none';
+  }
+
+  // ==========================================
+  // KALKULASI SKOR, PEMBAHASAN & SIMPAN RIWAYAT
+  // ==========================================
+  function finishExam() {
+    if (state.timerId) clearInterval(state.timerId);
+    clearCurrentSession();
+
+    el.timerContainer.style.display = 'none';
+    el.screenExam.style.display = 'none';
+    el.screenResult.style.display = 'block';
+
+    calculateAndRenderScore();
+  }
+
+  function calculateAndRenderScore() {
+    const isSkd = state.packetKey === 'skd';
+    const questions = state.activeQuestions;
+
+    let scoreTWK = 0, correctTWK = 0, totalTWK = 0;
+    let scoreTIU = 0, correctTIU = 0, totalTIU = 0;
+    let scoreTKP = 0, totalTKP = 0;
+    let scoreSKB = 0, correctSKB = 0, totalSKB = 0;
+
+    questions.forEach((q) => {
+      const userAns = state.answers[q.id];
+      const pts = userAns ? (q.points ? q.points[userAns] || 0 : (userAns === q.answer ? 5 : 0)) : 0;
+
+      if (isSkd) {
+        if (q.category === 'TWK') {
+          totalTWK++;
+          scoreTWK += pts;
+          if (pts > 0) correctTWK++;
+        } else if (q.category === 'TIU') {
+          totalTIU++;
+          scoreTIU += pts;
+          if (pts > 0) correctTIU++;
+        } else if (q.category === 'TKP') {
+          totalTKP++;
+          scoreTKP += pts;
+        }
+      } else {
+        totalSKB++;
+        scoreSKB += pts;
+        if (pts > 0) correctSKB++;
+      }
+    });
+
+    let passStatus = false;
+    let totalScore = 0;
+    const packetTitle = state.packetData ? state.packetData.title : 'Ujian CAT';
+    const instansiName = state.packetData ? state.packetData.instansi : 'Nasional';
+
+    if (isSkd) {
+      const pg = state.packetData.passingGrades;
+      const passTWK = scoreTWK >= pg.twk;
+      const passTIU = scoreTIU >= pg.tiu;
+      const passTKP = scoreTKP >= pg.tkp;
+      passStatus = passTWK && passTIU && passTKP;
+      totalScore = scoreTWK + scoreTIU + scoreTKP;
+
+      saveExamToHistory({
+        date: new Date().toLocaleString('id-ID'),
+        packet: `${packetTitle} (${instansiName})`,
+        twk: scoreTWK,
+        tiu: scoreTIU,
+        tkp: scoreTKP,
+        total: totalScore,
+        passed: passStatus
+      });
+
+      renderResultCardSKD({
+        totalScore, passStatus, pg,
+        scoreTWK, correctTWK, totalTWK, passTWK,
+        scoreTIU, correctTIU, totalTIU, passTIU,
+        scoreTKP, totalTKP, passTKP,
+        questions, packetTitle, instansiName
+      });
+    } else {
+      totalScore = scoreSKB;
+      passStatus = true;
+
+      saveExamToHistory({
+        date: new Date().toLocaleString('id-ID'),
+        packet: `${packetTitle} (${instansiName})`,
+        twk: '-',
+        tiu: '-',
+        tkp: '-',
+        total: totalScore,
+        passed: true
+      });
+
+      renderResultCardSKB({
+        scoreSKB, correctSKB, totalSKB, questions, packetTitle, instansiName
+      });
+    }
+  }
+
+  function renderResultCardSKD(d) {
+    el.resultContainer.innerHTML = `
+      <div class="result-card">
+        <div class="result-header">
+          <span class="result-badge ${d.passStatus ? 'pass' : 'fail'}">
+            ${d.passStatus ? '✓ MEMENUHI PASSING GRADE (LOLOS)' : '✕ BELUM MEMENUHI PASSING GRADE'}
+          </span>
+          <h2 style="font-size: 1.85rem; color: var(--primary); margin-top: 6px;">Total Skor SKD: ${d.totalScore}</h2>
+          <p style="color: var(--text-muted); margin-top: 4px;">Instansi: <strong>${d.instansiName}</strong> • Standar Resmi KepmenPAN-RB</p>
+        </div>
+
+        <div class="score-cards-grid">
+          <div class="score-card">
+            <div class="score-card-title">Tes Wawasan Kebangsaan (TWK)</div>
+            <div class="score-card-value">${d.scoreTWK}</div>
+            <div class="score-card-pg">Ambang Batas: ${d.pg.twk} (${d.passTWK ? '<strong style="color:var(--success)">Lolos</strong>' : '<strong style="color:var(--danger)">Tidak Lolos</strong>'})</div>
+            <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">Benar: ${d.correctTWK} / ${d.totalTWK}</div>
+          </div>
+
+          <div class="score-card">
+            <div class="score-card-title">Tes Inteligensia Umum (TIU)</div>
+            <div class="score-card-value">${d.scoreTIU}</div>
+            <div class="score-card-pg">Ambang Batas: ${d.pg.tiu} (${d.passTIU ? '<strong style="color:var(--success)">Lolos</strong>' : '<strong style="color:var(--danger)">Tidak Lolos</strong>'})</div>
+            <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">Benar: ${d.correctTIU} / ${d.totalTIU}</div>
+          </div>
+
+          <div class="score-card">
+            <div class="score-card-title">Tes Karakteristik Pribadi (TKP)</div>
+            <div class="score-card-value">${d.scoreTKP}</div>
+            <div class="score-card-pg">Ambang Batas: ${d.pg.tkp} (${d.passTKP ? '<strong style="color:var(--success)">Lolos</strong>' : '<strong style="color:var(--danger)">Tidak Lolos</strong>'})</div>
+            <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">Skala Skor 1-5 (${d.totalTKP} soal)</div>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:center; gap: 14px; margin-bottom: 24px;">
+          <button id="btn-restart" class="btn-nav" style="background:var(--primary); color:#fff; border:none;">Ulangi Ujian Ini</button>
+          <button id="btn-switch-packet" class="btn-nav">Menu Utama Dashboard</button>
+        </div>
+
+        ${renderReviewSectionHTML(d.questions)}
+      </div>
+    `;
+
+    setupReviewInteractions(d.questions);
+  }
+
+  function renderResultCardSKB(d) {
+    el.resultContainer.innerHTML = `
+      <div class="result-card">
+        <div class="result-header">
+          <span class="result-badge pass">SELESAI MENGERJAKAN SKB INSTANSI</span>
+          <h2 style="font-size: 1.85rem; color: var(--primary); margin-top: 6px;">Skor ${d.packetTitle}: ${d.scoreSKB}</h2>
+          <p style="color: var(--text-muted); margin-top: 4px;">Instansi: <strong>${d.instansiName}</strong> • Menjawab benar: ${d.correctSKB} dari ${d.totalSKB} soal (${Math.round((d.correctSKB / d.totalSKB) * 100)}%)</p>
+        </div>
+
+        <div style="display:flex; justify-content:center; gap: 14px; margin-bottom: 24px;">
+          <button id="btn-restart" class="btn-nav" style="background:var(--primary); color:#fff; border:none;">Ulangi Ujian Ini</button>
+          <button id="btn-switch-packet" class="btn-nav">Pilih Instansi Lain</button>
+        </div>
+
+        ${renderReviewSectionHTML(d.questions)}
+      </div>
+    `;
+
+    setupReviewInteractions(d.questions);
+  }
+
+  function renderReviewSectionHTML(questions) {
+    return `
+      <div class="review-section">
+        <div class="review-toolbar">
+          <div class="filter-buttons-group">
+            <button class="btn-filter active" data-filter="all">Semua (${questions.length})</button>
+            <button class="btn-filter" data-filter="wrong">Jawaban Salah</button>
+            <button class="btn-filter" data-filter="correct">Jawaban Benar</button>
+            <button class="btn-filter" data-filter="doubt">Ragu-Ragu</button>
+          </div>
+          <input type="text" id="review-search-input" class="search-review-input" placeholder="🔍 Cari pembahasan soal...">
+        </div>
+
+        <div id="review-items-container">
+          <!-- Rendered by filter logic -->
+        </div>
+      </div>
+    `;
+  }
+
+  function setupReviewInteractions(questions) {
+    document.getElementById('btn-restart').addEventListener('click', () => {
+      startNewExam(state.packetKey);
+    });
+
+    document.getElementById('btn-switch-packet').addEventListener('click', () => {
+      el.screenResult.style.display = 'none';
+      el.screenWelcome.style.display = 'block';
+      renderHistoryDashboard();
+    });
+
+    const filterBtns = document.querySelectorAll('.btn-filter');
+    const searchInput = document.getElementById('review-search-input');
+
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.reviewFilter = btn.dataset.filter;
+        renderFilteredReviewItems(questions);
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        state.reviewSearchQuery = e.target.value.toLowerCase();
+        renderFilteredReviewItems(questions);
+      });
+    }
+
+    renderFilteredReviewItems(questions);
+  }
+
+  function renderFilteredReviewItems(questions) {
+    const container = document.getElementById('review-items-container');
+    if (!container) return;
+
+    let filtered = questions.filter((q) => {
+      const userAns = state.answers[q.id];
+      const isTkp = q.category === 'TKP';
+      const isCorrect = isTkp ? (userAns && q.points[userAns] === 5) : (userAns === q.answer);
+      const isDoubt = state.doubts.has(q.id);
+
+      if (state.reviewFilter === 'wrong' && isCorrect) return false;
+      if (state.reviewFilter === 'correct' && !isCorrect) return false;
+      if (state.reviewFilter === 'doubt' && !isDoubt) return false;
+
+      if (state.reviewSearchQuery) {
+        const textToMatch = `${q.question} ${q.instansi || ''} ${q.category} ${q.subcategory || ''} ${q.explanation || ''}`.toLowerCase();
+        if (!textToMatch.includes(state.reviewSearchQuery)) return false;
+      }
+
+      return true;
+    });
+
+    if (filtered.length === 0) {
+      container.innerHTML = `<div style="text-align:center; padding:30px; color:#94a3b8;">Tidak ada soal yang sesuai dengan filter atau kata kunci pencarian.</div>`;
+      return;
+    }
+
+    let html = '';
+    filtered.forEach((q) => {
+      const origIdx = questions.findIndex((item) => item.id === q.id);
+      const userAns = state.answers[q.id];
+      const isTkp = q.category === 'TKP';
+      const isCorrect = isTkp ? (userAns && q.points[userAns] === 5) : (userAns === q.answer);
+
+      const itemClass = isCorrect ? 'is-correct' : 'is-wrong';
+
+      html += `
+        <div class="review-item ${itemClass}">
+          <div style="display:flex; justify-content:space-between; margin-bottom: 8px; flex-wrap:wrap; gap:6px;">
+            <span style="font-weight:700; font-size:0.95rem; color:var(--primary);">
+              No. ${origIdx + 1} - [${q.instansi || 'Nasional'}] ${q.category} (${q.subcategory || ''})
+            </span>
+            <span style="font-weight:700; font-size:0.85rem; color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+              ${isCorrect ? '✓ Benar / Poin 5' : '✕ ' + (userAns ? 'Kurang Tepat' : 'Tidak Dijawab')}
+            </span>
+          </div>
+
+          <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px; white-space: pre-line;">${q.question}</p>
+
+          <div style="font-size: 0.85rem; margin-bottom: 10px;">
+            <div style="margin-bottom: 4px;">
+              <strong>Jawaban Anda:</strong> 
+              <span style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'}; font-weight:700;">
+                ${userAns ? `${userAns}. ${q.options[userAns]}` : '(Tidak menjawab)'}
+                ${isTkp && userAns ? ` (Poin: ${q.points[userAns]})` : ''}
+              </span>
+            </div>
+            <div>
+              <strong>Kunci Jawaban Terbaik:</strong> 
+              <span style="color: var(--success); font-weight:700;">
+                ${q.answer ? `${q.answer}. ${q.options[q.answer]}` : '(Cek rincian poin opsi)'}
+              </span>
+            </div>
+          </div>
+
+          <div class="review-explanation">
+            <strong>Pembahasan:</strong><br>
+            ${q.explanation || 'Belum ada penjelasan tambahan.'}
+          </div>
+        </div>
+      `;
+    });
+
+    container.innerHTML = html;
+  }
+
+  // ==========================================
+  // MANAJEMEN RIWAYAT (HISTORY & ANALYTICS)
+  // ==========================================
+  function getHistory() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY_HISTORY);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function saveExamToHistory(record) {
+    const history = getHistory();
+    history.unshift(record);
+    localStorage.setItem(STORAGE_KEY_HISTORY, JSON.stringify(history));
+  }
+
+  function renderHistoryDashboard() {
+    const history = getHistory();
+
+    const total = history.length;
+    el.statTotalExams.textContent = total;
+
+    if (total === 0) {
+      el.statAvgScore.textContent = '0';
+      el.statPassRate.textContent = '0%';
+      el.statHighestScore.textContent = '0';
+      el.historyTableBody.innerHTML = `<tr><td colspan="7" style="text-align:center; color:#94a3b8; padding: 24px;">Belum ada riwayat pengerjaan ujian.</td></tr>`;
+      return;
+    }
+
+    const totalScoreSum = history.reduce((acc, h) => acc + (typeof h.total === 'number' ? h.total : 0), 0);
+    const avgScore = Math.round(totalScoreSum / total);
+    const highestScore = Math.max(...history.map((h) => (typeof h.total === 'number' ? h.total : 0)));
+    const passedCount = history.filter((h) => h.passed).length;
+    const passRate = Math.round((passedCount / total) * 100);
+
+    el.statAvgScore.textContent = avgScore;
+    el.statHighestScore.textContent = highestScore;
+    el.statPassRate.textContent = `${passRate}%`;
+
+    let rowsHtml = '';
+    history.forEach((item) => {
+      rowsHtml += `
+        <tr>
+          <td>${item.date}</td>
+          <td><strong>${item.packet}</strong></td>
+          <td>${item.twk}</td>
+          <td>${item.tiu}</td>
+          <td>${item.tkp}</td>
+          <td><strong style="color:var(--primary);">${item.total}</strong></td>
+          <td>
+            <span style="font-weight:700; color:${item.passed ? 'var(--success)' : 'var(--danger)'};">
+              ${item.passed ? '✓ Lolos' : '✕ Belum Lolos'}
+            </span>
+          </td>
+        </tr>
+      `;
+    });
+
+    el.historyTableBody.innerHTML = rowsHtml;
+  }
+
+  el.btnClearHistory.addEventListener('click', () => {
+    if (confirm('Apakah Anda yakin ingin menghapus seluruh riwayat pengerjaan ujian?')) {
+      localStorage.removeItem(STORAGE_KEY_HISTORY);
+      renderHistoryDashboard();
+    }
+  });
+
+  // ==========================================
+  // MANAJEMEN BANK SOAL (CRUD, IMPORT & EXPORT)
+  // ==========================================
+  function loadCustomQuestionsIntoBank() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY_CUSTOM_QUESTIONS);
+      if (!raw) return;
+      const customList = JSON.parse(raw);
+
+      customList.forEach((q) => {
+        const targetPacket = q.targetPacket || 'skd';
+        if (window.BANK_SOAL && window.BANK_SOAL[targetPacket]) {
+          const exists = window.BANK_SOAL[targetPacket].questions.some((existing) => existing.id === q.id);
+          if (!exists) {
+            window.BANK_SOAL[targetPacket].questions.push(q);
+          }
+        }
+      });
+    } catch (e) {
+      console.warn('Gagal memuat soal kustom:', e);
+    }
+  }
+
+  function renderBankSummary() {
+    if (!window.BANK_SOAL) return;
+    
+    let html = '';
+    let grandTotal = 0;
+
+    Object.keys(window.BANK_SOAL).forEach((key) => {
+      const p = window.BANK_SOAL[key];
+      const count = p.questions ? p.questions.length : 0;
+      grandTotal += count;
+      html += `<li><strong>[${p.instansi || 'Nasional'}] ${p.title}:</strong> ${count} Soal</li>`;
+    });
+
+    html += `<li style="margin-top:8px; border-top:1px dashed #cbd5e1; padding-top:6px;"><strong>Total Keseluruhan Bank Soal:</strong> ${grandTotal} Soal</li>`;
+    el.bankSummaryList.innerHTML = html;
+  }
+
+  function setupAddQuestionModal() {
+    el.btnOpenAddModal.addEventListener('click', () => {
+      el.formAddQuestion.reset();
+      toggleTkpAnswerInputs();
+      el.modalAddQuestion.style.display = 'flex';
+    });
+
+    el.btnCancelAddQ.addEventListener('click', () => {
+      el.modalAddQuestion.style.display = 'none';
+    });
+
+    el.inputCategory.addEventListener('change', toggleTkpAnswerInputs);
+
+    function toggleTkpAnswerInputs() {
+      const isTkp = el.inputCategory.value === 'TKP';
+      el.sectionAnswerStandard.style.display = isTkp ? 'none' : 'block';
+      el.sectionAnswerTkp.style.display = isTkp ? 'block' : 'none';
+    }
+
+    el.formAddQuestion.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const targetPacket = el.inputTargetPacket.value;
+      const category = el.inputCategory.value;
+      const isTkp = category === 'TKP';
+
+      const targetData = window.BANK_SOAL[targetPacket];
+      const instansi = targetData ? targetData.instansi : 'Umum';
+
+      const newQ = {
+        id: `custom_${Date.now()}`,
+        targetPacket: targetPacket,
+        instansi: instansi,
+        category: category,
+        subcategory: el.inputSubcategory.value.trim() || 'Umum',
+        question: el.inputQuestionText.value.trim(),
+        options: {
+          A: el.inputOptA.value.trim(),
+          B: el.inputOptB.value.trim(),
+          C: el.inputOptC.value.trim(),
+          D: el.inputOptD.value.trim(),
+          E: el.inputOptE.value.trim()
+        },
+        answer: isTkp ? 'A' : el.inputCorrectOpt.value,
+        points: isTkp ? {
+          A: parseInt(el.tkpPtsA.value) || 5,
+          B: parseInt(el.tkpPtsB.value) || 4,
+          C: parseInt(el.tkpPtsC.value) || 3,
+          D: parseInt(el.tkpPtsD.value) || 2,
+          E: parseInt(el.tkpPtsE.value) || 1
+        } : {
+          A: el.inputCorrectOpt.value === 'A' ? 5 : 0,
+          B: el.inputCorrectOpt.value === 'B' ? 5 : 0,
+          C: el.inputCorrectOpt.value === 'C' ? 5 : 0,
+          D: el.inputCorrectOpt.value === 'D' ? 5 : 0,
+          E: el.inputCorrectOpt.value === 'E' ? 5 : 0
+        },
+        explanation: el.inputExplanation.value.trim()
+      };
+
+      // Simpan ke memory aktif
+      if (window.BANK_SOAL && window.BANK_SOAL[targetPacket]) {
+        window.BANK_SOAL[targetPacket].questions.push(newQ);
+      }
+
+      // Simpan ke LocalStorage agar permanen
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY_CUSTOM_QUESTIONS);
+        const list = raw ? JSON.parse(raw) : [];
+        list.push(newQ);
+        localStorage.setItem(STORAGE_KEY_CUSTOM_QUESTIONS, JSON.stringify(list));
+      } catch (err) {
+        console.error(err);
+      }
+
+      el.modalAddQuestion.style.display = 'none';
+      renderBankSummary();
+      alert('Soal baru berhasil ditambahkan ke bank soal!');
+    });
+  }
+
+  function setupImportExport() {
+    // Ekspor JSON
+    el.btnExportJson.addEventListener('click', () => {
+      const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(window.BANK_SOAL, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute('href', dataStr);
+      downloadAnchor.setAttribute('download', `bank_soal_multi_instansi_${Date.now()}.json`);
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    });
+
+    // Impor JSON
+    el.inputImportJson.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        try {
+          const imported = JSON.parse(event.target.result);
+          if (imported && typeof imported === 'object') {
+            Object.assign(window.BANK_SOAL, imported);
+            renderBankSummary();
+            alert('Bank soal multi-instansi berhasil diimpor!');
+          } else {
+            alert('Format file JSON tidak sesuai struktur bank soal.');
+          }
+        } catch (err) {
+          alert('Gagal membaca file JSON: ' + err.message);
+        }
+      };
+      reader.readAsText(file);
+    });
+  }
+
+  // Mulai saat DOM siap
+  document.addEventListener('DOMContentLoaded', init);
+})();
