@@ -164,6 +164,38 @@
           </div>
         </div>
 
+        <!-- Pilihan Mode Pengerjaan (Simulasi vs Belajar Mandiri) -->
+        <div class="mode-selection-section" style="margin-bottom: 24px;">
+          <div class="section-title">2. Pilih Mode Latihan:</div>
+          <div class="mode-cards-grid">
+            <!-- Mode 1: Simulasi CAT Resmi -->
+            <div class="mode-card selected" id="mode-card-simulasi" data-mode="simulasi">
+              <span class="mode-badge-tag badge-sim">Standar Ujian BKN</span>
+              <div class="mode-card-icon">⏱️</div>
+              <div class="mode-card-title">Simulasi CAT Resmi</div>
+              <div class="mode-card-desc">Simulasi persis kondisi ujian asli: Waktu hitung mundur (90/100 menit), pembahasan terkunci selama ujian, dan evaluasi kelulusan passing grade di akhir.</div>
+              <ul class="mode-card-perks">
+                <li><span class="check-icon">✓</span> Timer hitung mundur 90/100 menit aktif</li>
+                <li><span class="check-icon">✓</span> Pembahasan & kunci dirahasiakan hingga akhir</li>
+                <li><span class="check-icon">✓</span> Penilaian Passing Grade & analitik resmi</li>
+              </ul>
+            </div>
+
+            <!-- Mode 2: Belajar Mandiri -->
+            <div class="mode-card" id="mode-card-belajar" data-mode="belajar">
+              <span class="mode-badge-tag badge-study">Feedback Langsung</span>
+              <div class="mode-card-icon">📖</div>
+              <div class="mode-card-title">Mode Belajar Mandiri</div>
+              <div class="mode-card-desc">Belajar santai tanpa tekanan waktu: Begitu Anda memilih opsi, kunci jawaban dan pembahasan komprehensif langsung terbuka seketika di bawah soal.</div>
+              <ul class="mode-card-perks">
+                <li><span class="check-icon">✓</span> Feedback instan Benar (Hijau) / Salah (Merah)</li>
+                <li><span class="check-icon">✓</span> Kunci & rujukan regulasi langsung tampil</li>
+                <li><span class="check-icon">✓</span> Tanpa batas waktu, pelajari sesuai ritme</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <!-- Opsi Simulasi (Acak Soal / Opsi) -->
         <div class="exam-options-panel">
           <label class="checkbox-label">
@@ -176,9 +208,9 @@
           </label>
         </div>
 
-        <div class="rules-box">
-          <h3>Ketentuan & Petunjuk Ujian:</h3>
-          <ul>
+        <div class="rules-box" id="rules-box-container">
+          <h3 id="rules-box-title">Ketentuan & Petunjuk Ujian (Mode Simulasi):</h3>
+          <ul id="rules-box-list">
             <li>Gunakan tombol <strong>Simpan & Lanjutkan</strong> untuk menyimpan jawaban dan berpindah ke soal berikutnya.</li>
             <li>Gunakan tombol <strong>Ragu-Ragu</strong> (kuning) jika Anda belum yakin dengan jawaban yang dipilih.</li>
             <li>Warna pada grid nomor soal: <strong>Hijau</strong> (Sudah dijawab), <strong>Kuning</strong> (Ragu-ragu), <strong>Abu-abu</strong> (Belum dijawab).</li>
@@ -286,6 +318,20 @@
           <!-- Options A-E rendered via JS -->
         </div>
 
+        <!-- Box Pembahasan Instan untuk Mode Belajar Mandiri -->
+        <div id="study-explanation-card" class="study-explanation-card" style="display: none;">
+          <div class="study-explanation-header">
+            <div class="study-explanation-title">
+              <span class="study-exp-icon">💡</span>
+              <strong>Kunci Jawaban & Pembahasan Langsung</strong>
+            </div>
+            <span id="study-correct-badge" class="badge-study-key">Kunci: B</span>
+          </div>
+          <div id="study-explanation-content" class="study-explanation-content">
+            <!-- Formatted explanation rendered via JS -->
+          </div>
+        </div>
+
         <div class="exam-actions">
           <button id="btn-prev" class="btn-nav">« Sebelumnya</button>
           <button id="btn-doubt" class="btn-nav btn-doubt">⚠ Ragu-Ragu</button>
@@ -305,11 +351,15 @@
         </div>
 
         <div class="nav-legend">
-          <div class="legend-item">
+          <div class="legend-item" id="legend-item-answered">
             <span class="legend-box box-answered"></span>
-            <span>Sudah Dijawab</span>
+            <span id="legend-label-answered">Sudah Dijawab</span>
           </div>
-          <div class="legend-item">
+          <div class="legend-item" id="legend-item-wrong" style="display:none;">
+            <span class="legend-box box-wrong" style="background:#ef4444; border:1px solid #dc2626;"></span>
+            <span>Jawaban Salah</span>
+          </div>
+          <div class="legend-item" id="legend-item-doubt">
             <span class="legend-box box-doubt"></span>
             <span>Ragu-Ragu</span>
           </div>

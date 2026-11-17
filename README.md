@@ -23,9 +23,13 @@ Dilengkapi dengan **Bank Soal Autentik (710 Soal Berdasar Regulasi & Standar Res
 
 ## 🌟 Fitur Utama
 
-### 1. Antarmuka Realistis Standar CAT BKN
-* **Pengalaman Ujian Autentik:** Tampilan antarmuka, warna tema, timer hitung mundur, panel nomor soal, dan indikator status (Sudah Dijawab, Belum Dijawab, Ragu-Ragu) dirancang menyerupai terminal tes BKN asli.
-* **Auto-Save & Resume Sesi:** Sesi ujian tersimpan otomatis di *LocalStorage* setiap beberapa detik. Jika browser tidak sengaja tertutup atau halaman ter-refresh, ujian dapat dilanjutkan tanpa kehilangan waktu dan progres jawaban.
+### 1. Pilihan 2 Mode Latihan Fleksibel
+* ⏱️ **Mode Simulasi CAT Resmi:** Replikasi persis kondisi ujian asli: timer hitung mundur (90/100 menit), pembahasan terkunci selama ujian, indikator status ragu-ragu, dan evaluasi kelulusan passing grade resmi di akhir sesi.
+* 📖 **Mode Belajar Mandiri (Study Mode):** Belajar santai tanpa tekanan waktu: begitu peserta memilih opsi A–E, status **Benar (Hijau)** atau **Salah (Merah)** beserta kunci jawaban resmi dan pembahasan komprehensif langsung terbuka seketika di bawah soal. Grid nomor otomatis menandai hijau (benar) atau merah (salah).
+
+### 2. Antarmuka Realistis Standar CAT BKN
+* **Pengalaman Ujian Autentik:** Tampilan antarmuka, warna tema, timer hitung mundur, panel nomor soal, dan indikator status dirancang menyerupai terminal tes BKN asli.
+* **Auto-Save & Resume Sesi:** Sesi ujian tersimpan otomatis di *LocalStorage* setiap beberapa detik. Jika browser tidak sengaja tertutup atau halaman ter-refresh, progres pengerjaan dan sisa waktu tidak hilang.
 * **Hentikan Sesi (Keluar):** Tombol pembatalan/penghentian sesi ujian kapan saja dengan konfirmasi modal yang aman.
 * **Aksesibilitas & Kiosk Mode:**
   * Kontrol ukuran teks soal (`A-`, `A`, `A+`) untuk kenyamanan membaca.
@@ -35,7 +39,7 @@ Dilengkapi dengan **Bank Soal Autentik (710 Soal Berdasar Regulasi & Standar Res
   * Pada SKD: `[TWK (1-30)]`, `[TIU (31-65)]`, `[TKP (66-110)]`.
   * Pada SKB: Berdasarkan rumpun kompetensi teknis instansi.
 
-### 2. Evaluasi & Pembahasan Mendalam
+### 3. Evaluasi & Pembahasan Mendalam
 * **Skor & Kelulusan Passing Grade Otomatis:** Perhitungan nilai SKD instan mengacu pada PermenPAN-RB terbaru (TWK: min 65, TIU: min 80, TKP: min 166). Penilaian TKP menggunakan pembobotan asli skala 1–5.
 * **Filter Pembahasan:** Di layar hasil, peserta dapat meninjau:
   * `Semua Soal`

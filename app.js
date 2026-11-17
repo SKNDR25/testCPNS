@@ -20,6 +20,7 @@
     timerSeconds: 0,
     timerId: null,
     startTime: null,
+    mode: 'simulasi',    // 'simulasi' | 'belajar'
     reviewFilter: 'all', // 'all' | 'wrong' | 'correct' | 'doubt'
     reviewSearchQuery: '',
     fontSize: 16
@@ -58,9 +59,23 @@
     // Packet & Instansi Selection
     packetCards: document.querySelectorAll('.packet-card'),
     instansiCards: document.querySelectorAll('.instansi-card'),
+    modeCards: document.querySelectorAll('.mode-card'),
+    modeCardSimulasi: document.getElementById('mode-card-simulasi'),
+    modeCardBelajar: document.getElementById('mode-card-belajar'),
+    rulesBoxTitle: document.getElementById('rules-box-title'),
+    rulesBoxList: document.getElementById('rules-box-list'),
     optShuffleQuestions: document.getElementById('opt-shuffle-questions'),
     optShuffleOptions: document.getElementById('opt-shuffle-options'),
     btnStart: document.getElementById('btn-start'),
+
+    // Study Mode Feedback Elements
+    studyExpCard: document.getElementById('study-explanation-card'),
+    studyExpContent: document.getElementById('study-explanation-content'),
+    studyCorrectBadge: document.getElementById('study-correct-badge'),
+    legendItemAnswered: document.getElementById('legend-item-answered'),
+    legendLabelAnswered: document.getElementById('legend-label-answered'),
+    legendItemWrong: document.getElementById('legend-item-wrong'),
+    legendItemDoubt: document.getElementById('legend-item-doubt'),
 
     // Tab 2 (Riwayat & Statistik)
     statTotalExams: document.getElementById('stat-total-exams'),
@@ -253,13 +268,56 @@
       });
     });
 
+    // Pilihan Mode Latihan (Simulasi vs Belajar Mandiri)
+    if (el.modeCards && el.modeCards.length > 0) {
+      el.modeCards.forEach((card) => {
+        card.addEventListener('click', () => {
+          setExamMode(card.dataset.mode || 'simulasi');
+        });
+      });
+    }
+
     // Tombol Mulai
     el.btnStart.addEventListener('click', () => {
       startNewExam(state.packetKey, {
+        mode: state.mode,
         shuffleQuestions: el.optShuffleQuestions.checked,
         shuffleOptions: el.optShuffleOptions.checked
       });
     });
+  }
+
+  function setExamMode(mode) {
+    state.mode = mode;
+    if (el.modeCards) {
+      el.modeCards.forEach((c) => c.classList.remove('selected'));
+    }
+
+    if (mode === 'simulasi') {
+      if (el.modeCardSimulasi) el.modeCardSimulasi.classList.add('selected');
+      if (el.btnStart) el.btnStart.textContent = 'Mulai Simulasi CAT Sekarang »';
+      if (el.rulesBoxTitle) el.rulesBoxTitle.textContent = 'Ketentuan & Petunjuk Ujian (Mode Simulasi):';
+      if (el.rulesBoxList) {
+        el.rulesBoxList.innerHTML = `
+          <li>Gunakan tombol <strong>Simpan & Lanjutkan</strong> untuk menyimpan jawaban dan berpindah ke soal berikutnya.</li>
+          <li>Gunakan tombol <strong>Ragu-Ragu</strong> (kuning) jika Anda belum yakin dengan jawaban yang dipilih.</li>
+          <li>Warna pada grid nomor soal: <strong>Hijau</strong> (Sudah dijawab), <strong>Kuning</strong> (Ragu-ragu), <strong>Abu-abu</strong> (Belum dijawab).</li>
+          <li>Progres pengerjaan Anda otomatis disimpan. Jika browser tertutup tidak sengaja, ujian dapat dilanjutkan kembali.</li>
+        `;
+      }
+    } else {
+      if (el.modeCardBelajar) el.modeCardBelajar.classList.add('selected');
+      if (el.btnStart) el.btnStart.textContent = '📖 Mulai Mode Belajar Mandiri Sekarang »';
+      if (el.rulesBoxTitle) el.rulesBoxTitle.textContent = 'Ketentuan & Petunjuk (Mode Belajar Mandiri):';
+      if (el.rulesBoxList) {
+        el.rulesBoxList.innerHTML = `
+          <li>Pilih salah satu opsi jawaban A–E, status <strong>Benar (Hijau)</strong> atau <strong>Salah (Merah)</strong> langsung terlihat seketika.</li>
+          <li>Kunci jawaban resmi dan pembahasan lengkap (beserta rujukan hukum/standar) langsung terbuka di bawah soal.</li>
+          <li>Warna pada grid nomor: <strong>Hijau</strong> (Jawaban Benar), <strong>Merah</strong> (Jawaban Salah), <strong>Abu-abu</strong> (Belum Dikerjakan).</li>
+          <li>Tidak ada batasan waktu, Anda dapat belajar santai dan berpindah soal sesuka hati.</li>
+        `;
+      }
+    }
   }
 
   // ==========================================
@@ -274,9 +332,11 @@
 
     try {
       const saved = JSON.parse(raw);
-      if (saved && saved.activeQuestions && saved.activeQuestions.length > 0 && saved.timerSeconds > 0) {
-        const remainingMin = Math.ceil(saved.timerSeconds / 60);
-        el.resumeInfoText.textContent = `Paket: ${saved.packetTitle || 'Ujian'} • Sisa Waktu: ${remainingMin} Menit • Terjawab: ${Object.keys(saved.answers || {}).length}/${saved.activeQuestions.length} Soal.`;
+      if (saved && saved.activeQuestions && saved.activeQuestions.length > 0) {
+        const isBelajar = saved.mode === 'belajar';
+        const remainingMin = Math.ceil((saved.timerSeconds || 0) / 60);
+        const timeInfo = isBelajar ? 'Mode Belajar Mandiri' : `Sisa Waktu: ${remainingMin} Menit`;
+        el.resumeInfoText.textContent = `Paket: ${saved.packetTitle || 'Ujian'} • ${timeInfo} • Terjawab: ${Object.keys(saved.answers || {}).length}/${saved.activeQuestions.length} Soal.`;
         el.resumeBanner.style.display = 'flex';
 
         el.btnResumeSession.onclick = () => resumeExamSession(saved);
@@ -298,6 +358,7 @@
     const sessionData = {
       packetKey: state.packetKey,
       packetTitle: state.packetData ? state.packetData.title : 'Ujian',
+      mode: state.mode || 'simulasi',
       activeQuestions: state.activeQuestions,
       currentIndex: state.currentIndex,
       answers: state.answers,
@@ -317,11 +378,12 @@
   function resumeExamSession(saved) {
     state.packetKey = saved.packetKey;
     state.packetData = window.BANK_SOAL[saved.packetKey];
+    state.mode = saved.mode || 'simulasi';
     state.activeQuestions = saved.activeQuestions;
     state.currentIndex = saved.currentIndex || 0;
     state.answers = saved.answers || {};
     state.doubts = new Set(saved.doubts || []);
-    state.timerSeconds = saved.timerSeconds;
+    state.timerSeconds = saved.timerSeconds || 0;
     state.startTime = saved.startTime || new Date().toISOString();
 
     el.resumeBanner.style.display = 'none';
@@ -329,7 +391,25 @@
     el.screenResult.style.display = 'none';
     el.screenExam.style.display = 'grid';
     el.timerContainer.style.display = 'flex';
-    el.examTitle.textContent = state.packetData ? state.packetData.title : 'Simulasi Ujian';
+
+    if (state.mode === 'belajar') {
+      el.examTitle.textContent = `[Mode Belajar] ${state.packetData ? state.packetData.title : 'Belajar Mandiri'}`;
+      if (el.btnFinish) el.btnFinish.textContent = 'Selesai Belajar & Lihat Ringkasan';
+      if (el.btnDoubt) el.btnDoubt.style.display = 'none';
+      if (el.legendItemWrong) el.legendItemWrong.style.display = 'flex';
+      if (el.legendItemDoubt) el.legendItemDoubt.style.display = 'none';
+      if (el.legendLabelAnswered) el.legendLabelAnswered.textContent = 'Jawaban Benar';
+      el.timerDisplay.textContent = '📖 Belajar Mandiri';
+      el.timerDisplay.classList.remove('timer-danger');
+    } else {
+      el.examTitle.textContent = state.packetData ? state.packetData.title : 'Simulasi Ujian';
+      if (el.btnFinish) el.btnFinish.textContent = 'Selesai Ujian';
+      if (el.btnDoubt) el.btnDoubt.style.display = 'inline-block';
+      if (el.legendItemWrong) el.legendItemWrong.style.display = 'none';
+      if (el.legendItemDoubt) el.legendItemDoubt.style.display = 'flex';
+      if (el.legendLabelAnswered) el.legendLabelAnswered.textContent = 'Sudah Dijawab';
+      startTimer();
+    }
 
     if (el.quickJumpContainer) {
       el.quickJumpContainer.style.display = state.packetKey === 'skd' ? 'flex' : 'none';
@@ -337,7 +417,6 @@
 
     renderGrid();
     loadQuestion(state.currentIndex);
-    startTimer();
   }
 
   // ==========================================
@@ -346,6 +425,7 @@
   function startNewExam(packetKey, options = {}) {
     state.packetKey = packetKey;
     state.packetData = window.BANK_SOAL[packetKey];
+    state.mode = options.mode || state.mode || 'simulasi';
     if (!state.packetData) return;
 
     let clonedQuestions = JSON.parse(JSON.stringify(state.packetData.questions));
@@ -384,7 +464,25 @@
     el.screenResult.style.display = 'none';
     el.screenExam.style.display = 'grid';
     el.timerContainer.style.display = 'flex';
-    el.examTitle.textContent = state.packetData.title;
+
+    if (state.mode === 'belajar') {
+      el.examTitle.textContent = `[Mode Belajar] ${state.packetData.title}`;
+      if (el.btnFinish) el.btnFinish.textContent = 'Selesai Belajar & Lihat Ringkasan';
+      if (el.btnDoubt) el.btnDoubt.style.display = 'none';
+      if (el.legendItemWrong) el.legendItemWrong.style.display = 'flex';
+      if (el.legendItemDoubt) el.legendItemDoubt.style.display = 'none';
+      if (el.legendLabelAnswered) el.legendLabelAnswered.textContent = 'Jawaban Benar';
+      el.timerDisplay.textContent = '📖 Belajar Mandiri';
+      el.timerDisplay.classList.remove('timer-danger');
+    } else {
+      el.examTitle.textContent = state.packetData.title;
+      if (el.btnFinish) el.btnFinish.textContent = 'Selesai Ujian';
+      if (el.btnDoubt) el.btnDoubt.style.display = 'inline-block';
+      if (el.legendItemWrong) el.legendItemWrong.style.display = 'none';
+      if (el.legendItemDoubt) el.legendItemDoubt.style.display = 'flex';
+      if (el.legendLabelAnswered) el.legendLabelAnswered.textContent = 'Sudah Dijawab';
+      startTimer();
+    }
 
     if (el.quickJumpContainer) {
       el.quickJumpContainer.style.display = state.packetKey === 'skd' ? 'flex' : 'none';
@@ -392,7 +490,6 @@
 
     renderGrid();
     loadQuestion(state.currentIndex);
-    startTimer();
     saveCurrentSession();
   }
 
@@ -512,19 +609,37 @@
   function updateGridStatus() {
     const buttons = el.questionGrid.querySelectorAll('.grid-btn');
     const questions = state.activeQuestions;
+    const isStudyMode = state.mode === 'belajar';
 
     buttons.forEach((btn, idx) => {
       const q = questions[idx];
-      btn.classList.remove('current', 'answered', 'doubt');
+      btn.classList.remove('current', 'answered', 'doubt', 'wrong');
 
       if (idx === state.currentIndex) {
         btn.classList.add('current');
       }
 
-      if (state.doubts.has(q.id)) {
-        btn.classList.add('doubt');
-      } else if (state.answers[q.id]) {
-        btn.classList.add('answered');
+      if (isStudyMode) {
+        const userAns = state.answers[q.id];
+        if (userAns) {
+          if (q.category === 'TKP') {
+            const pt = q.points ? (q.points[userAns] || 0) : 0;
+            if (pt >= 4) btn.classList.add('answered');
+            else btn.classList.add('wrong');
+          } else {
+            if (userAns === q.answer) {
+              btn.classList.add('answered');
+            } else {
+              btn.classList.add('wrong');
+            }
+          }
+        }
+      } else {
+        if (state.doubts.has(q.id)) {
+          btn.classList.add('doubt');
+        } else if (state.answers[q.id]) {
+          btn.classList.add('answered');
+        }
       }
     });
   }
@@ -558,18 +673,64 @@
 
     el.optionsContainer.innerHTML = '';
     const selectedAnswer = state.answers[q.id];
+    const isStudyMode = state.mode === 'belajar';
+    const hasAnswered = Boolean(selectedAnswer);
+
+    const isTkp = q.category === 'TKP';
+    let bestTkpKey = 'A';
+    if (isTkp && q.points) {
+      let maxPt = -1;
+      ['A', 'B', 'C', 'D', 'E'].forEach((k) => {
+        if ((q.points[k] || 0) > maxPt) {
+          maxPt = q.points[k];
+          bestTkpKey = k;
+        }
+      });
+    }
 
     ['A', 'B', 'C', 'D', 'E'].forEach((optKey) => {
       if (!q.options[optKey]) return;
       const optItem = document.createElement('div');
       optItem.className = 'option-item';
-      if (selectedAnswer === optKey) {
-        optItem.classList.add('selected');
+
+      let badgeHtml = '';
+
+      if (isStudyMode && hasAnswered) {
+        if (!isTkp) {
+          // Non-TKP Standard Feedback
+          if (optKey === selectedAnswer && optKey === q.answer) {
+            optItem.classList.add('study-correct');
+            badgeHtml = '<span class="option-study-badge badge-correct">✓ Jawaban Anda Benar (+5)</span>';
+          } else if (optKey === selectedAnswer && optKey !== q.answer) {
+            optItem.classList.add('study-wrong');
+            badgeHtml = '<span class="option-study-badge badge-wrong">✗ Pilihan Anda (Salah)</span>';
+          } else if (optKey === q.answer) {
+            optItem.classList.add('study-key');
+            badgeHtml = '<span class="option-study-badge badge-key">✓ Kunci Jawaban Benar</span>';
+          }
+        } else {
+          // TKP Feedback
+          const pt = q.points ? (q.points[optKey] || 0) : 0;
+          if (optKey === selectedAnswer) {
+            optItem.classList.add('selected');
+            badgeHtml = `<span class="option-study-badge ${pt === 5 ? 'badge-correct' : 'badge-tkp-pts'}">Pilihan Anda: <strong>${pt} Poin</strong></span>`;
+          } else if (optKey === bestTkpKey) {
+            optItem.classList.add('study-key');
+            badgeHtml = '<span class="option-study-badge badge-tkp-max">★ Bobot 5 Poin (Maksimal)</span>';
+          } else {
+            badgeHtml = `<span class="option-study-badge badge-tkp-pts">${pt} Poin</span>`;
+          }
+        }
+      } else {
+        if (selectedAnswer === optKey) {
+          optItem.classList.add('selected');
+        }
       }
 
       optItem.innerHTML = `
         <span class="option-letter">${optKey}</span>
         <span class="option-text">${q.options[optKey]}</span>
+        ${badgeHtml}
       `;
 
       optItem.addEventListener('click', () => {
@@ -582,8 +743,25 @@
       el.optionsContainer.appendChild(optItem);
     });
 
+    // Tampilkan / Sembunyikan Box Pembahasan di Mode Belajar
+    if (el.studyExpCard) {
+      if (isStudyMode && hasAnswered) {
+        el.studyExpCard.style.display = 'block';
+        if (el.studyCorrectBadge) {
+          el.studyCorrectBadge.textContent = isTkp ? `Poin 5: ${bestTkpKey}` : `Kunci: ${q.answer}`;
+        }
+        if (el.studyExpContent) {
+          el.studyExpContent.innerHTML = formatExplanationText(q.explanation);
+        }
+      } else {
+        el.studyExpCard.style.display = 'none';
+      }
+    }
+
     el.btnPrev.disabled = index === 0;
-    el.btnNext.textContent = index === questions.length - 1 ? 'Simpan' : 'Simpan & Lanjutkan »';
+    el.btnNext.textContent = index === questions.length - 1 
+      ? (isStudyMode ? 'Selesai Belajar' : 'Simpan') 
+      : (isStudyMode ? 'Soal Berikutnya »' : 'Simpan & Lanjutkan »');
 
     if (state.doubts.has(q.id)) {
       el.btnDoubt.classList.add('active');
@@ -594,6 +772,14 @@
     }
 
     updateGridStatus();
+  }
+
+  function formatExplanationText(text) {
+    if (!text) return 'Belum ada penjelasan untuk butir soal ini.';
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\n\n/g, '<br><br>')
+      .replace(/\n/g, '<br>');
   }
 
   function navigateQuestion(direction) {
@@ -729,6 +915,39 @@
     const packetTitle = state.packetData ? state.packetData.title : 'Ujian CAT';
     const instansiName = state.packetData ? state.packetData.instansi : 'Nasional';
 
+    // Jika dalam Mode Belajar Mandiri, tampilkan ringkasan belajar khusus
+    if (state.mode === 'belajar') {
+      const answeredCount = Object.keys(state.answers).length;
+      let correctCount = 0;
+      let wrongCount = 0;
+
+      questions.forEach((q) => {
+        const userAns = state.answers[q.id];
+        if (userAns) {
+          if (q.category === 'TKP') {
+            const pt = q.points ? (q.points[userAns] || 0) : 0;
+            if (pt >= 4) correctCount++;
+            else wrongCount++;
+          } else {
+            if (userAns === q.answer) correctCount++;
+            else wrongCount++;
+          }
+        }
+      });
+
+      renderResultCardStudy({
+        isSkd,
+        packetTitle,
+        instansiName,
+        totalQuestions: questions.length,
+        answeredCount,
+        correctCount,
+        wrongCount,
+        questions
+      });
+      return;
+    }
+
     if (isSkd) {
       const pg = state.packetData.passingGrades;
       const passTWK = scoreTWK >= pg.twk;
@@ -772,6 +991,55 @@
         scoreSKB, correctSKB, totalSKB, questions, packetTitle, instansiName
       });
     }
+  }
+
+  function renderResultCardStudy(d) {
+    const accuracy = d.answeredCount > 0 ? Math.round((d.correctCount / d.answeredCount) * 100) : 0;
+    const completionRate = Math.round((d.answeredCount / d.totalQuestions) * 100);
+
+    el.resultContainer.innerHTML = `
+      <div class="result-card">
+        <div class="result-header">
+          <span class="result-badge pass" style="background:#d1fae5; color:#065f46; border:1px solid #6ee7b7;">
+            📖 RINGKASAN MODE BELAJAR MANDIRI
+          </span>
+          <h2 style="font-size: 1.85rem; color: #065f46; margin-top: 6px;">${d.packetTitle}</h2>
+          <p style="color: var(--text-muted); margin-top: 4px;">Instansi: <strong>${d.instansiName}</strong> • Evaluasi Pembahasan Mandiri</p>
+        </div>
+
+        <div class="score-cards-grid">
+          <div class="score-card">
+            <div class="score-card-title">Soal Telah Dipelajari</div>
+            <div class="score-card-value">${d.answeredCount} <span style="font-size:1rem; color:#64748b;">/ ${d.totalQuestions}</span></div>
+            <div class="score-card-pg">Progres Sesi: ${completionRate}%</div>
+            <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">Dapat diulang kapan saja</div>
+          </div>
+
+          <div class="score-card">
+            <div class="score-card-title" style="color:#059669;">Jawaban Tepat / Benar</div>
+            <div class="score-card-value" style="color:#059669;">${d.correctCount}</div>
+            <div class="score-card-pg" style="color:#059669;">Tingkat Akurasi: ${accuracy}%</div>
+            <div style="font-size: 0.75rem; color: #059669; margin-top: 4px;">Pemahaman materi baik</div>
+          </div>
+
+          <div class="score-card">
+            <div class="score-card-title" style="color:#dc2626;">Perlu Dievaluasi (Salah)</div>
+            <div class="score-card-value" style="color:#dc2626;">${d.wrongCount}</div>
+            <div class="score-card-pg" style="color:#dc2626;">Gunakan filter di bawah untuk fokus</div>
+            <div style="font-size: 0.75rem; color: #dc2626; margin-top: 4px;">Tinjau rujukan & tips</div>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:center; gap: 14px; margin-bottom: 24px;">
+          <button id="btn-restart" class="btn-nav" style="background:#059669; color:#fff; border:none; padding:10px 22px;">Ulangi Belajar Paket Ini</button>
+          <button id="btn-switch-packet" class="btn-nav" style="padding:10px 22px;">Kembali ke Menu Utama</button>
+        </div>
+
+        ${renderReviewSectionHTML(d.questions)}
+      </div>
+    `;
+
+    setupReviewInteractions(d.questions);
   }
 
   function renderResultCardSKD(d) {
