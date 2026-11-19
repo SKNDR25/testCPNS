@@ -430,7 +430,7 @@
 
     let clonedQuestions = JSON.parse(JSON.stringify(state.packetData.questions));
 
-    // Acak Urutan Soal bila diminta
+    // Acak Urutan Soal & Sampling Standar Ujian
     if (options.shuffleQuestions) {
       if (packetKey === 'skd') {
         const twk = clonedQuestions.filter((q) => q.category === 'TWK');
@@ -439,10 +439,32 @@
         shuffleArray(twk);
         shuffleArray(tiu);
         shuffleArray(tkp);
-        clonedQuestions = [...twk, ...tiu, ...tkp];
+        
+        // Sampling persis standar CAT BKN (30 TWK, 35 TIU, 45 TKP) dari bank soal yang lebih besar
+        const sampleTwk = twk.length > 30 ? twk.slice(0, 30) : twk;
+        const sampleTiu = tiu.length > 35 ? tiu.slice(0, 35) : tiu;
+        const sampleTkp = tkp.length > 45 ? tkp.slice(0, 45) : tkp;
+        clonedQuestions = [...sampleTwk, ...sampleTiu, ...sampleTkp];
       } else {
         shuffleArray(clonedQuestions);
+        // Sampling persis standar SKB BKN (100 Soal) dari bank soal yang lebih besar
+        if (clonedQuestions.length > 100) {
+          clonedQuestions = clonedQuestions.slice(0, 100);
+        }
       }
+    } else {
+      // Jika mode simulasi (bukan belajar mandiri) dan shuffle tidak dicentang, batasi ke standar resmi 110 (SKD) atau 100 (SKB)
+      if (state.mode === 'simulasi') {
+        if (packetKey === 'skd') {
+          const twk = clonedQuestions.filter((q) => q.category === 'TWK').slice(0, 30);
+          const tiu = clonedQuestions.filter((q) => q.category === 'TIU').slice(0, 35);
+          const tkp = clonedQuestions.filter((q) => q.category === 'TKP').slice(0, 45);
+          clonedQuestions = [...twk, ...tiu, ...tkp];
+        } else if (clonedQuestions.length > 100) {
+          clonedQuestions = clonedQuestions.slice(0, 100);
+        }
+      }
+      // Jika mode belajar mandiri dan shuffle tidak dicentang: tampilkan seluruh bank soal (220 SKD / 150 SKB) untuk dipelajari tuntas
     }
 
     // Acak Pilihan Opsi A-E bila diminta

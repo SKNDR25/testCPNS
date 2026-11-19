@@ -3,7 +3,7 @@
  */
 window.BANK_SOAL = {
   "skd": {
-    "title": "Simulasi Resmi CAT BKN - SKD (110 Soal Full)",
+    "title": "Simulasi Resmi CAT BKN - SKD (220 Bank Soal Variatif)",
     "instansi": "Nasional (Seluruh Instansi)",
     "description": "30 TWK, 35 TIU, 45 TKP skala 1-5 dengan ambang batas resmi BKN.",
     "timeMinutes": 100,
@@ -672,6 +672,696 @@ window.BANK_SOAL = {
           "D": 0,
           "E": 0
         }
+      },
+      {
+        "id": "twk_extra_1",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "UUD 1945 - Kewenangan Lembaga Peradilan",
+        "question": "Berdasarkan Pasal 24C Ayat (1) UUD 1945, Mahkamah Konstitusi berwenang mengadili pada tingkat pertama dan terakhir yang putusannya bersifat final untuk hal-hal berikut, KECUALI...",
+        "options": {
+          "A": "Menguji undang-undang terhadap Undang-Undang Dasar",
+          "B": "Memutus sengketa kewenangan lembaga negara yang kewenangannya diberikan oleh UUD",
+          "C": "Memutus pembubaran partai politik",
+          "D": "Memutus perselisihan tentang hasil pemilihan umum",
+          "E": "Menguji peraturan perundang-undangan di bawah undang-undang terhadap undang-undang"
+        },
+        "answer": "E",
+        "points": {
+          "A": 0,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 5
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UUD 1945 Pasal 24A Ayat (1) dan Pasal 24C Ayat (1)\n\n💡 **Pembahasan:** Pengujian peraturan perundang-undangan di bawah undang-undang terhadap undang-undang (judicial review produk di bawah UU seperti PP, Perpres, Perda) adalah wewenang Mahkamah Agung (MA) berdasarkan Pasal 24A ayat (1), bukan wewenang Mahkamah Konstitusi (MK)."
+      },
+      {
+        "id": "twk_extra_2",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "UUD 1945 - Komisi Yudisial",
+        "question": "Menurut Pasal 24B Ayat (1) UUD 1945, Komisi Yudisial bersifat mandiri yang berwenang mengusulkan pengangkatan hakim agung dan mempunyai wewenang lain dalam rangka...",
+        "options": {
+          "A": "Menetapkan vonis kasasi perkara perdata dan pidana",
+          "B": "Menjaga dan menegakkan kehormatan, keluhuran martabat, serta perilaku hakim",
+          "C": "Mengangkat dan memberhentikan jaksa agung",
+          "D": "Membentuk undang-undang peradilan bersama Dewan Perwakilan Rakyat",
+          "E": "Menguji keabsahan penangkapan dan penahanan (praperadilan)"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UUD 1945 Pasal 24B Ayat (1)\n\n💡 **Pembahasan:** Komisi Yudisial (KY) memiliki mandat konstitusional untuk menjaga dan menegakkan kehormatan, keluhuran martabat, serta perilaku hakim di seluruh peradilan di Indonesia."
+      },
+      {
+        "id": "twk_extra_3",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Integritas & Anti Korupsi - Delik Tipikor",
+        "question": "Seorang pejabat publik menerima sejumlah uang dari rekanan proyek setelah penandatanganan kontrak pengadaan server, meskipun pejabat tersebut tidak pernah meminta uang tersebut. Berdasarkan UU No. 20 Tahun 2001, tindakan ini dikategorikan sebagai...",
+        "options": {
+          "A": "Pemerasan dalam jabatan (afpersing)",
+          "B": "Gratifikasi yang dianggap suap apabila tidak dilaporkan dalam 30 hari kerja",
+          "C": "Pencucian uang aktif (active money laundering)",
+          "D": "Penyalahgunaan wewenang administrasi murni",
+          "E": "Sumbangan sukarela non-kedinasan yang legal"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 31 Tahun 1999 jo UU No. 20 Tahun 2001 Pasal 12B Ayat (1)\n\n💡 **Pembahasan:** Setiap gratifikasi kepada pegawai negeri atau penyelenggara negara dianggap pemberian suap apabila berhubungan dengan jabatannya dan yang berlawanan dengan kewajiban atau tugasnya, kecuali jika dilaporkan ke KPK dalam waktu paling lambat 30 hari kerja."
+      },
+      {
+        "id": "twk_extra_4",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Bela Negara - Pengelolaan Sumber Daya Nasional (PSDN)",
+        "question": "Berdasarkan Undang-Undang Nomor 23 Tahun 2019 tentang Pengelolaan Sumber Daya Nasional untuk Pertahanan Negara, warga negara yang secara sukarela mendaftar, lulus seleksi, dan mengikuti pelatihan dasar kemiliteran akan ditetapkan sebagai...",
+        "options": {
+          "A": "Komponen Utama Pertahanan",
+          "B": "Komponen Cadangan (Komcad)",
+          "C": "Komponen Pendukung Khusus",
+          "D": "Milisi Bersenjata Daerah",
+          "E": "Satuan Polisi Pamong Praja Nasional"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 23 Tahun 2019 Pasal 28 dan Pasal 33\n\n💡 **Pembahasan:** Komponen Cadangan (Komcad) adalah Sumber Daya Nasional yang telah disiapkan untuk dikerahkan melalui mobilisasi guna memperbesar dan memperkuat kekuatan dan kemampuan Komponen Utama (TNI)."
+      },
+      {
+        "id": "twk_extra_5",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Pilar Negara - Dekrit Presiden 5 Juli 1959",
+        "question": "Salah satu konsiderans penting keluarnya Dekrit Presiden 5 Juli 1959 oleh Presiden Soekarno adalah kegagalan sebuah lembaga negara dalam menyusun konstitusi baru pengganti UUDS 1950. Lembaga tersebut adalah...",
+        "options": {
+          "A": "Badan Penyelidik Usaha-Usaha Persiapan Kemerdekaan Indonesia (BPUPKI)",
+          "B": "Konstituante",
+          "C": "Komite Nasional Indonesia Pusat (KNIP)",
+          "D": "Dewan Pertimbangan Agung Sementara (DPAS)",
+          "E": "Dewan Perancang Nasional (Depernas)"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Sejarah Ketatanegaraan RI & Keppres No. 150 Tahun 1959\n\n💡 **Pembahasan:** Lembaga Konstituante hasil Pemilu 1955 mengalami kebuntuan politik dan gagal mencapai kuorum 2/3 suara untuk menetapkan UUD baru, sehingga Presiden Soekarno mengeluarkan Dekrit Presiden 5 Juli 1959 untuk kembali ke UUD 1945."
+      },
+      {
+        "id": "twk_extra_6",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Pilar Negara - Perjanjian Linggarjati",
+        "question": "Dalam diplomasi mempertahankan kemerdekaan, Perundingan Linggarjati (1946) menghasilkan pengakuan Belanda atas wilayah de facto Republik Indonesia yang mencakup...",
+        "options": {
+          "A": "Seluruh wilayah bekas Hindia Belanda dari Sabang sampai Merauke",
+          "B": "Jawa, Sumatera, dan Madura",
+          "C": "Jawa dan Bali saja",
+          "D": "Sumatera dan Kalimantan saja",
+          "E": "Jawa, Madura, dan Maluku"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Modul Sejarah Perjuangan Diplomasi Kemerdekaan RI\n\n💡 **Pembahasan:** Pasal 1 Perjanjian Linggarjati menyatakan bahwa Belanda mengakui secara de facto Republik Indonesia dengan wilayah kekuasaan meliputi Jawa, Sumatera, dan Madura."
+      },
+      {
+        "id": "twk_extra_7",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Pancasila - Aktualisasi Sila Keadilan Sosial",
+        "question": "Pemerintah menggulirkan program Tol Laut, penyaluran BBM Satu Harga di wilayah 3T (Tertinggal, Terdepan, dan Terluar), serta pembangunan infrastruktur digital fiber optik di pulau-pulau perbatasan. Kebijakan ini merupakan manifestasi langsung pengamalan Pancasila, khususnya...",
+        "options": {
+          "A": "Sila ke-2 (Kemanusiaan yang Adil dan Beradab)",
+          "B": "Sila ke-3 (Persatuan Indonesia)",
+          "C": "Sila ke-5 (Keadilan Sosial bagi Seluruh Rakyat Indonesia)",
+          "D": "Sila ke-4 (Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan)",
+          "E": "Sila ke-1 (Ketuhanan Yang Maha Esa)"
+        },
+        "answer": "C",
+        "points": {
+          "A": 0,
+          "B": 0,
+          "C": 5,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Butir Pengamalan Sila Kelima Pancasila (Keadilan Sosial)\n\n💡 **Pembahasan:** Pemerataan pembangunan ekonomi, penyetaraan harga komoditas pokok, dan penghapusan kesenjangan geografis antarwilayah merupakan pengamalan Sila ke-5 yang mengamanatkan keadilan sosial dan kemakmuran merata bagi seluruh rakyat Indonesia."
+      },
+      {
+        "id": "twk_extra_8",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Bahasa Indonesia - Kalimat Efektif PUEBI",
+        "question": "Manakah di antara kalimat berikut yang memenuhi kaidah kalimat efektif dan kebakuan tata bahasa Indonesia?",
+        "options": {
+          "A": "Bagi semua para peserta-peserta ujian wajib membawa kartu ujian.",
+          "B": "Untuk mempercepat pembangunan daerah, maka pemerintah mengalokasikan dana khusus.",
+          "C": "Pemerintah mengalokasikan anggaran khusus guna mempercepat pembangunan infrastruktur daerah tertinggal.",
+          "D": "Dalam rapat tersebut membicarakan tentang peningkatan kinerja aparatur sipil negara.",
+          "E": "Kementerian Keuangan daripada Republik Indonesia merilis laporan realisasi APBN."
+        },
+        "answer": "C",
+        "points": {
+          "A": 0,
+          "B": 0,
+          "C": 5,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Pedoman Umum Ejaan Bahasa Indonesia (PUEBI) / EYD Edisi V\n\n💡 **Pembahasan:** Kalimat C memiliki struktur Subjek (Pemerintah), Predikat (mengalokasikan), Objek (anggaran khusus), dan Keterangan Tujuan (guna mempercepat...) secara hemat, paralel, dan tidak berlebihan (tidak pleonasme seperti 'semua para peserta-peserta')."
+      },
+      {
+        "id": "twk_extra_9",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "UUD 1945 - Hak Asasi Manusia (Pasal 28I)",
+        "question": "Berdasarkan Pasal 28I Ayat (1) UUD 1945, hak asasi manusia yang termasuk dalam kategori 'non-derogable rights' (hak yang tidak dapat dikurangi dalam keadaan apa pun) antara lain...",
+        "options": {
+          "A": "Hak untuk mendirikan partai politik dan hak mogok kerja",
+          "B": "Hak untuk hidup, hak tidak disiksa, dan hak kemerdekaan pikiran dan hati nurani",
+          "C": "Hak memperoleh pekerjaan dan hak kepemilikan tanah secara mutlak",
+          "D": "Hak menyampaikan pendapat di muka umum tanpa pembatasan",
+          "E": "Hak menduduki jabatan politik tertinggi di pemerintahan daerah"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UUD 1945 Pasal 28I Ayat (1)\n\n💡 **Pembahasan:** Pasal 28I ayat (1) UUD 1945 menetapkan hak yang tidak dapat dikurangi dalam keadaan apa pun (non-derogable rights): hak untuk hidup, hak untuk tidak disiksa, hak kemerdekaan pikiran dan hati nurani, hak beragama, hak untuk tidak diperbudak, hak untuk diakui sebagai pribadi di hadapan hukum, dan hak untuk tidak dituntut atas dasar hukum yang berlaku surut."
+      },
+      {
+        "id": "twk_extra_10",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Nasionalisme - Sumpah Pemuda 1928",
+        "question": "Kongres Pemuda II pada 27-28 Oktober 1928 yang melahirkan ikrar Sumpah Pemuda dipimpin oleh seorang tokoh muda dari Perhimpunan Pelajar-Pelajar Indonesia (PPPI), yaitu...",
+        "options": {
+          "A": "Soegondo Djojopoespito",
+          "B": "R.M. Djoko Marsaid",
+          "C": "Mohammad Yamin",
+          "D": "Amir Sjarifoeddin",
+          "E": "W.R. Soepratman"
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Sejarah Nasional Indonesia - Pergerakan Sumpah Pemuda\n\n💡 **Pembahasan:** Ketua Kongres Pemuda II adalah Soegondo Djojopoespito (dari PPPI), sedangkan Mohammad Yamin bertindak sebagai sekretaris (dari Jong Sumatranen Bond) yang merumuskan teks Sumpah Pemuda."
+      },
+      {
+        "id": "twk_extra_11",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #11",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_12",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #12",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_13",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #13",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_14",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #14",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_15",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #15",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_16",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #16",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_17",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #17",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_18",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #18",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_19",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #19",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_20",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #20",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_21",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #21",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_22",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #22",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_23",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #23",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_24",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #24",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_25",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #25",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_26",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #26",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_27",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #27",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_28",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #28",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_29",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #29",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
+      },
+      {
+        "id": "twk_extra_30",
+        "instansi": "Nasional",
+        "category": "TWK",
+        "subcategory": "Wawasan Kebangsaan & Integritas Seri #30",
+        "question": "Penyelenggaraan tata kelola pemerintahan yang baik (Good Governance) menuntut keterbukaan informasi publik, akuntabilitas anggaran, dan pencegahan benturan kepentingan. Hal ini berlandaskan asas keterbukaan dan integritas aparatur yang diatur dalam Undang-Undang Administrasi Pemerintahan. Apa langkah preventif utama seorang ASN dalam menghindari benturan kepentingan (conflict of interest)?",
+        "options": {
+          "A": "Melimpahkan seluruh pekerjaan proyek pengadaan barang kepada kerabat dekat agar mudah diawasi",
+          "B": "Menyatakan secara terbuka potensi benturan kepentingan kepada atasan langsung dan mengundurkan diri dari proses pengambilan keputusan terkait",
+          "C": "Melanjutkan proses pengadaan asalkan harga penawaran rekanan tersebut berada di bawah pagu anggaran",
+          "D": "Menyimpan informasi kepemilikan saham pada perusahaan rekanan sebagai privasi keluarga",
+          "E": "Menerima potongan harga khusus dari vendor untuk kepentingan pribadi di luar kedinasan"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 30 Tahun 2014 tentang Administrasi Pemerintahan Pasal 42 - 45\n\n💡 **Pembahasan:** Pejabat pemerintahan yang memiliki potensi benturan kepentingan wajib memberitahukan kepada atasan dan dilarang menetapkan atau melakukan keputusan/tindakan dalam proses administrasi tersebut."
       },
       {
         "id": "tiu_31",
@@ -1442,6 +2132,811 @@ window.BANK_SOAL = {
           "D": 5,
           "E": 0
         }
+      },
+      {
+        "id": "tiu_extra_1",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Silogisme Logika",
+        "question": "Semua pegawai negeri sipil yang memegang jabatan fungsional wajib menyusun Sasaran Kinerja Pegawai (SKP). Beberapa pegawai di Dinas Kominfo tidak menyusun Sasaran Kinerja Pegawai (SKP). Simpulan yang sah adalah...",
+        "options": {
+          "A": "Semua pegawai di Dinas Kominfo bukan pegawai negeri sipil pemegang jabatan fungsional.",
+          "B": "Beberapa pegawai di Dinas Kominfo bukan pegawai negeri sipil yang memegang jabatan fungsional.",
+          "C": "Semua pegawai fungsional di Dinas Kominfo telah menyusun SKP tepat waktu.",
+          "D": "Tidak ada pegawai di Dinas Kominfo yang memegang jabatan fungsional.",
+          "E": "Beberapa pegawai negeri sipil tidak wajib menyusun SKP tahunan."
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Logika Matematika Silogisme Kategoris (Modus Darapti/Bokardo)\n\n💡 **Pembahasan:** Premis 1: Semua Fungsional -> Wajib SKP. Premis 2: Beberapa Pegawai Kominfo -> Tidak Wajib/Tidak Susun SKP. Simpulan: Beberapa pegawai di Dinas Kominfo bukan pegawai negeri sipil pemegang jabatan fungsional."
+      },
+      {
+        "id": "tiu_extra_2",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Deret Angka Bertingkat",
+        "question": "Tentukan angka berikutnya dari barisan pola bilangan berikut: 3, 5, 9, 17, 33, ...",
+        "options": {
+          "A": "49",
+          "B": "55",
+          "C": "65",
+          "D": "67",
+          "E": "72"
+        },
+        "answer": "C",
+        "points": {
+          "A": 0,
+          "B": 0,
+          "C": 5,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Pola Deret Geometri Beda Bertingkat (+2, +4, +8, +16, +32)\n\n💡 **Pembahasan:** Selisih antarsuku berlipat ganda: 5-3 = 2; 9-5 = 4; 17-9 = 8; 33-17 = 16. Maka selisih berikutnya adalah 32. 33 + 32 = 65."
+      },
+      {
+        "id": "tiu_extra_3",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Aritmatika Sosial - Kecepatan & Papasan",
+        "question": "Jarak kota A ke kota B adalah 240 km. Mobil X berangkat dari kota A menuju B pada pukul 08.00 dengan kecepatan rata-rata 60 km/jam. Pada waktu yang sama, mobil Y berangkat dari kota B menuju A dengan kecepatan 40 km/jam melalui rute yang sama. Pada pukul berapa kedua mobil tersebut akan berpapasan?",
+        "options": {
+          "A": "09.30",
+          "B": "10.00",
+          "C": "10.24",
+          "D": "10.45",
+          "E": "11.15"
+        },
+        "answer": "C",
+        "points": {
+          "A": 0,
+          "B": 0,
+          "C": 5,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Rumus Gerak Lurus Beraturan (Waktu Berpapasan: t = s / (v1 + v2))\n\n💡 **Pembahasan:** Waktu berpapasan = Jarak Total / (Kecepatan X + Kecepatan Y) = 240 / (60 + 40) = 240 / 100 = 2,4 jam = 2 jam 24 menit. Berangkat pukul 08.00 + 2 jam 24 menit = pukul 10.24."
+      },
+      {
+        "id": "tiu_extra_4",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Aritmatika Sosial - Diskon Bertingkat",
+        "question": "Sebuah toko elektronik memberikan promo diskon bertingkat untuk pembelian laptop sebesar 20% kemudian mendapat diskon tambahan 10% dari harga setelah diskon pertama. Jika harga awal laptop tersebut adalah Rp10.000.000, berapakah harga yang harus dibayar pembeli?",
+        "options": {
+          "A": "Rp7.000.000",
+          "B": "Rp7.200.000",
+          "C": "Rp7.500.000",
+          "D": "Rp8.000.000",
+          "E": "Rp8.200.000"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Aritmatika Keuangan Diskon Bertingkat\n\n💡 **Pembahasan:** Diskon 1 (20%): Harga menjadi 80% x Rp10.000.000 = Rp8.000.000. Diskon 2 (10% dari sisa): Harga menjadi 90% x Rp8.000.000 = Rp7.200.000."
+      },
+      {
+        "id": "tiu_extra_5",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Penalaran Analitis Posisi Duduk",
+        "question": "Enam orang (A, B, C, D, E, F) duduk melingkar mengelilingi meja bundar. A duduk berhadapan langsung dengan D. B duduk tepat di sebelah kanan A. C duduk tepat di sebelah kiri D. E duduk di antara B dan D. Di manakah posisi duduk F?",
+        "options": {
+          "A": "Tepat di antara A dan C",
+          "B": "Tepat di antara B dan D",
+          "C": "Berhadapan dengan E",
+          "D": "Di sebelah kanan B",
+          "E": "Berhadapan dengan A"
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Penalaran Posisi Melingkar (Circular Permutation Analysis)\n\n💡 **Pembahasan:** Urutan melingkar searah jarum jam: A -> B -> E -> D -> C -> F -> kembali ke A. Jadi F berada tepat di antara C dan A."
+      },
+      {
+        "id": "tiu_extra_6",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #6",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_7",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #7",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_8",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #8",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_9",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #9",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_10",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #10",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_11",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #11",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_12",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #12",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_13",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #13",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_14",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #14",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_15",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #15",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_16",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #16",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_17",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #17",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_18",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #18",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_19",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #19",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_20",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #20",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_21",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #21",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_22",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #22",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_23",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #23",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_24",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #24",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_25",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #25",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_26",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #26",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_27",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #27",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_28",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #28",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_29",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #29",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_30",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #30",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_31",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #31",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_32",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #32",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_33",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #33",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_34",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #34",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
+      },
+      {
+        "id": "tiu_extra_35",
+        "instansi": "Nasional",
+        "category": "TIU",
+        "subcategory": "Numerik & Logika Analitis Seri #35",
+        "question": "Sebuah proyek pemasangan kabel fiber optik sepanjang 12 km dapat diselesaikan oleh 15 orang pekerja dalam waktu 20 hari. Jika proyek tersebut harus selesai dalam waktu 12 hari karena percepatan jadwal peresmian, berapa tambahan pekerja yang harus didatangkan?",
+        "options": {
+          "A": "8 orang",
+          "B": "10 orang",
+          "C": "12 orang",
+          "D": "15 orang",
+          "E": "25 orang"
+        },
+        "answer": "B",
+        "points": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perbandingan Berbalik Nilai (P1 x T1 = P2 x T2)\n\n💡 **Pembahasan:** Beban kerja = 15 pekerja x 20 hari = 300 orang-hari. Jika waktu target 12 hari, maka jumlah pekerja total yang dibutuhkan = 300 / 12 = 25 orang. Tambahan pekerja yang dibutuhkan = 25 - 15 = 10 orang pekerja baru."
       },
       {
         "id": "tkp_66",
@@ -2432,11 +3927,1001 @@ window.BANK_SOAL = {
         },
         "answer": "B",
         "explanation": "Fungsi utama ASN sesuai Pasal 10 UU No. 5/2014 & UU No. 20/2023: Pelaksana kebijakan publik, pelayan publik, dan perekat serta pemersatu bangsa (B=5, E=4, D=3, A=2, C=1)."
+      },
+      {
+        "id": "tkp_extra_1",
+        "category": "TKP",
+        "subcategory": "Pelayanan Publik - Pengaduan Digital",
+        "question": "Instansi tempat Anda bekerja baru saja meluncurkan aplikasi pengaduan publik berbasis web. Namun, banyak warga lansia yang datang ke loket fisik mengeluh kesulitan menggunakan aplikasi tersebut untuk mengurus dokumen. Sikap Anda sebagai petugas adalah...",
+        "options": {
+          "A": "Membimbing dan membantu warga lansia tersebut menginput data melalui perangkat loket bantuan serta menyiapkan opsi pelayanan ramah disabilitas/lansia.",
+          "B": "Menyuruh warga lansia tersebut pulang dan meminta bantuan anak atau kerabat mudanya untuk mengurus secara online.",
+          "C": "Menolak berkas fisik karena seluruh regulasi dinas mewajibkan pelayanan tanpa kertas (paperless).",
+          "D": "Memberikan selebaran petunjuk teknis aplikasi dan meminta mereka membaca sendiri secara mandiri.",
+          "E": "Mengabaikan keluhan tersebut karena transformasi digital adalah keniscayaan nasional."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "D": 4,
+          "B": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PermenPAN-RB No. 321/2024 & UU No. 25/2009 tentang Pelayanan Publik\n\n💡 **Pembahasan:** Opsi A mencerminkan empati pelayanan publik prima (skor 5). Transformasi digital harus inklusif dan menyediakan loket pendampingan/asistensi bagi kelompok rentan."
+      },
+      {
+        "id": "tkp_extra_2",
+        "category": "TKP",
+        "subcategory": "Teknologi Informasi & Komunikasi (TIK) - Keamanan Data Kantor",
+        "question": "Seorang rekan kerja satu ruangan meminta Anda mengirimkan file database kepegawaian melalui aplikasi chat pesan instan pribadi tanpa enkripsi karena sedang bekerja di luar kantor dan terburu-buru. Tindakan Anda adalah...",
+        "options": {
+          "A": "Mengirimkannya segera karena rekan kerja tersebut memiliki hubungan akrab dengan Anda.",
+          "B": "Menolak dan menjelaskan bahwa data tersebut bersifat sensitif/rahasia jabatan serta mengarahkannya menggunakan saluran VPN dinas dan email resmi terenkripsi sesuai SOP.",
+          "C": "Mengirimkan sebagian data penting saja agar tidak melanggar seluruh aturan.",
+          "D": "Membiarkan pesan tersebut tanpa membalasnya agar tidak merasa bersalah.",
+          "E": "Mengunggah data tersebut ke Google Drive publik dan membagikan tautannya."
+        },
+        "answer": "B",
+        "points": {
+          "B": 5,
+          "C": 3,
+          "A": 2,
+          "D": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU No. 27/2022 (UU PDP) & ISO/IEC 27001 Tata Kelola Keamanan Informasi ASN\n\n💡 **Pembahasan:** Opsi B (skor 5) menjunjung tinggi integritas kepatuhan SOP keamanan siber dan perlindungan data rahasia kedinasan dari risiko kebocoran di jalur tidak resmi."
+      },
+      {
+        "id": "tkp_extra_3",
+        "category": "TKP",
+        "subcategory": "Jejaring Kerja & Kolaborasi",
+        "question": "Tim kerja Anda ditugaskan mengintegrasikan sistem data antar-OPD. Namun, perwakilan dari OPD mitra bersikap pasif dan lambat dalam menyerahkan dokumentasi API mereka. Sikap Anda...",
+        "options": {
+          "A": "Melaporkan rekan mitra tersebut kepada pimpinan tinggi daerah agar mereka ditegur keras.",
+          "B": "Menginisiasi pertemuan koordinasi langsung secara persuasif, menanyakan kendala teknis yang dihadapi mitra, serta menawarkan asistensi teknis bersama.",
+          "C": "Menghentikan integrasi dan mengerjakan bagian tim Anda sendiri saja.",
+          "D": "Menyindir kinerja mereka melalui grup obrolan informal agar merasa malu.",
+          "E": "Menunggu sampai OPD mitra memiliki inisiatif sendiri menghubungi Anda."
+        },
+        "answer": "B",
+        "points": {
+          "B": 5,
+          "A": 4,
+          "E": 3,
+          "C": 2,
+          "D": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Core Values ASN BerAKHLAK - Nilai Kolaboratif\n\n💡 **Pembahasan:** Opsi B (skor 5) mencerminkan kepemimpinan kolaboratif yang proaktif mengidentifikasi sumbatan masalah (bottleneck) dan membangun sinergi lintas instansi secara solutif."
+      },
+      {
+        "id": "tkp_extra_4",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #4",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_5",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #5",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_6",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #6",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_7",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #7",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_8",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #8",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_9",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #9",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_10",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #10",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_11",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #11",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_12",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #12",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_13",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #13",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_14",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #14",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_15",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #15",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_16",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #16",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_17",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #17",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_18",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #18",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_19",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #19",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_20",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #20",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_21",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #21",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_22",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #22",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_23",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #23",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_24",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #24",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_25",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #25",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_26",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #26",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_27",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #27",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_28",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #28",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_29",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #29",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_30",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #30",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_31",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #31",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_32",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #32",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_33",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #33",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_34",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #34",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_35",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #35",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_36",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #36",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_37",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #37",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_38",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #38",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_39",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #39",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_40",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #40",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_41",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #41",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_42",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #42",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_43",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #43",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_44",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #44",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
+      },
+      {
+        "id": "tkp_extra_45",
+        "category": "TKP",
+        "subcategory": "Integritas & Karakter ASN Seri #45",
+        "question": "Saat menghadiri acara serah terima jabatan pimpinan baru di hotel, pihak panitia penyelenggara menawarkan cinderamata mahal di luar batas wajar kepada seluruh ASN yang hadir sebagai kenang-kenangan pribadi. Tindakan Anda...",
+        "options": {
+          "A": "Menolak cinderamata tersebut secara sopan dengan menjelaskan aturan larangan gratifikasi dan mengembalikan barang ke panitia.",
+          "B": "Menerima barang tersebut lalu segera melaporkannya ke Unit Pengendalian Gratifikasi (UPG) instansi dalam waktu 30 hari kerja.",
+          "C": "Menerimanya karena semua rekan kerja lain juga menerimanya tanpa ada yang protes.",
+          "D": "Mengambil barang tersebut lalu menjualnya kembali untuk disumbangkan ke panti asuhan.",
+          "E": "Menerima dan menyembunyikannya agar tidak diketahui oleh atasan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 4,
+          "D": 3,
+          "C": 2,
+          "E": 1
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** KPK RI & SE MenPAN-RB No. 20/2021 Core Value Akuntabel\n\n💡 **Pembahasan:** Opsi A (skor 5) adalah tindakan preventif terbaik menolak pemberian di awal. Jika terpaksa diterima karena situasi diplomatik/protokoler, opsi B (skor 4) adalah pelaporan wajib ke UPG."
       }
     ]
   },
   "skb_kemenkeu": {
-    "title": "SKB IT - Kementerian Keuangan (Kemenkeu) - 100 Soal Penuh",
+    "title": "SKB IT - Kementerian Keuangan (Kemenkeu) - 150 Bank Soal Variatif",
     "instansi": "Kementerian Keuangan RI",
     "description": "Simulasi 100 soal CAT BKN resmi: SPAN, Core Tax, SAKTI, ACID Basis Data Finansial, PCI-DSS, dan Audit TI BPK.",
     "timeMinutes": 90,
@@ -4743,11 +7228,1161 @@ window.BANK_SOAL = {
           "E": 0
         },
         "explanation": "📚 **Sumber Regulasi/Standar:** Database Concurrency Control Principles (Gray & Reuter) & Oracle Transaction Management Guide.\n\n💡 **Pembahasan:** Deadlock dapat dicegah dengan memastikan seluruh transaksi mengakses tabel dalam urutan global yang sama, atau menggunakan mekanisme deadlock detection berbasis wait-for-graph dengan rollback otomatis."
+      },
+      {
+        "id": "skb_kemenkeu_extra_101",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #101",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_102",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #102",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_103",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #103",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_104",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #104",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_105",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #105",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_106",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #106",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_107",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #107",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_108",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #108",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_109",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #109",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_110",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #110",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_111",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #111",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_112",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #112",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_113",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #113",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_114",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #114",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_115",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #115",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_116",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #116",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_117",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #117",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_118",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #118",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_119",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #119",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_120",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #120",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_121",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #121",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_122",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #122",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_123",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #123",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_124",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #124",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_125",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #125",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_126",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #126",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_127",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #127",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_128",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #128",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_129",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #129",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_130",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #130",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_131",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #131",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_132",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #132",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_133",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #133",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_134",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #134",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_135",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #135",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_136",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #136",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_137",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #137",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_138",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #138",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_139",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #139",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_140",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #140",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_141",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #141",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_142",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #142",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_143",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #143",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_144",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #144",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_145",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #145",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_146",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #146",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_147",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #147",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_148",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #148",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_149",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #149",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
+      },
+      {
+        "id": "skb_kemenkeu_extra_150",
+        "instansi": "Kemenkeu",
+        "category": "Arsitektur SPAN, CoreTax, SAKTI & Tata Kelola TIK Finansial",
+        "subcategory": "Regulasi & Modul Spesifik #150",
+        "question": "Sistem Perbendaharaan dan Anggaran Negara (SPAN) dan Sistem Modul Penerimaan Negara Generasi 3 (MPN G3) di Kementerian Keuangan memproses jutaan transaksi penerimaan kas negara per jam. Protokol basis data apakah yang wajib diimplementasikan untuk menjamin transaksi setoran pajak tidak mengalami inkonsistensi saldo saat terjadi konkurensi tinggi?",
+        "options": {
+          "A": "Penerapan prinsip ACID (Atomicity, Consistency, Isolation, Durability) dengan mekanisme Two-Phase Locking (2PL) atau Distributed Transaction Coordinator.",
+          "B": "Penyimpanan data transaksi hanya di cache memory RAM (In-Memory volatile) tanpa logging disk.",
+          "C": "Pengabaian isolasi transaksi agar throughput read/write mencapai kecepatan maksimal.",
+          "D": "Penggunaan format file flat CSV yang diperbarui secara batch harian setiap tengah malam.",
+          "E": "Pencatatan mutasi kredit tanpa mencatat mutasi debit pada buku besar perbendaharaan."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** PMK No. 155/PMK.01/2017, Sistem Billing MPN G3, Standar Audit BPK, dan ACID DB\n\n💡 **Pembahasan:** Transaksi keuangan negara mewajibkan pemenuhan penuh prinsip ACID dan mekanisme koordinasi transaksi terdistribusi guna menjamin zero-loss data dan konsistensi buku besar kas negara."
       }
     ]
   },
   "skb_bssn": {
-    "title": "SKB IT - Badan Siber dan Sandi Negara (BSSN) - 100 Soal Penuh",
+    "title": "SKB IT - Badan Siber dan Sandi Negara (BSSN) - 150 Bank Soal Variatif",
     "instansi": "Badan Siber dan Sandi Negara (BSSN)",
     "description": "Simulasi 100 soal CAT BKN resmi: CSIRT NIST SP 800-61, Forensik Digital RFC 3227, Kriptografi ECC/RSA, Zero Trust, dan ISO 27001:2022.",
     "timeMinutes": 90,
@@ -7054,11 +10689,1161 @@ window.BANK_SOAL = {
           "E": 0
         },
         "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 82 Tahun 2022 tentang Perlindungan Infrastruktur Informasi Vital, Pasal 4.\n\n💡 **Pembahasan:** Perpres IIV menetapkan 8 sektor strategis yang jika sistemnya lumpuh dapat mengancam stabilitas negara: pemerintahan, energi, transportasi, keuangan, kesehatan, TIK, pangan, dan pertahanan."
+      },
+      {
+        "id": "skb_bssn_extra_101",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #101",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_102",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #102",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_103",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #103",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_104",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #104",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_105",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #105",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_106",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #106",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_107",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #107",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_108",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #108",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_109",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #109",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_110",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #110",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_111",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #111",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_112",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #112",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_113",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #113",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_114",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #114",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_115",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #115",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_116",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #116",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_117",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #117",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_118",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #118",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_119",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #119",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_120",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #120",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_121",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #121",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_122",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #122",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_123",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #123",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_124",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #124",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_125",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #125",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_126",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #126",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_127",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #127",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_128",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #128",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_129",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #129",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_130",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #130",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_131",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #131",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_132",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #132",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_133",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #133",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_134",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #134",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_135",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #135",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_136",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #136",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_137",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #137",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_138",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #138",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_139",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #139",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_140",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #140",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_141",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #141",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_142",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #142",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_143",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #143",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_144",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #144",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_145",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #145",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_146",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #146",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_147",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #147",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_148",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #148",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_149",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #149",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
+      },
+      {
+        "id": "skb_bssn_extra_150",
+        "instansi": "BSSN",
+        "category": "Manajemen Insiden Siber, NIST SP 800-61, Indeks KAMI & Zero Trust",
+        "subcategory": "Regulasi & Modul Spesifik #150",
+        "question": "Berdasarkan Peraturan Presiden Nomor 47 Tahun 2023 tentang Strategi Keamanan Siber Nasional dan Manajemen Krisis Siber, ketika terjadi insiden serangan siber kategori kritis (misalnya serangan ransomware pada infrastruktur informasi vital nasional), apa tindakan mitigasi awal dan kewajiban notifikasi yang harus dilakukan oleh Gov-CSIRT?",
+        "options": {
+          "A": "Melakukan isolasi segmen jaringan yang terinfeksi (containment), memelihara integritas bukti digital (forensik), dan menyampaikan laporan awal insiden kepada BSSN paling lambat 3 x 24 jam.",
+          "B": "Membayar uang tebusan (ransom) segera melalui transfer cryptocurrency demi memulihkan data instansi secepatnya.",
+          "C": "Menghapus seluruh log server dan mematikan sistem tanpa melakukan snapshot memory volatile.",
+          "D": "Mempublikasikan kerentanan zero-day sistem ke media sosial sebelum melakukan penambalan (patching).",
+          "E": "Menutup layanan publik secara permanen dan menggantinya dengan formulir manual selamanya."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perpres No. 47/2023 (Krisis Siber), RFC 3227, ISO 27001:2022, dan Kriptografi Kunci Publik\n\n💡 **Pembahasan:** Protokol penanganan insiden siber nasional menuntut tindakan pembendungan (containment), preservasi artefak digital (RFC 3227), dan notifikasi eskalasi berjenjang ke National CSIRT (BSSN) dalam tenggat waktu resmi."
       }
     ]
   },
   "skb_kemkomdigi": {
-    "title": "SKB IT - Kementerian Komunikasi dan Digital (Kemkomdigi) - 100 Soal Penuh",
+    "title": "SKB IT - Kementerian Komunikasi dan Digital (Kemkomdigi) - 150 Bank Soal Variatif",
     "instansi": "Kementerian Komunikasi dan Digital (Kemkomdigi)",
     "description": "Simulasi riil 100 soal teknis penuh standar CAT BKN berdasar UU PDP, UU ITE, Perpres SPBE, Cloud PDN, Jaringan 5G, Cybersecurity ISO 27001, dan Basis Data.",
     "timeMinutes": 90,
@@ -9365,11 +14150,1161 @@ window.BANK_SOAL = {
           "E": 0
         },
         "explanation": "📚 **Sumber Regulasi/Standar:** Bill Inmon / Ralph Kimball - The Data Warehouse Lifecycle Toolkit & Cloud Analytics Standards.\n\n💡 **Pembahasan:** Dalam ELT modern (berkat skalabilitas compute cloud seperti Snowflake/BigQuery), data mentah ditampung terlebih dahulu tanpa bottleneck pemrosesan staging eksternal, lalu transformasi data dieksekusi secara terdistribusi di dalam engine data warehouse."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_101",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #101",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_102",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #102",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_103",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #103",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_104",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #104",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_105",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #105",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_106",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #106",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_107",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #107",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_108",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #108",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_109",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #109",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_110",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #110",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_111",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #111",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_112",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #112",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_113",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #113",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_114",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #114",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_115",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #115",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_116",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #116",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_117",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #117",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_118",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #118",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_119",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #119",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_120",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #120",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_121",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #121",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_122",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #122",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_123",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #123",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_124",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #124",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_125",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #125",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_126",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #126",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_127",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #127",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_128",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #128",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_129",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #129",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_130",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #130",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_131",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #131",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_132",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #132",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_133",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #133",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_134",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #134",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_135",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #135",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_136",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #136",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_137",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #137",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_138",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #138",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_139",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #139",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_140",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #140",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_141",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #141",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_142",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #142",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_143",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #143",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_144",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #144",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_145",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #145",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_146",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #146",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_147",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #147",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_148",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #148",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_149",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #149",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
+      },
+      {
+        "id": "skb_kemkomdigi_extra_150",
+        "instansi": "Kemkomdigi",
+        "category": "Regulasi Digital, AI Ethics & Infrastruktur PDN",
+        "subcategory": "Regulasi & Modul Spesifik #150",
+        "question": "Dalam rangka penerapan Surat Edaran Menkominfo Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (AI), pengembang sistem AI di lingkungan penyelenggara sistem elektronik wajib menerapkan prinsip transparansi dan keandalan data. Manakah langkah teknis yang paling tepat untuk mencegah bias diskriminatif pada model Machine Learning layanan publik?",
+        "options": {
+          "A": "Menggunakan data pelatihan (training dataset) yang terdiversifikasi, teraudit secara berkala, dan menguji fairness matrix terhadap kelompok demografis yang rentan.",
+          "B": "Menghapus seluruh fitur identitas dari database sehingga model bekerja secara sepenuhnya acak.",
+          "C": "Menyerahkan seluruh keputusan penentuan kelayakan bantuan sosial 100% pada algoritma AI tanpa human-in-the-loop.",
+          "D": "Membatasi akses pengawasan publik terhadap model AI demi menjaga kerahasiaan hak cipta vendor.",
+          "E": "Menjalankan model hanya pada perangkat keras lokal yang terputus dari jaringan internet."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** UU PDP No. 27/2022, UU ITE No. 1/2024, SE Menkominfo No. 9/2023 (Etika AI), dan Perpres 95/2018 (SPBE)\n\n💡 **Pembahasan:** SE Menkominfo No. 9/2023 menekankan etika AI: inklusivitas, pencegahan bias data pelatihan, akuntabilitas audit algoritma, serta keberadaan pengawasan manusia (Human-in-the-Loop)."
       }
     ]
   },
   "skb_bkn": {
-    "title": "SKB IT - Badan Kepegawaian Negara (BKN) - 100 Soal Penuh",
+    "title": "SKB IT - Badan Kepegawaian Negara (BKN) - 150 Bank Soal Variatif",
     "instansi": "Badan Kepegawaian Negara (BKN)",
     "description": "Simulasi 100 soal CAT BKN resmi: Arsitektur CAT BKN, SIASN, Database Kepegawaian Nasional, MyASN SSO, dan UU ASN 20/2023.",
     "timeMinutes": 90,
@@ -11676,11 +17611,1161 @@ window.BANK_SOAL = {
           "E": 0
         },
         "explanation": "📚 **Sumber Regulasi/Standar:** RFC 6749 (The OAuth 2.0 Authorization Framework) & Standar SSO Layanan BKN.\n\n💡 **Pembahasan:** OAuth 2.0 dan OIDC menyediakan mekanisme otentikasi Single Sign-On (SSO) aman berbasis token digital bertanda tangan (JWT) tanpa pernah membagikan password pengguna ke aplikasi pihak ketiga."
+      },
+      {
+        "id": "skb_bkn_extra_101",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #101",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_102",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #102",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_103",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #103",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_104",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #104",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_105",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #105",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_106",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #106",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_107",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #107",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_108",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #108",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_109",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #109",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_110",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #110",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_111",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #111",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_112",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #112",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_113",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #113",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_114",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #114",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_115",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #115",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_116",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #116",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_117",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #117",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_118",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #118",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_119",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #119",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_120",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #120",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_121",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #121",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_122",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #122",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_123",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #123",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_124",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #124",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_125",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #125",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_126",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #126",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_127",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #127",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_128",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #128",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_129",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #129",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_130",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #130",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_131",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #131",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_132",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #132",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_133",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #133",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_134",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #134",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_135",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #135",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_136",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #136",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_137",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #137",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_138",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #138",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_139",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #139",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_140",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #140",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_141",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #141",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_142",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #142",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_143",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #143",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_144",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #144",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_145",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #145",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_146",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #146",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_147",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #147",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_148",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #148",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_149",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #149",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
+      },
+      {
+        "id": "skb_bkn_extra_150",
+        "instansi": "BKN",
+        "category": "Sistem CAT BKN Kiosk/LAN, SIASN, MyASN OAuth 2.0 & Talenta ASN",
+        "subcategory": "Regulasi & Modul Spesifik #150",
+        "question": "Berdasarkan Peraturan Kepala BKN Nomor 8 Tahun 2022 tentang Prosedur Seleksi dengan Metode Computer Assisted Test (CAT BKN), untuk mengamankan integritas ujian dari kebocoran soal dan intervensi eksternal, arsitektur jaringan pada stasiun tes CAT BKN diwajibkan menggunakan sistem...",
+        "options": {
+          "A": "Jaringan Local Area Network (LAN) terisolasi dengan mode Kiosk Lock-Down pada browser klien, tanpa akses internet publik bebas ke stasiun peserta.",
+          "B": "Koneksi Wi-Fi terbuka tanpa sandi agar peserta dapat mengakses internet bebas selama ujian berlangsung.",
+          "C": "Aplikasi berbasis cloud publik tanpa enkripsi lalu lintas data sesi peserta.",
+          "D": "Penyimpanan seluruh database soal di harddisk lokal masing-masing PC peserta dalam bentuk file teks terbuka.",
+          "E": "Komputer klien yang terhubung ke jaringan peer-to-peer antarpeserta ujian."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Perka BKN No. 8/2022, PermenPAN-RB No. 3/2020 (9-Box Grid), dan Standar Database ASN\n\n💡 **Pembahasan:** Sistem CAT BKN wajib menggunakan jaringan LAN tertutup/terisolasi dan perangkat lunak client terkunci (Secure Exam Browser / Kiosk Mode) untuk mencegah kecurangan dan pembocoran bank soal."
       }
     ]
   },
   "skb_kemenkumham": {
-    "title": "SKB IT - Kementerian Hukum dan HAM (Kemenkumham) - 100 Soal Penuh",
+    "title": "SKB IT - Kementerian Hukum dan HAM (Kemenkumham) - 150 Bank Soal Variatif",
     "instansi": "Kementerian Hukum dan HAM RI",
     "description": "Simulasi 100 soal CAT BKN resmi: SIMKIM Autogate ICAO 9303, Sistem Database Pemasyarakatan SDP, AHU Online, dan e-Paten DJKI.",
     "timeMinutes": 90,
@@ -13987,11 +21072,1161 @@ window.BANK_SOAL = {
           "E": 0
         },
         "explanation": "📚 **Sumber Regulasi/Standar:** Standar Infrastruktur Jaringan SIMKIM Ditjen Imigrasi Kemenkumham.\n\n💡 **Pembahasan:** Seluruh kantor imigrasi dan pos lintas batas negara (PLBN) terhubung ke server SIMKIM pusat menggunakan tunnel IPSec VPN terenkripsi militer AES-256 untuk menjamin kerahasiaan data intelijen keimigrasian."
+      },
+      {
+        "id": "skb_kemenkumham_extra_101",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #101",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_102",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #102",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_103",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #103",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_104",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #104",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_105",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #105",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_106",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #106",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_107",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #107",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_108",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #108",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_109",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #109",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_110",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #110",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_111",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #111",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_112",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #112",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_113",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #113",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_114",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #114",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_115",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #115",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_116",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #116",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_117",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #117",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_118",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #118",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_119",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #119",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_120",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #120",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_121",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #121",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_122",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #122",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_123",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #123",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_124",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #124",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_125",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #125",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_126",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #126",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_127",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #127",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_128",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #128",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_129",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #129",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_130",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #130",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_131",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #131",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_132",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #132",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_133",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #133",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_134",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #134",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_135",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #135",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_136",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #136",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_137",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #137",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_138",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #138",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_139",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #139",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_140",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #140",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_141",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #141",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_142",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #142",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_143",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #143",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_144",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #144",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_145",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #145",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_146",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #146",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_147",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #147",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_148",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #148",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_149",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #149",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
+      },
+      {
+        "id": "skb_kemenkumham_extra_150",
+        "instansi": "Kemenkumham",
+        "category": "SIMKIM ICAO Doc 9303, SDP Biometrik, AHU Online & e-Paten",
+        "subcategory": "Regulasi & Modul Spesifik #150",
+        "question": "Penerbitan Paspor Elektronik (e-Paspor) Republik Indonesia pada Sistem Informasi Manajemen Keimigrasian (SIMKIM) mengacu pada standar internasional ICAO Doc 9303. Mekanisme kriptografi apakah yang digunakan oleh pintu perlintasan otomatis (Autogate) imigrasi untuk memverifikasi keaslian data chip paspor dan mencegah pemalsuan dokumen perjalanan?",
+        "options": {
+          "A": "Passive Authentication (PA) menggunakan Document Signer Certificate (DSC) yang divalidasi terhadap Country Signing Certificate Authority (CSCA) terdaftar di ICAO PKD.",
+          "B": "Pemindaian barcode 2 dimensi tanpa memerlukan cryptographic digital signature.",
+          "C": "Pencocokan nama manual oleh petugas loket tanpa pembacaan contactless chip RF.",
+          "D": "Penyimpanan nomor paspor pada media pita magnetik (magnetic stripe) konvensional.",
+          "E": "Pengecekan stempel cap tinta basah pada halaman visa."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** ICAO Doc 9303 Part 11 MRTD, UU No. 6/2011 (Keimigrasian), dan Sertifikasi BSrE\n\n💡 **Pembahasan:** ICAO Doc 9303 Part 11 menetapkan Passive Authentication (PA) berbasis PKI internasional (ICAO PKD) guna memvalidasi signature SOD (Security Object Document) chip paspor terhadap sertifikat resmi negara penerbit."
       }
     ]
   },
   "skb_pemda": {
-    "title": "SKB IT - Pemerintah Daerah (Pemda) - 100 Soal Penuh",
+    "title": "SKB IT - Pemerintah Daerah (Pemda) - 150 Bank Soal Variatif",
     "instansi": "Pemerintah Daerah",
     "description": "Simulasi 100 soal CAT BKN resmi: SIPD Permendagri 70/2019, Smart City 6 Pilar, SIAK Terpusat Dukcapil, WebGIS, dan SuperApps.",
     "timeMinutes": 90,
@@ -16298,6 +24533,1156 @@ window.BANK_SOAL = {
           "E": 0
         },
         "explanation": "📚 **Sumber Regulasi/Standar:** Smart City Framework Kemkomdigi & Enterprise Architecture Guide for Local Government.\n\n💡 **Pembahasan:** Microservices dengan API Gateway memungkinkan masing-masing dinas (OPD) memelihara modul layanannya sendiri secara modular dan dapat diskalakan secara independen di balik satu portal SuperApp warga."
+      },
+      {
+        "id": "skb_pemda_extra_101",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #101",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_102",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #102",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_103",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #103",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_104",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #104",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_105",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #105",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_106",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #106",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_107",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #107",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_108",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #108",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_109",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #109",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_110",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #110",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_111",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #111",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_112",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #112",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_113",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #113",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_114",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #114",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_115",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #115",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_116",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #116",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_117",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #117",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_118",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #118",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_119",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #119",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_120",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #120",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_121",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #121",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_122",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #122",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_123",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #123",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_124",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #124",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_125",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #125",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_126",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #126",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_127",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #127",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_128",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #128",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_129",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #129",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_130",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #130",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_131",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #131",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_132",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #132",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_133",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #133",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_134",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #134",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_135",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #135",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_136",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #136",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_137",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #137",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_138",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #138",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_139",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #139",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_140",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #140",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_141",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #141",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_142",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #142",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_143",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #143",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_144",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #144",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_145",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #145",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_146",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #146",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_147",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #147",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_148",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #148",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_149",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #149",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
+      },
+      {
+        "id": "skb_pemda_extra_150",
+        "instansi": "Pemda",
+        "category": "SIPD Permendagri 70/2019, SIAK Terpusat & IKD, PATEN Kecamatan & Smart City",
+        "subcategory": "Regulasi & Modul Spesifik #150",
+        "question": "Dalam tata kelola Administrasi Kependudukan di tingkat Kecamatan dan Disdukcapil berdasarkan Permendagri Nomor 73 Tahun 2022 dan Permendagri Nomor 104 Tahun 2019, terdapat pedoman teknis pencatatan data penduduk. Manakah ketentuan pencatatan nama pada dokumen kependudukan yang wajib dipatuhi oleh operator SIAK Terpusat?",
+        "options": {
+          "A": "Nama penduduk paling sedikit 2 (dua) kata, jumlah huruf paling banyak 60 (enam puluh) karakter termasuk spasi, dan tidak boleh disingkat atau bermakna multitafsir/negatif.",
+          "B": "Nama penduduk boleh terdiri dari 1 huruf saja asalkan disetujui oleh orang tua.",
+          "C": "Nama penduduk dapat mencantumkan angka romawi dan simbol matematika khusus.",
+          "D": "Pencatatan gelar akademis atau keagamaan wajib disatukan ke dalam akta kelahiran anak.",
+          "E": "Data NIK penduduk dapat diubah secara bebas setiap tahun atas permohonan pribadi."
+        },
+        "answer": "A",
+        "points": {
+          "A": 5,
+          "B": 0,
+          "C": 0,
+          "D": 0,
+          "E": 0
+        },
+        "explanation": "📚 **Sumber Regulasi/Standar:** Permendagri No. 70/2019 (SIPD), Permendagri No. 73/2022 (Pencatatan Nama), Permendagri No. 104/2019 (Hak Akses Data), dan UU 24/2013\n\n💡 **Pembahasan:** Pasal 4 dan Pasal 5 Permendagri No. 73 Tahun 2022 mengatur bahwa pencatatan nama penduduk pada dokumen kependudukan harus memenuhi kaidah: mudah dibaca, tidak bermakna negatif, jumlah huruf paling banyak 60 karakter termasuk spasi, dan paling sedikit 2 kata."
       }
     ]
   }
