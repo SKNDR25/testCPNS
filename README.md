@@ -32,6 +32,7 @@ Dilengkapi dengan **Bank Soal Autentik (710 Soal Berdasar Regulasi & Standar Res
 * **Auto-Save & Resume Sesi:** Sesi ujian tersimpan otomatis di *LocalStorage* setiap beberapa detik. Jika browser tidak sengaja tertutup atau halaman ter-refresh, progres pengerjaan dan sisa waktu tidak hilang.
 * **Hentikan Sesi (Keluar):** Tombol pembatalan/penghentian sesi ujian kapan saja dengan konfirmasi modal yang aman.
 * **Aksesibilitas & Kiosk Mode:**
+  * 🌙 **Mode Malam (Dark Mode):** Tombol pengalih tema gelap/terang di bilah atas untuk kenyamanan membaca dalam kondisi pencahayaan redup (*dim light*), dengan penyimpanan preferensi otomatis di browser.
   * Kontrol ukuran teks soal (`A-`, `A`, `A+`) untuk kenyamanan membaca.
   * Tombol **Layar Penuh (⛶ Fullscreen)** untuk meminimalkan distraksi saat mengerjakan ujian.
 * **Acak Soal & Pilihan Jawaban:** Tersedia opsi *checkbox* untuk mengacak urutan soal (*Shuffle Questions*) dan mengacak pilihan jawaban (*Shuffle Options*) A–E.

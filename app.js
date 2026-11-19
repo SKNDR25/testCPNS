@@ -33,6 +33,7 @@
     fontSizeReset: document.getElementById('btn-font-reset'),
     fontSizeInc: document.getElementById('btn-font-inc'),
     btnFullscreen: document.getElementById('btn-fullscreen'),
+    btnThemeToggle: document.getElementById('btn-theme-toggle'),
     timerContainer: document.getElementById('timer-container'),
     timerDisplay: document.getElementById('timer-display'),
     examTitle: document.getElementById('exam-title'),
@@ -154,6 +155,7 @@
   // ==========================================
   function init() {
     loadCustomQuestionsIntoBank();
+    setupThemeToggle();
     setupAccessibilityControls();
     setupTabNavigation();
     setupCategoryAndInstansiSelection();
@@ -164,6 +166,44 @@
     renderHistoryDashboard();
     renderBankSummary();
     checkSavedSession();
+  }
+
+  // ==========================================
+  // FITUR TEMA GELAP / TERANG (DARK MODE)
+  // ==========================================
+  const STORAGE_KEY_THEME = 'cpns_cat_theme';
+
+  function setupThemeToggle() {
+    const savedTheme = localStorage.getItem(STORAGE_KEY_THEME);
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    applyTheme(initialTheme);
+
+    if (el.btnThemeToggle) {
+      el.btnThemeToggle.addEventListener('click', () => {
+        const isCurrentDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const newTheme = isCurrentDark ? 'light' : 'dark';
+        applyTheme(newTheme);
+        localStorage.setItem(STORAGE_KEY_THEME, newTheme);
+      });
+    }
+  }
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      if (el.btnThemeToggle) {
+        el.btnThemeToggle.innerHTML = '☀️ Terang';
+        el.btnThemeToggle.title = 'Ganti ke Mode Terang';
+      }
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      if (el.btnThemeToggle) {
+        el.btnThemeToggle.innerHTML = '🌙 Gelap';
+        el.btnThemeToggle.title = 'Ganti ke Mode Gelap';
+      }
+    }
   }
 
   // ==========================================
