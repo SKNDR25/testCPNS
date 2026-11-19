@@ -916,9 +916,43 @@ body {
   grid-template-columns: repeat(5, 1fr);
   gap: 8px;
   margin-bottom: 20px;
-  max-height: 380px;
+  max-height: 400px;
   overflow-y: auto;
-  padding-right: 4px;
+  overflow-x: hidden;
+  padding: 4px 6px 18px 4px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.question-grid::-webkit-scrollbar {
+  width: 6px;
+}
+
+.question-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.question-grid::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.question-grid::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+[data-theme="dark"] .question-grid {
+  scrollbar-color: #475569 transparent;
+}
+
+[data-theme="dark"] .question-grid::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+[data-theme="dark"] .question-grid::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
 }
 
 .grid-btn {
@@ -1501,15 +1535,61 @@ textarea.form-control {
   border-color: #ef4444 !important;
 }
 
+/* Question Grid in Dark Mode */
 [data-theme="dark"] .grid-btn {
   background: #1e293b !important;
   border-color: #334155 !important;
   color: #cbd5e1 !important;
 }
 
-[data-theme="dark"] .grid-btn:hover {
+[data-theme="dark"] .grid-btn:hover:not(.answered):not(.wrong):not(.doubt) {
   background: #334155 !important;
   border-color: #60a5fa !important;
+}
+
+/* Jawaban Benar (Mode Belajar & Simulasi) */
+[data-theme="dark"] .grid-btn.answered {
+  background: #059669 !important;
+  border-color: #10b981 !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 4px rgba(16, 185, 129, 0.4);
+}
+
+[data-theme="dark"] .grid-btn.answered:hover {
+  background: #10b981 !important;
+  border-color: #34d399 !important;
+}
+
+/* Jawaban Salah (Khusus Mode Belajar) */
+[data-theme="dark"] .grid-btn.wrong {
+  background: #dc2626 !important;
+  border-color: #ef4444 !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 4px rgba(239, 68, 68, 0.4);
+}
+
+[data-theme="dark"] .grid-btn.wrong:hover {
+  background: #b91c1c !important;
+  border-color: #f87171 !important;
+}
+
+/* Ragu-Ragu (Mode Simulasi) */
+[data-theme="dark"] .grid-btn.doubt {
+  background: #d97706 !important;
+  border-color: #f59e0b !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 4px rgba(245, 158, 11, 0.4);
+}
+
+[data-theme="dark"] .grid-btn.doubt:hover {
+  background: #b45309 !important;
+  border-color: #fbbf24 !important;
+}
+
+/* Nomor Soal Aktif (Current) */
+[data-theme="dark"] .grid-btn.current {
+  outline: 2px solid #38bdf8 !important;
+  outline-offset: 2px !important;
 }
 
 [data-theme="dark"] .history-table th {

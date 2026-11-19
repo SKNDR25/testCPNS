@@ -679,6 +679,17 @@
 
       if (idx === state.currentIndex) {
         btn.classList.add('current');
+        if (el.questionGrid) {
+          const gridTop = el.questionGrid.scrollTop;
+          const gridHeight = el.questionGrid.clientHeight;
+          const btnTop = btn.offsetTop - el.questionGrid.offsetTop;
+          const btnBottom = btnTop + btn.offsetHeight;
+          if (btnTop < gridTop) {
+            el.questionGrid.scrollTo({ top: Math.max(0, btnTop - 8), behavior: 'smooth' });
+          } else if (btnBottom > gridTop + gridHeight - 12) {
+            el.questionGrid.scrollTo({ top: btnBottom - gridHeight + 20, behavior: 'smooth' });
+          }
+        }
       }
 
       if (isStudyMode) {
