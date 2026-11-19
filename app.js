@@ -464,7 +464,7 @@
           clonedQuestions = clonedQuestions.slice(0, 100);
         }
       }
-      // Jika mode belajar mandiri dan shuffle tidak dicentang: tampilkan seluruh bank soal (220 SKD / 150 SKB) untuk dipelajari tuntas
+      // Jika mode belajar mandiri dan shuffle tidak dicentang: tampilkan seluruh bank soal (160 SKD / 101 SKB) untuk dipelajari tuntas
     }
 
     // Acak Pilihan Opsi A-E bila diminta

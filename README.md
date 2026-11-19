@@ -59,19 +59,19 @@ Dilengkapi dengan **Bank Soal Autentik (710 Soal Berdasar Regulasi & Standar Res
 
 ---
 
-## 📚 Struktur & Cakupan Bank Soal (1.120 Soal Variatif)
+## 📚 Struktur & Cakupan Bank Soal (766 Soal 100% Unik Bebas Duplikat)
 
-Seluruh soal dalam aplikasi ini disusun secara sistematis berdasarkan regulasi resmi pemerintah dan standar industri. Dengan mengaktifkan fitur **"🔀 Acak Urutan Soal (Shuffle Questions)"**, sistem akan mengambil sampel acak segar sesuai standar ujian BKN (SKD: 110 soal; SKB: 100 soal) sehingga simulasi setiap sesi menjadi unik dan variatif:
+Seluruh soal dalam aplikasi ini disusun secara sistematis berdasarkan regulasi resmi pemerintah dan standar industri, dan **telah melalui proses audit deduplikasi ketat (100% Unik, 0 Duplikat)**. Dengan mengaktifkan fitur **"🔀 Acak Urutan Soal (Shuffle Questions)"**, sistem akan mengambil sampel acak segar sesuai standar ujian BKN (SKD: 110 soal; SKB: 100 soal) sehingga simulasi setiap sesi menjadi variatif tanpa pengulangan soal yang sama:
 
 | No | Paket Ujian | Total Bank Soal | Sampel Ujian Resmi | Alokasi Waktu | Standar Rujukan & Fokus Materi |
 |:---:|:---|:---:|:---:|:---:|:---|
-| 1 | **SKD Nasional (Resmi CAT BKN)** | **220 Soal** | **110 Soal** | 100 Menit | **KepmenPAN-RB No. 321/2024**:<br>• TWK 60 Soal (Pancasila, UUD 1945 Amandemen, NKRI, Sejarah Perjuangan, Tipikor KPK, Bela Negara)<br>• TIU 70 Soal (Silogisme, Analitis, Deret Angka, Aritmatika Sosial, Kecepatan, Figural)<br>• TKP 90 Soal (Pelayanan Publik, Jejaring Kerja, Sosial Budaya, TIK, Profesionalisme, Anti Radikalisme - Skala 1–5) |
-| 2 | **SKB IT - Kemkomdigi** | **150 Soal** | **100 Soal** | 90 Menit | • **UU No. 27/2022 (PDP)** & **UU No. 1/2024 (ITE)**<br>• **SE Menkominfo No. 9/2023 (Etika AI)** & Permenkominfo 5/2020 (PSE Privat)<br>• Pusat Data Nasional (PDN Cloud ISO 27017), Spektrum Frekuensi 5G, DNS Filtering |
-| 3 | **SKB IT - Kementerian Keuangan** | **150 Soal** | **100 Soal** | 90 Menit | • Sistem Perbendaharaan dan Anggaran Negara (**SPAN**)<br>• Pembaruan Sistem Inti Administrasi Perpajakan (**CoreTax/PSIAP**)<br>• Aplikasi **SAKTI**, Modul Penerimaan Negara (**MPN G3**), PMK No. 155/2017, ACID Database |
-| 4 | **SKB IT - BSSN** | **150 Soal** | **100 Soal** | 90 Menit | • Manajemen Krisis Siber (**Perpres No. 47/2023**)<br>• Manajemen Insiden Keamanan Siber (**NIST SP 800-61 Rev 2**)<br>• Indeks KAMI BSSN, Bukti Forensik Digital (**RFC 3227**), Kriptografi Asimetris, Zero Trust |
-| 5 | **SKB IT - Badan Kepegawaian Negara (BKN)** | **150 Soal** | **100 Soal** | 90 Menit | • Prosedur Seleksi CAT BKN LAN Kiosk (**Perka BKN No. 8/2022**)<br>• Manajemen Talenta ASN 9-Box Grid (**PermenPAN-RB No. 3/2020**)<br>• Sistem Informasi ASN Terintegrasi (**SIASN**), NIP 18 Digit, MyASN OAuth 2.0 |
-| 6 | **SKB IT - Kemenkumham** | **150 Soal** | **100 Soal** | 90 Menit | • Paspor Elektronik & Autogate (**ICAO Doc 9303 Part 11 PA/CA**)<br>• Sistem Database Pemasyarakatan (**SDP**) & Biometrik Warga Binaan<br>• AHU Online, e-Paten DJKI, Sertifikasi Tanda Tangan Elektronik BSrE |
-| 7 | **SKB IT - Pemerintah Daerah (Pemda)** | **150 Soal** | **100 Soal** | 90 Menit | • Hak Akses Data Kependudukan (**Permendagri No. 104/2019**)<br>• Pedoman Pencatatan Nama Dokumen (**Permendagri No. 73/2022**)<br>• Sistem Informasi Pemerintahan Daerah (**SIPD Permendagri 70/2019**)<br>• SIAK Terpusat Web-based & IKD di Kecamatan, Smart City 6 Dimensi |
+| 1 | **SKD Nasional (Resmi CAT BKN)** | **160 Soal** | **110 Soal** | 100 Menit | **KepmenPAN-RB No. 321/2024**:<br>• TWK 50 Soal (Pancasila, UUD 1945 Amandemen, NKRI, Sejarah Perjuangan, Tipikor KPK, Bela Negara)<br>• TIU 50 Soal (Silogisme, Analitis, Deret Angka, Aritmatika Sosial, Kecepatan, Figural)<br>• TKP 60 Soal (Pelayanan Publik, Jejaring Kerja, Sosial Budaya, TIK, Profesionalisme, Anti Radikalisme - Skala 1–5) |
+| 2 | **SKB IT - Kemkomdigi** | **101 Soal** | **100 Soal** | 90 Menit | • **UU No. 27/2022 (PDP)** & **UU No. 1/2024 (ITE)**<br>• **SE Menkominfo No. 9/2023 (Etika AI)** & Permenkominfo 5/2020 (PSE Privat)<br>• Pusat Data Nasional (PDN Cloud ISO 27017), Spektrum Frekuensi 5G, DNS Filtering |
+| 3 | **SKB IT - Kementerian Keuangan** | **101 Soal** | **100 Soal** | 90 Menit | • Sistem Perbendaharaan dan Anggaran Negara (**SPAN**)<br>• Pembaruan Sistem Inti Administrasi Perpajakan (**CoreTax/PSIAP**)<br>• Aplikasi **SAKTI**, Modul Penerimaan Negara (**MPN G3**), PMK No. 155/2017, ACID Database |
+| 4 | **SKB IT - BSSN** | **101 Soal** | **100 Soal** | 90 Menit | • Manajemen Krisis Siber (**Perpres No. 47/2023**)<br>• Manajemen Insiden Keamanan Siber (**NIST SP 800-61 Rev 2**)<br>• Indeks KAMI BSSN, Bukti Forensik Digital (**RFC 3227**), Kriptografi Asimetris, Zero Trust |
+| 5 | **SKB IT - Badan Kepegawaian Negara (BKN)** | **101 Soal** | **100 Soal** | 90 Menit | • Prosedur Seleksi CAT BKN LAN Kiosk (**Perka BKN No. 8/2022**)<br>• Manajemen Talenta ASN 9-Box Grid (**PermenPAN-RB No. 3/2020**)<br>• Sistem Informasi ASN Terintegrasi (**SIASN**), NIP 18 Digit, MyASN OAuth 2.0 |
+| 6 | **SKB IT - Kemenkumham** | **101 Soal** | **100 Soal** | 90 Menit | • Paspor Elektronik & Autogate (**ICAO Doc 9303 Part 11 PA/CA**)<br>• Sistem Database Pemasyarakatan (**SDP**) & Biometrik Warga Binaan<br>• AHU Online, e-Paten DJKI, Sertifikasi Tanda Tangan Elektronik BSrE |
+| 7 | **SKB IT - Pemerintah Daerah (Pemda)** | **101 Soal** | **100 Soal** | 90 Menit | • Hak Akses Data Kependudukan (**Permendagri No. 104/2019**)<br>• Pedoman Pencatatan Nama Dokumen (**Permendagri No. 73/2022**)<br>• Sistem Informasi Pemerintahan Daerah (**SIPD Permendagri 70/2019**)<br>• SIAK Terpusat Web-based & IKD di Kecamatan, Smart City 6 Dimensi |
 
 ---
 
