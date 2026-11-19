@@ -1415,20 +1415,84 @@ textarea.form-control {
   color: #ffffff !important;
 }
 
+/* Button Navigations in Dark Mode */
 [data-theme="dark"] .btn-nav {
   background: #1e293b !important;
   color: #e2e8f0 !important;
-  border-color: #334155 !important;
+  border: 1px solid #475569 !important;
 }
 
 [data-theme="dark"] .btn-nav:hover:not(:disabled) {
   background: #334155 !important;
+  border-color: #64748b !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .btn-nav:disabled {
+  opacity: 0.35 !important;
+  cursor: not-allowed !important;
+  border-color: #334155 !important;
+  color: #64748b !important;
+}
+
+/* Primary Action Button (Simpan & Lanjutkan / Soal Berikutnya) in Dark Mode */
+[data-theme="dark"] .btn-save-next {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border: 1px solid #3b82f6 !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+}
+
+[data-theme="dark"] .btn-save-next:hover:not(:disabled) {
+  background: #1d4ed8 !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.5);
+}
+
+/* Tombol Mulai Ujian / Belajar in Dark Mode */
+[data-theme="dark"] .btn-start {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+}
+
+[data-theme="dark"] .btn-start:hover {
+  background: #1d4ed8 !important;
+}
+
+/* Tombol Ragu-Ragu in Dark Mode */
+[data-theme="dark"] .btn-doubt {
+  background: #2b2006 !important;
+  border: 1px solid #854d0e !important;
+  color: #fde047 !important;
+}
+
+[data-theme="dark"] .btn-doubt:hover {
+  background: #3f2f0a !important;
+  border-color: #a16207 !important;
+}
+
+[data-theme="dark"] .btn-doubt.active {
+  background: #d97706 !important;
+  border-color: #f59e0b !important;
+  color: #ffffff !important;
+}
+
+/* Tombol Selesai Ujian in Dark Mode */
+[data-theme="dark"] .btn-finish {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+  border: 1px solid #ef4444 !important;
+}
+
+[data-theme="dark"] .btn-finish:hover {
+  background: #b91c1c !important;
 }
 
 [data-theme="dark"] .btn-abort-exam {
   background: #1e293b !important;
   color: #94a3b8 !important;
-  border-color: #334155 !important;
+  border: 1px solid #334155 !important;
 }
 
 [data-theme="dark"] .btn-abort-exam:hover {
