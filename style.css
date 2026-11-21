@@ -868,6 +868,18 @@ body {
   background: var(--primary-dark);
 }
 
+/* Mobile Drawer Sheet & Floating Navigation Defaults (Hidden on Desktop) */
+.sheet-drag-handle,
+.btn-close-sidebar,
+.nav-sidebar-backdrop,
+.mobile-exam-bar {
+  display: none;
+}
+
+.nav-sidebar-header-row {
+  display: block;
+}
+
 /* Right: Navigation Sidebar */
 .nav-sidebar {
   background: var(--surface);
@@ -1284,16 +1296,19 @@ textarea.form-control {
 
 @media (max-width: 640px) {
   /* Container & Global */
+  body.in-exam {
+    padding-bottom: 74px !important;
+  }
+
   .container {
     padding: 10px 8px;
   }
   
   .welcome-card,
   .question-card,
-  .nav-sidebar,
   .result-card {
-    padding: 16px 12px;
-    border-radius: 10px;
+    padding: 16px 14px 20px 14px;
+    border-radius: 12px;
     margin: 6px auto;
   }
   
@@ -1305,35 +1320,45 @@ textarea.form-control {
     font-size: 0.85rem;
   }
 
-  /* Header Topbar on Mobile */
+  /* Header Topbar on Mobile - Clean 1-Line App Bar */
   .topbar {
-    padding: 8px 10px;
-    flex-wrap: wrap;
+    padding: 0 12px;
+    height: 52px;
+    flex-wrap: nowrap;
     gap: 8px;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .topbar-left {
     gap: 8px;
     flex: 1;
     min-width: 0;
+    overflow: hidden;
   }
   
   .badge-logo {
     padding: 4px 8px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     border-radius: 5px;
     flex-shrink: 0;
   }
   
+  .title-group {
+    min-width: 0;
+    overflow: hidden;
+  }
+  
   .title-group h1 {
-    font-size: 0.9rem;
+    font-size: 0.84rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 700;
   }
   
   .title-group p {
-    display: none; /* Sembunyikan subtitle panjang di layar HP agar hemat ruang */
+    display: none !important;
   }
   
   .topbar-right {
@@ -1342,38 +1367,419 @@ textarea.form-control {
   }
   
   .topbar-tools {
-    padding: 2px 6px;
+    padding: 0;
+    background: transparent;
     gap: 4px;
   }
   
+  /* Sembunyikan kontrol font & fullscreen di HP agar topbar muat 1 baris */
   .topbar-tools span,
+  #btn-font-dec,
   #btn-font-reset,
+  #btn-font-inc,
   #btn-fullscreen {
-    display: none; /* Sembunyikan tombol yang tidak esensial di HP */
-  }
-  
-  .btn-tool {
-    padding: 3px 6px;
-    font-size: 0.72rem;
+    display: none !important;
   }
   
   #btn-theme-toggle {
-    padding: 3px 8px;
+    padding: 4px 8px;
     font-size: 0.74rem;
+    border-radius: 6px;
   }
   
   .timer-box {
-    padding: 3px 8px;
+    padding: 4px 8px;
     gap: 4px;
     border-radius: 6px;
   }
   
   .timer-label {
-    display: none; /* Sembunyikan label kata "Sisa Waktu:" */
+    display: none;
   }
   
   .timer-value {
+    font-size: 0.95rem;
+  }
+
+  /* Question Meta Bar - Compact Single-Row Badges */
+  .question-meta-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .question-number-badge {
+    font-size: 0.76rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+  
+  .question-tags {
+    display: inline-flex;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+  
+  .tag {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .tag-instansi {
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #q-subcategory-tag {
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Question Text & Options */
+  .question-text {
+    font-size: 0.96rem;
+    line-height: 1.62;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  
+  .options-list {
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  
+  .option-item {
+    padding: 11px 12px;
+    gap: 10px;
+    border-radius: 8px;
+    min-height: 48px;
+    flex-wrap: wrap;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .option-item:active {
+    transform: scale(0.985);
+  }
+  
+  .option-letter {
+    width: 28px;
+    height: 28px;
+    font-size: 0.82rem;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  
+  .option-text {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+  
+  .option-study-badge {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 6px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+
+  /* Box Pembahasan di HP */
+  .study-explanation-card {
+    padding: 12px;
+    margin-top: 14px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+  }
+  
+  .study-explanation-title {
+    font-size: 0.85rem;
+  }
+  
+  .study-explanation-content {
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  /* Tombol Aksi Ujian di Bawah Kartu */
+  .exam-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 14px;
+  }
+  
+  #btn-next {
+    width: 100% !important;
+    order: 1;
+    padding: 13px !important;
+    font-size: 0.96rem !important;
+    border-radius: 8px;
+  }
+  
+  #btn-prev {
+    flex: 1;
+    min-width: 120px;
+    order: 2;
+    padding: 11px !important;
+    font-size: 0.85rem !important;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  #btn-doubt {
+    flex: 1;
+    min-width: 120px;
+    order: 3;
+    padding: 11px !important;
+    font-size: 0.85rem !important;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  /* ===================================================
+     MOBILE STICKY BOTTOM BAR & BOTTOM SHEET DRAWER
+     =================================================== */
+  .mobile-exam-bar {
+    display: flex !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 58px;
+    background: #ffffff;
+    border-top: 1px solid #cbd5e1;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
+    z-index: 950;
+    padding: 8px 10px;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  [data-theme="dark"] .mobile-exam-bar {
+    background: #0f172a;
+    border-color: #1e293b;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.55);
+  }
+
+  .mob-bar-btn {
+    height: 42px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #334155;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mob-bar-btn:active {
+    transform: scale(0.97);
+  }
+
+  #mobile-btn-prev {
+    flex: 0 0 76px;
+    background: #f1f5f9;
+    color: #475569;
+  }
+
+  #mobile-btn-prev:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  [data-theme="dark"] #mobile-btn-prev {
+    background: #1e293b;
+    border-color: #334155;
+    color: #94a3b8;
+  }
+
+  #mobile-btn-sheet {
+    flex: 1;
+    background: #eff6ff;
+    border-color: #93c5fa;
+    color: #1d4ed8;
+    gap: 6px;
+    font-size: 0.86rem;
+    font-weight: 800;
+  }
+
+  [data-theme="dark"] #mobile-btn-sheet {
+    background: #1e3a5f;
+    border-color: #2563eb;
+    color: #60a5fa;
+  }
+
+  .mob-sheet-icon {
     font-size: 1rem;
+  }
+
+  .mob-sheet-arrow {
+    font-size: 0.75rem;
+    margin-left: 2px;
+    opacity: 0.7;
+  }
+
+  #mobile-btn-next {
+    flex: 0 0 94px;
+    background: #2563eb !important;
+    border-color: #1d4ed8 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+  }
+
+  #mobile-btn-next:active {
+    background: #1d4ed8 !important;
+  }
+
+  /* Backdrop for Bottom Sheet */
+  .nav-sidebar-backdrop {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+  }
+
+  .nav-sidebar-backdrop.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Bottom Sheet Drawer on Mobile */
+  .nav-sidebar {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1050 !important;
+    background: var(--surface) !important;
+    border-radius: 20px 20px 0 0 !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.45) !important;
+    max-height: 82vh !important;
+    overflow-y: auto !important;
+    transform: translateY(105%) !important;
+    transition: transform 0.28s cubic-bezier(0.32, 0.72, 0, 1) !important;
+    padding: 12px 16px 28px 16px !important;
+    margin: 0 !important;
+  }
+
+  .nav-sidebar.open {
+    transform: translateY(0) !important;
+  }
+
+  .sheet-drag-handle {
+    display: block !important;
+    width: 44px;
+    height: 5px;
+    border-radius: 4px;
+    background: #cbd5e1;
+    margin: 0 auto 10px auto;
+  }
+
+  [data-theme="dark"] .sheet-drag-handle {
+    background: #475569;
+  }
+
+  .nav-sidebar-header-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-bottom: 12px !important;
+    padding-bottom: 8px !important;
+    border-bottom: 1px solid var(--border) !important;
+  }
+
+  .btn-close-sidebar {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #475569;
+    cursor: pointer;
+  }
+
+  [data-theme="dark"] .btn-close-sidebar {
+    background: #1e293b;
+    border-color: #334155;
+    color: #94a3b8;
+  }
+
+  .nav-sidebar-title {
+    font-size: 0.95rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  #quick-jump-container {
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+  
+  #quick-jump-container .btn-nav {
+    padding: 6px 4px !important;
+    font-size: 0.72rem !important;
+  }
+  
+  .nav-legend {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    font-size: 0.74rem;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  
+  .question-grid {
+    gap: 6px;
+    max-height: 290px;
+    padding: 4px 4px 14px 4px;
+  }
+  
+  .grid-btn {
+    font-size: 0.8rem;
+    border-radius: 6px;
+  }
+  
+  .btn-finish {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+  
+  .btn-abort-exam {
+    padding: 10px;
+    font-size: 0.82rem;
   }
 
   /* Tabs Nav */
@@ -1441,159 +1847,6 @@ textarea.form-control {
     padding: 13px;
     font-size: 1rem;
     border-radius: 8px;
-  }
-
-  /* Question & Options */
-  .question-meta-bar {
-    padding-bottom: 10px;
-    margin-bottom: 14px;
-    gap: 6px;
-  }
-  
-  .question-number-badge {
-    font-size: 0.8rem;
-    padding: 3px 10px;
-  }
-  
-  .tag {
-    font-size: 0.7rem;
-    padding: 3px 7px;
-  }
-  
-  .question-text {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 16px;
-  }
-  
-  .options-list {
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .option-item {
-    padding: 12px 10px;
-    gap: 10px;
-    flex-wrap: wrap; /* Supaya teks opsi dan badge jawaban tidak saling tindih */
-  }
-  
-  .option-letter {
-    width: 28px;
-    height: 28px;
-    font-size: 0.85rem;
-    flex-shrink: 0;
-  }
-  
-  .option-text {
-    font-size: 0.88rem;
-    line-height: 1.45;
-  }
-  
-  .option-study-badge {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 6px;
-    text-align: center;
-    font-size: 0.75rem;
-    padding: 4px 8px;
-  }
-
-  /* Box Pembahasan di HP */
-  .study-explanation-card {
-    padding: 12px;
-    margin-top: 14px;
-    margin-bottom: 18px;
-    border-radius: 8px;
-  }
-  
-  .study-explanation-title {
-    font-size: 0.85rem;
-  }
-  
-  .study-explanation-content {
-    font-size: 0.84rem;
-    line-height: 1.55;
-  }
-
-  /* Tombol Aksi Ujian Ergonomis di HP */
-  .exam-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding-top: 14px;
-  }
-  
-  #btn-next {
-    width: 100% !important;
-    order: 1;
-    padding: 13px !important;
-    font-size: 0.96rem !important;
-    border-radius: 8px;
-  }
-  
-  #btn-prev {
-    flex: 1;
-    min-width: 120px;
-    order: 2;
-    padding: 11px !important;
-    font-size: 0.85rem !important;
-    text-align: center;
-    border-radius: 8px;
-  }
-  
-  #btn-doubt {
-    flex: 1;
-    min-width: 120px;
-    order: 3;
-    padding: 11px !important;
-    font-size: 0.85rem !important;
-    text-align: center;
-    border-radius: 8px;
-  }
-
-  /* Grid Nomor Soal di HP */
-  .nav-sidebar {
-    margin-top: 12px;
-  }
-  
-  #quick-jump-container {
-    gap: 4px;
-    margin-bottom: 10px;
-  }
-  
-  #quick-jump-container .btn-nav {
-    padding: 6px 4px !important;
-    font-size: 0.72rem !important;
-  }
-  
-  .nav-legend {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px 12px;
-    font-size: 0.74rem;
-    justify-content: center;
-    margin-bottom: 12px;
-  }
-  
-  .question-grid {
-    gap: 6px;
-    max-height: 290px;
-    padding: 4px 4px 14px 4px;
-  }
-  
-  .grid-btn {
-    font-size: 0.8rem;
-    border-radius: 6px;
-  }
-  
-  .btn-finish {
-    padding: 12px;
-    font-size: 0.95rem;
-  }
-  
-  .btn-abort-exam {
-    padding: 10px;
-    font-size: 0.82rem;
   }
 
   /* Ringkasan Skor & Modal */

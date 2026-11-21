@@ -340,9 +340,16 @@
         </div>
       </div>
 
-      <!-- Right: Navigation Sidebar -->
-      <aside class="nav-sidebar">
-        <div class="nav-sidebar-title">Daftar Nomor Soal</div>
+      <!-- Right: Navigation Sidebar & Mobile Bottom Sheet -->
+      <div id="nav-sidebar-backdrop" class="nav-sidebar-backdrop"></div>
+      <aside class="nav-sidebar" id="nav-sidebar">
+        <div class="nav-sidebar-header">
+          <div class="sheet-drag-handle"></div>
+          <div class="nav-sidebar-header-row">
+            <div class="nav-sidebar-title">Daftar Nomor Soal</div>
+            <button type="button" id="btn-close-sidebar" class="btn-close-sidebar" title="Tutup">✕ Tutup</button>
+          </div>
+        </div>
 
         <!-- Quick Jump Categories for SKD -->
         <div id="quick-jump-container" style="display:flex; gap:6px; margin-bottom:12px;">
@@ -378,6 +385,17 @@
         <button id="btn-abort-session" class="btn-abort-exam" style="width:100%; margin-top:8px; padding:10px; background:#fff; color:#64748b; border:1px solid #cbd5e1; border-radius:6px; font-weight:700; font-size:0.88rem; cursor:pointer; transition:all 0.15s;">⏹ Hentikan Sesi (Keluar)</button>
       </aside>
     </section>
+
+    <!-- Mobile Sticky Navigation Bar (Active only on mobile during exam) -->
+    <div id="mobile-exam-bar" class="mobile-exam-bar" style="display: none;">
+      <button type="button" id="mobile-btn-prev" class="mob-bar-btn" title="Soal Sebelumnya">« Prev</button>
+      <button type="button" id="mobile-btn-sheet" class="mob-bar-btn mob-bar-sheet" title="Buka Daftar Nomor Soal">
+        <span class="mob-sheet-icon">🔢</span>
+        <span id="mobile-sheet-progress">1 / 110</span>
+        <span class="mob-sheet-arrow">▴</span>
+      </button>
+      <button type="button" id="mobile-btn-next" class="mob-bar-btn mob-bar-next" title="Soal Berikutnya">Next »</button>
+    </div>
 
     <!-- Screen 3: Results & Explanations -->
     <section id="screen-result" style="display: none;">

@@ -110,6 +110,16 @@
     jumpTkp: document.getElementById('jump-tkp'),
     questionGrid: document.getElementById('question-grid'),
 
+    // Mobile Bottom Bar & Bottom Sheet Drawer
+    mobileExamBar: document.getElementById('mobile-exam-bar'),
+    mobileBtnPrev: document.getElementById('mobile-btn-prev'),
+    mobileBtnNext: document.getElementById('mobile-btn-next'),
+    mobileBtnSheet: document.getElementById('mobile-btn-sheet'),
+    mobileSheetProgress: document.getElementById('mobile-sheet-progress'),
+    navSidebar: document.getElementById('nav-sidebar'),
+    navSidebarBackdrop: document.getElementById('nav-sidebar-backdrop'),
+    btnCloseSidebar: document.getElementById('btn-close-sidebar'),
+
     // Modal Selesai
     modalFinish: document.getElementById('modal-finish'),
     btnModalCancel: document.getElementById('btn-modal-cancel'),
@@ -431,6 +441,8 @@
     el.screenResult.style.display = 'none';
     el.screenExam.style.display = 'grid';
     el.timerContainer.style.display = 'flex';
+    document.body.classList.add('in-exam');
+    if (el.mobileExamBar) el.mobileExamBar.style.display = 'flex';
 
     if (state.mode === 'belajar') {
       el.examTitle.textContent = `[Mode Belajar] ${state.packetData ? state.packetData.title : 'Belajar Mandiri'}`;
@@ -526,6 +538,8 @@
     el.screenResult.style.display = 'none';
     el.screenExam.style.display = 'grid';
     el.timerContainer.style.display = 'flex';
+    document.body.classList.add('in-exam');
+    if (el.mobileExamBar) el.mobileExamBar.style.display = 'flex';
 
     if (state.mode === 'belajar') {
       el.examTitle.textContent = `[Mode Belajar] ${state.packetData.title}`;
@@ -623,6 +637,33 @@
     if (el.jumpTwk) el.jumpTwk.addEventListener('click', () => jumpToCategoryIndex('TWK'));
     if (el.jumpTiu) el.jumpTiu.addEventListener('click', () => jumpToCategoryIndex('TIU'));
     if (el.jumpTkp) el.jumpTkp.addEventListener('click', () => jumpToCategoryIndex('TKP'));
+
+    // Mobile Bottom Bar Actions & Drawer Sheet
+    if (el.mobileBtnPrev) el.mobileBtnPrev.addEventListener('click', () => navigateQuestion(-1));
+    if (el.mobileBtnNext) el.mobileBtnNext.addEventListener('click', () => navigateQuestion(1));
+    if (el.mobileBtnSheet) el.mobileBtnSheet.addEventListener('click', toggleMobileSheet);
+    if (el.btnCloseSidebar) el.btnCloseSidebar.addEventListener('click', closeMobileSheet);
+    if (el.navSidebarBackdrop) el.navSidebarBackdrop.addEventListener('click', closeMobileSheet);
+  }
+
+  function openMobileSheet() {
+    if (el.navSidebar) el.navSidebar.classList.add('open');
+    if (el.navSidebarBackdrop) el.navSidebarBackdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMobileSheet() {
+    if (el.navSidebar) el.navSidebar.classList.remove('open');
+    if (el.navSidebarBackdrop) el.navSidebarBackdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function toggleMobileSheet() {
+    if (el.navSidebar && el.navSidebar.classList.contains('open')) {
+      closeMobileSheet();
+    } else {
+      openMobileSheet();
+    }
   }
 
   function showModalAbort() {
@@ -636,6 +677,10 @@
   function abortCurrentSession() {
     if (state.timerId) clearInterval(state.timerId);
     clearCurrentSession();
+    document.body.classList.remove('in-exam');
+    if (el.mobileExamBar) el.mobileExamBar.style.display = 'none';
+    closeMobileSheet();
+
     el.screenExam.style.display = 'none';
     el.timerContainer.style.display = 'none';
     el.screenWelcome.style.display = 'block';
@@ -645,7 +690,10 @@
 
   function jumpToCategoryIndex(category) {
     const idx = state.activeQuestions.findIndex((q) => q.category === category);
-    if (idx !== -1) loadQuestion(idx);
+    if (idx !== -1) {
+      loadQuestion(idx);
+      closeMobileSheet();
+    }
   }
 
   function renderGrid() {
@@ -660,6 +708,7 @@
 
       btn.addEventListener('click', () => {
         loadQuestion(idx);
+        closeMobileSheet();
       });
 
       el.questionGrid.appendChild(btn);
@@ -836,6 +885,18 @@
       ? (isStudyMode ? 'Selesai Belajar' : 'Simpan') 
       : (isStudyMode ? 'Soal Berikutnya »' : 'Simpan & Lanjutkan »');
 
+    if (el.mobileSheetProgress) {
+      el.mobileSheetProgress.textContent = `${index + 1} / ${questions.length}`;
+    }
+    if (el.mobileBtnPrev) {
+      el.mobileBtnPrev.disabled = index === 0;
+    }
+    if (el.mobileBtnNext) {
+      el.mobileBtnNext.textContent = index === questions.length - 1 
+        ? (isStudyMode ? 'Selesai' : 'Simpan') 
+        : 'Next »';
+    }
+
     if (state.doubts.has(q.id)) {
       el.btnDoubt.classList.add('active');
       el.btnDoubt.textContent = '★ Tandai Yakin';
@@ -942,6 +1003,9 @@
   function finishExam() {
     if (state.timerId) clearInterval(state.timerId);
     clearCurrentSession();
+    document.body.classList.remove('in-exam');
+    if (el.mobileExamBar) el.mobileExamBar.style.display = 'none';
+    closeMobileSheet();
 
     el.timerContainer.style.display = 'none';
     el.screenExam.style.display = 'none';
