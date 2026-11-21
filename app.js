@@ -8,9 +8,9 @@
   const STORAGE_KEY_SESSION = 'cpns_cat_active_session';
   const STORAGE_KEY_HISTORY = 'cpns_cat_history';
   const STORAGE_KEY_CUSTOM_QUESTIONS = 'cpns_cat_custom_questions';
-  const STORAGE_KEY_ACCESS_PIN = 'cpns_cat_security_pin';
+  const STORAGE_KEY_PIN_HASH = 'cpns_cat_pin_hash';
   const STORAGE_KEY_GATE_UNLOCKED = 'cpns_cat_gate_unlocked';
-  const DEFAULT_PIN = 'CPNS2026';
+  const DEFAULT_PIN_HASH = '514196786f4e4';
 
   // State Aplikasi
   const state = {
@@ -168,7 +168,6 @@
     inputGatePin: document.getElementById('input-gate-pin'),
     btnToggleGatePwd: document.getElementById('btn-toggle-gate-pwd'),
     gatePinError: document.getElementById('gate-pin-error'),
-    hintDefaultPin: document.getElementById('hint-default-pin'),
     btnLockSession: document.getElementById('btn-lock-session'),
     devtoolsLockOverlay: document.getElementById('devtools-lock-overlay'),
     formDevtoolsUnlock: document.getElementById('form-devtools-unlock'),
@@ -314,8 +313,26 @@
   let isDevToolsLocked = false;
   let adminDevToolsBypass = false;
 
-  function getActiveSecurityPin() {
-    return localStorage.getItem(STORAGE_KEY_ACCESS_PIN) || DEFAULT_PIN;
+  // Hashing Salted untuk Verifikasi PIN (PIN tidak pernah disimpan dalam plain-text)
+  function hashPinSync(pin) {
+    const salt = 'CPNS_CAT_BKN_SEC_2026_';
+    let h1 = 0xdeadbeef, h2 = 0x41c6ce57;
+    const str = salt + String(pin || '').trim();
+    for (let i = 0; i < str.length; i++) {
+      const ch = str.charCodeAt(i);
+      h1 = Math.imul(h1 ^ ch, 2654435761);
+      h2 = Math.imul(h2 ^ ch, 1597334677);
+    }
+    h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+    h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+    return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(16);
+  }
+
+  function isPinValid(inputPin) {
+    if (!inputPin) return false;
+    const inputHash = hashPinSync(inputPin);
+    const storedHash = localStorage.getItem(STORAGE_KEY_PIN_HASH) || DEFAULT_PIN_HASH;
+    return inputHash === storedHash;
   }
 
   function showSecurityToast(msg, type = 'warning') {
@@ -352,9 +369,6 @@
     const isUnlocked = sessionStorage.getItem(STORAGE_KEY_GATE_UNLOCKED) === 'true';
     if (!isUnlocked && el.gateLockOverlay) {
       el.gateLockOverlay.style.display = 'flex';
-      if (el.hintDefaultPin) {
-        el.hintDefaultPin.textContent = getActiveSecurityPin();
-      }
       if (el.inputGatePin) {
         setTimeout(() => el.inputGatePin.focus(), 200);
       }
@@ -367,9 +381,8 @@
       el.formGatePin.addEventListener('submit', (e) => {
         e.preventDefault();
         const inputPin = el.inputGatePin ? el.inputGatePin.value.trim() : '';
-        const correctPin = getActiveSecurityPin();
 
-        if (inputPin === correctPin) {
+        if (isPinValid(inputPin)) {
           sessionStorage.setItem(STORAGE_KEY_GATE_UNLOCKED, 'true');
           el.gateLockOverlay.style.display = 'none';
           if (el.gatePinError) el.gatePinError.style.display = 'none';
@@ -397,7 +410,6 @@
         sessionStorage.removeItem(STORAGE_KEY_GATE_UNLOCKED);
         if (el.gateLockOverlay) {
           el.gateLockOverlay.style.display = 'flex';
-          if (el.hintDefaultPin) el.hintDefaultPin.textContent = getActiveSecurityPin();
           if (el.inputGatePin) {
             el.inputGatePin.value = '';
             el.inputGatePin.focus();
@@ -474,7 +486,7 @@
       el.formDevtoolsUnlock.addEventListener('submit', (e) => {
         e.preventDefault();
         const pin = el.inputDevtoolsPin ? el.inputDevtoolsPin.value.trim() : '';
-        if (pin === getActiveSecurityPin()) {
+        if (isPinValid(pin)) {
           adminDevToolsBypass = true;
           isDevToolsLocked = false;
           if (el.devtoolsLockOverlay) el.devtoolsLockOverlay.style.display = 'none';
@@ -487,7 +499,7 @@
 
     // 3. Manajemen Ganti PIN di Tab 3
     if (el.inputCustomPin) {
-      el.inputCustomPin.value = getActiveSecurityPin();
+      el.inputCustomPin.value = '';
     }
     if (el.btnSaveCustomPin && el.inputCustomPin) {
       el.btnSaveCustomPin.addEventListener('click', () => {
@@ -502,13 +514,13 @@
           return;
         }
 
-        localStorage.setItem(STORAGE_KEY_ACCESS_PIN, newPin);
-        if (el.hintDefaultPin) el.hintDefaultPin.textContent = newPin;
+        localStorage.setItem(STORAGE_KEY_PIN_HASH, hashPinSync(newPin));
+        el.inputCustomPin.value = '';
         if (el.pinChangeStatus) {
           el.pinChangeStatus.style.display = 'block';
           el.pinChangeStatus.style.background = 'rgba(16, 185, 129, 0.15)';
           el.pinChangeStatus.style.color = '#10b981';
-          el.pinChangeStatus.textContent = `✓ PIN Akses Portal berhasil diubah menjadi: ${newPin}`;
+          el.pinChangeStatus.textContent = '✓ PIN Akses Portal berhasil diperbarui dan dienkripsi!';
         }
         showSecurityToast('PIN Akses Portal berhasil diperbarui!', 'success');
       });
