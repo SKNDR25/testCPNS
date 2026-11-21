@@ -667,6 +667,7 @@
   }
 
   function showModalAbort() {
+    closeMobileSheet();
     if (el.modalAbort) el.modalAbort.style.display = 'flex';
   }
 
@@ -972,6 +973,7 @@
   // MODAL SELESAI UJIAN
   // ==========================================
   function showModalFinish() {
+    closeMobileSheet();
     const questions = state.activeQuestions;
     let answeredCount = 0;
     let doubtCount = 0;

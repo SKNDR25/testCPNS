@@ -873,7 +873,7 @@ body {
 .btn-close-sidebar,
 .nav-sidebar-backdrop,
 .mobile-exam-bar {
-  display: none;
+  display: none !important;
 }
 
 .nav-sidebar-header-row {
@@ -1037,12 +1037,13 @@ body {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.65);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  backdrop-filter: blur(2px);
+  z-index: 2000;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .modal-content {
@@ -1076,6 +1077,23 @@ body {
   padding: 12px 16px;
   margin-top: 12px;
   font-size: 0.85rem;
+}
+
+.modal-abort-warning {
+  background: #fef2f2;
+  border: 1px solid #fee2e2;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px;
+  color: #991b1b;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .modal-abort-warning {
+  background: #451a1a !important;
+  border-color: #7f1d1d !important;
+  color: #fca5a5 !important;
 }
 
 .modal-recap-row {
@@ -1550,7 +1568,7 @@ textarea.form-control {
   /* ===================================================
      MOBILE STICKY BOTTOM BAR & BOTTOM SHEET DRAWER
      =================================================== */
-  .mobile-exam-bar {
+  body.in-exam .mobile-exam-bar {
     display: flex !important;
     position: fixed;
     bottom: 0;
@@ -1567,7 +1585,7 @@ textarea.form-control {
     justify-content: space-between;
   }
 
-  [data-theme="dark"] .mobile-exam-bar {
+  [data-theme="dark"] body.in-exam .mobile-exam-bar {
     background: #0f172a;
     border-color: #1e293b;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.55);
