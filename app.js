@@ -4,10 +4,13 @@
  */
 
 (function () {
-  // Key Penyimpanan LocalStorage
+  // Key Penyimpanan LocalStorage & SessionStorage
   const STORAGE_KEY_SESSION = 'cpns_cat_active_session';
   const STORAGE_KEY_HISTORY = 'cpns_cat_history';
   const STORAGE_KEY_CUSTOM_QUESTIONS = 'cpns_cat_custom_questions';
+  const STORAGE_KEY_ACCESS_PIN = 'cpns_cat_security_pin';
+  const STORAGE_KEY_GATE_UNLOCKED = 'cpns_cat_gate_unlocked';
+  const DEFAULT_PIN = 'CPNS2026';
 
   // State Aplikasi
   const state = {
@@ -157,7 +160,24 @@
     inputExplanation: document.getElementById('input-explanation'),
 
     // Result View
-    resultContainer: document.getElementById('result-container')
+    resultContainer: document.getElementById('result-container'),
+
+    // Security Gate & DevTools Protection Elements
+    gateLockOverlay: document.getElementById('gate-lock-overlay'),
+    formGatePin: document.getElementById('form-gate-pin'),
+    inputGatePin: document.getElementById('input-gate-pin'),
+    btnToggleGatePwd: document.getElementById('btn-toggle-gate-pwd'),
+    gatePinError: document.getElementById('gate-pin-error'),
+    hintDefaultPin: document.getElementById('hint-default-pin'),
+    btnLockSession: document.getElementById('btn-lock-session'),
+    devtoolsLockOverlay: document.getElementById('devtools-lock-overlay'),
+    formDevtoolsUnlock: document.getElementById('form-devtools-unlock'),
+    inputDevtoolsPin: document.getElementById('input-devtools-pin'),
+    devtoolsPinError: document.getElementById('devtools-pin-error'),
+    securityToastContainer: document.getElementById('security-toast-container'),
+    inputCustomPin: document.getElementById('input-custom-pin'),
+    btnSaveCustomPin: document.getElementById('btn-save-custom-pin'),
+    pinChangeStatus: document.getElementById('pin-change-status')
   };
 
   // ==========================================
@@ -165,6 +185,7 @@
   // ==========================================
   function init() {
     loadCustomQuestionsIntoBank();
+    protectBankSoal(window.BANK_SOAL);
     setupThemeToggle();
     setupAccessibilityControls();
     setupTabNavigation();
@@ -172,10 +193,326 @@
     setupExamActionHandlers();
     setupAddQuestionModal();
     setupImportExport();
+    setupSecuritySystem();
 
     renderHistoryDashboard();
     renderBankSummary();
     checkSavedSession();
+  }
+
+  // ==========================================
+  // ENKRIPSI & PROTEKSI BANK SOAL RUNTIME
+  // ==========================================
+  const SEC_SALT = 0x5a;
+
+  function obfuscateStr(str) {
+    if (!str && str !== 0) return '';
+    try {
+      const bytes = new TextEncoder().encode(String(str));
+      let binary = '';
+      for (let i = 0; i < bytes.length; i++) {
+        binary += String.fromCharCode(bytes[i] ^ (SEC_SALT + (i % 7)));
+      }
+      return btoa(binary);
+    } catch (e) {
+      return btoa(unescape(encodeURIComponent(String(str))));
+    }
+  }
+
+  function deobfuscateStr(encoded) {
+    if (!encoded) return '';
+    try {
+      const binary = atob(encoded);
+      const bytes = new Uint8Array(binary.length);
+      for (let i = 0; i < binary.length; i++) {
+        bytes[i] = binary.charCodeAt(i) ^ (SEC_SALT + (i % 7));
+      }
+      return new TextDecoder().decode(bytes);
+    } catch (e) {
+      try {
+        return decodeURIComponent(escape(atob(encoded)));
+      } catch (err) {
+        return encoded;
+      }
+    }
+  }
+
+  function getQuestionAnswer(q) {
+    if (!q) return '';
+    if (q._secAns) return deobfuscateStr(q._secAns);
+    return q.answer || '';
+  }
+
+  function setQuestionAnswer(q, newAns) {
+    if (!q) return;
+    if (q._secAns || !q.answer) {
+      q._secAns = obfuscateStr(newAns);
+      delete q.answer;
+    } else {
+      q.answer = newAns;
+    }
+  }
+
+  function getQuestionExplanation(q) {
+    if (!q) return '';
+    if (q._secExp) return deobfuscateStr(q._secExp);
+    return q.explanation || '';
+  }
+
+  function getQuestionPoints(q) {
+    if (!q) return null;
+    if (q._secPts) {
+      try {
+        return JSON.parse(deobfuscateStr(q._secPts));
+      } catch (e) {
+        return null;
+      }
+    }
+    return q.points || null;
+  }
+
+  function setQuestionPoints(q, newPts) {
+    if (!q) return;
+    if (q._secPts || !q.points) {
+      q._secPts = obfuscateStr(JSON.stringify(newPts));
+      delete q.points;
+    } else {
+      q.points = newPts;
+    }
+  }
+
+  function protectBankSoal(bankSoal) {
+    if (!bankSoal) return;
+    try {
+      Object.keys(bankSoal).forEach((pktKey) => {
+        const pkt = bankSoal[pktKey];
+        if (pkt && Array.isArray(pkt.questions)) {
+          pkt.questions.forEach((q) => {
+            if (q.answer && !q._secAns) {
+              q._secAns = obfuscateStr(q.answer);
+              delete q.answer;
+            }
+            if (q.explanation && !q._secExp) {
+              q._secExp = obfuscateStr(q.explanation);
+              delete q.explanation;
+            }
+            if (q.points && !q._secPts) {
+              q._secPts = obfuscateStr(JSON.stringify(q.points));
+              delete q.points;
+            }
+          });
+        }
+      });
+    } catch (err) {
+      console.warn('Bank soal security note:', err);
+    }
+  }
+
+  // ==========================================
+  // SISTEM KEAMANAN: PIN GATE, ANTI-F12 & DEVTOOLS TRAP
+  // ==========================================
+  let isDevToolsLocked = false;
+  let adminDevToolsBypass = false;
+
+  function getActiveSecurityPin() {
+    return localStorage.getItem(STORAGE_KEY_ACCESS_PIN) || DEFAULT_PIN;
+  }
+
+  function showSecurityToast(msg, type = 'warning') {
+    if (!el.securityToastContainer) return;
+    const toast = document.createElement('div');
+    toast.className = `security-toast toast-${type}`;
+    let icon = '🔒';
+    if (type === 'danger') icon = '🚨';
+    if (type === 'success') icon = '✓';
+    toast.innerHTML = `<span style="font-size:1.1rem;">${icon}</span> <span>${msg}</span>`;
+    el.securityToastContainer.appendChild(toast);
+    setTimeout(() => {
+      if (toast.parentNode) toast.remove();
+    }, 4000);
+  }
+
+  function triggerDevToolsLock(reason = '') {
+    if (isDevToolsLocked || adminDevToolsBypass) return;
+    isDevToolsLocked = true;
+    if (el.devtoolsLockOverlay) {
+      el.devtoolsLockOverlay.style.display = 'flex';
+      if (el.inputDevtoolsPin) {
+        el.inputDevtoolsPin.value = '';
+        el.inputDevtoolsPin.focus();
+      }
+      if (el.devtoolsPinError) {
+        el.devtoolsPinError.style.display = 'none';
+      }
+    }
+  }
+
+  function setupSecuritySystem() {
+    // 1. Inisialisasi Gate PIN Akses Portal
+    const isUnlocked = sessionStorage.getItem(STORAGE_KEY_GATE_UNLOCKED) === 'true';
+    if (!isUnlocked && el.gateLockOverlay) {
+      el.gateLockOverlay.style.display = 'flex';
+      if (el.hintDefaultPin) {
+        el.hintDefaultPin.textContent = getActiveSecurityPin();
+      }
+      if (el.inputGatePin) {
+        setTimeout(() => el.inputGatePin.focus(), 200);
+      }
+    } else if (el.gateLockOverlay) {
+      el.gateLockOverlay.style.display = 'none';
+    }
+
+    // Submit PIN Masuk
+    if (el.formGatePin) {
+      el.formGatePin.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const inputPin = el.inputGatePin ? el.inputGatePin.value.trim() : '';
+        const correctPin = getActiveSecurityPin();
+
+        if (inputPin === correctPin) {
+          sessionStorage.setItem(STORAGE_KEY_GATE_UNLOCKED, 'true');
+          el.gateLockOverlay.style.display = 'none';
+          if (el.gatePinError) el.gatePinError.style.display = 'none';
+          if (el.inputGatePin) el.inputGatePin.value = '';
+          showSecurityToast('Akses Berhasil Dibuka! Selamat Berlatih.', 'success');
+        } else {
+          if (el.gatePinError) el.gatePinError.style.display = 'block';
+          if (el.inputGatePin) el.inputGatePin.select();
+        }
+      });
+    }
+
+    // Toggle Lihat/Sembunyikan PIN di Gate
+    if (el.btnToggleGatePwd && el.inputGatePin) {
+      el.btnToggleGatePwd.addEventListener('click', () => {
+        const isPwd = el.inputGatePin.type === 'password';
+        el.inputGatePin.type = isPwd ? 'text' : 'password';
+        el.btnToggleGatePwd.textContent = isPwd ? '🙈' : '👁️';
+      });
+    }
+
+    // Tombol Kunci Sesi Cepat di Topbar
+    if (el.btnLockSession) {
+      el.btnLockSession.addEventListener('click', () => {
+        sessionStorage.removeItem(STORAGE_KEY_GATE_UNLOCKED);
+        if (el.gateLockOverlay) {
+          el.gateLockOverlay.style.display = 'flex';
+          if (el.hintDefaultPin) el.hintDefaultPin.textContent = getActiveSecurityPin();
+          if (el.inputGatePin) {
+            el.inputGatePin.value = '';
+            el.inputGatePin.focus();
+          }
+          if (el.gatePinError) el.gatePinError.style.display = 'none';
+        }
+        showSecurityToast('Sesi simulasi berhasil dikunci.', 'warning');
+      });
+    }
+
+    // 2. Proteksi DevTools / F12 Trap
+    window.addEventListener('keydown', (e) => {
+      // F12
+      if (e.key === 'F12' || e.keyCode === 123) {
+        e.preventDefault();
+        e.stopPropagation();
+        showSecurityToast('Tombol F12 (DevTools) dinonaktifkan.', 'danger');
+        triggerDevToolsLock('Shortcut F12 ditekan');
+        return false;
+      }
+      // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
+      if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) {
+        e.preventDefault();
+        e.stopPropagation();
+        showSecurityToast('Akses Inspect Element dinonaktifkan.', 'danger');
+        triggerDevToolsLock('Shortcut Inspect Element ditekan');
+        return false;
+      }
+      // Ctrl+U (View Source)
+      if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
+        e.preventDefault();
+        e.stopPropagation();
+        showSecurityToast('Akses Page Source dinonaktifkan.', 'danger');
+        return false;
+      }
+      // Ctrl+S (Save Page)
+      if (e.ctrlKey && (e.key === 'S' || e.key === 's')) {
+        e.preventDefault();
+        e.stopPropagation();
+        showSecurityToast('Penyimpanan halaman dinonaktifkan.', 'warning');
+        return false;
+      }
+    }, true);
+
+    // Context Menu (Klik Kanan)
+    document.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+      showSecurityToast('Menu klik kanan dinonaktifkan demi integritas CAT BKN.', 'warning');
+      return false;
+    });
+
+    // Anti-Copy pada teks soal
+    document.addEventListener('copy', (e) => {
+      if (document.body.classList.contains('in-exam')) {
+        e.preventDefault();
+        showSecurityToast('Teks soal dilindungi dari penyalinan (Anti-Copy).', 'warning');
+      }
+    });
+
+    // Deteksi Pembukaan Jendela DevTools (Docked Window Delta)
+    function checkDevToolsDocked() {
+      if (isDevToolsLocked || adminDevToolsBypass) return;
+      const widthDelta = window.outerWidth - window.innerWidth;
+      const heightDelta = window.outerHeight - window.innerHeight;
+      if (widthDelta > 160 || heightDelta > 160) {
+        triggerDevToolsLock('Jendela DevTools terbuka');
+      }
+    }
+    window.addEventListener('resize', checkDevToolsDocked);
+    setInterval(checkDevToolsDocked, 2500);
+
+    // Form Unlock DevTools Lock
+    if (el.formDevtoolsUnlock) {
+      el.formDevtoolsUnlock.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const pin = el.inputDevtoolsPin ? el.inputDevtoolsPin.value.trim() : '';
+        if (pin === getActiveSecurityPin()) {
+          adminDevToolsBypass = true;
+          isDevToolsLocked = false;
+          if (el.devtoolsLockOverlay) el.devtoolsLockOverlay.style.display = 'none';
+          showSecurityToast('Override DevTools berhasil diizinkan oleh Admin.', 'success');
+        } else {
+          if (el.devtoolsPinError) el.devtoolsPinError.style.display = 'block';
+        }
+      });
+    }
+
+    // 3. Manajemen Ganti PIN di Tab 3
+    if (el.inputCustomPin) {
+      el.inputCustomPin.value = getActiveSecurityPin();
+    }
+    if (el.btnSaveCustomPin && el.inputCustomPin) {
+      el.btnSaveCustomPin.addEventListener('click', () => {
+        const newPin = el.inputCustomPin.value.trim();
+        if (!newPin || newPin.length < 4) {
+          if (el.pinChangeStatus) {
+            el.pinChangeStatus.style.display = 'block';
+            el.pinChangeStatus.style.background = 'rgba(239, 68, 68, 0.15)';
+            el.pinChangeStatus.style.color = '#ef4444';
+            el.pinChangeStatus.textContent = '⚠️ PIN minimal terdiri dari 4 karakter.';
+          }
+          return;
+        }
+
+        localStorage.setItem(STORAGE_KEY_ACCESS_PIN, newPin);
+        if (el.hintDefaultPin) el.hintDefaultPin.textContent = newPin;
+        if (el.pinChangeStatus) {
+          el.pinChangeStatus.style.display = 'block';
+          el.pinChangeStatus.style.background = 'rgba(16, 185, 129, 0.15)';
+          el.pinChangeStatus.style.color = '#10b981';
+          el.pinChangeStatus.textContent = `✓ PIN Akses Portal berhasil diubah menjadi: ${newPin}`;
+        }
+        showSecurityToast('PIN Akses Portal berhasil diperbarui!', 'success');
+      });
+    }
   }
 
   // ==========================================
@@ -579,10 +916,12 @@
 
   function shuffleQuestionOptions(q) {
     const letters = ['A', 'B', 'C', 'D', 'E'];
+    const qAns = getQuestionAnswer(q);
+    const qPts = getQuestionPoints(q);
     const currentEntries = letters.map((k) => ({
       key: k,
       text: q.options[k],
-      point: q.points ? q.points[k] : (k === q.answer ? 5 : 0)
+      point: qPts ? qPts[k] : (k === qAns ? 5 : 0)
     }));
 
     shuffleArray(currentEntries);
@@ -595,13 +934,13 @@
       const newKey = letters[idx];
       newOptions[newKey] = entry.text;
       newPoints[newKey] = entry.point;
-      if (entry.key === q.answer) {
+      if (entry.key === qAns) {
         newCorrectKey = newKey;
       }
     });
 
-    q.points = newPoints;
-    q.answer = newCorrectKey;
+    setQuestionPoints(q, newPoints);
+    setQuestionAnswer(q, newCorrectKey);
     return newOptions;
   }
 
@@ -744,13 +1083,15 @@
 
       if (isStudyMode) {
         const userAns = state.answers[q.id];
+        const qAns = getQuestionAnswer(q);
+        const qPts = getQuestionPoints(q);
         if (userAns) {
           if (q.category === 'TKP') {
-            const pt = q.points ? (q.points[userAns] || 0) : 0;
+            const pt = qPts ? (qPts[userAns] || 0) : 0;
             if (pt >= 4) btn.classList.add('answered');
             else btn.classList.add('wrong');
           } else {
-            if (userAns === q.answer) {
+            if (userAns === qAns) {
               btn.classList.add('answered');
             } else {
               btn.classList.add('wrong');
@@ -800,12 +1141,16 @@
     const hasAnswered = Boolean(selectedAnswer);
 
     const isTkp = q.category === 'TKP';
+    const qAns = getQuestionAnswer(q);
+    const qPts = getQuestionPoints(q);
+    const qExp = getQuestionExplanation(q);
+
     let bestTkpKey = 'A';
-    if (isTkp && q.points) {
+    if (isTkp && qPts) {
       let maxPt = -1;
       ['A', 'B', 'C', 'D', 'E'].forEach((k) => {
-        if ((q.points[k] || 0) > maxPt) {
-          maxPt = q.points[k];
+        if ((qPts[k] || 0) > maxPt) {
+          maxPt = qPts[k];
           bestTkpKey = k;
         }
       });
@@ -821,19 +1166,19 @@
       if (isStudyMode && hasAnswered) {
         if (!isTkp) {
           // Non-TKP Standard Feedback
-          if (optKey === selectedAnswer && optKey === q.answer) {
+          if (optKey === selectedAnswer && optKey === qAns) {
             optItem.classList.add('study-correct');
             badgeHtml = '<span class="option-study-badge badge-correct">✓ Jawaban Anda Benar (+5)</span>';
-          } else if (optKey === selectedAnswer && optKey !== q.answer) {
+          } else if (optKey === selectedAnswer && optKey !== qAns) {
             optItem.classList.add('study-wrong');
             badgeHtml = '<span class="option-study-badge badge-wrong">✗ Pilihan Anda (Salah)</span>';
-          } else if (optKey === q.answer) {
+          } else if (optKey === qAns) {
             optItem.classList.add('study-key');
             badgeHtml = '<span class="option-study-badge badge-key">✓ Kunci Jawaban Benar</span>';
           }
         } else {
           // TKP Feedback
-          const pt = q.points ? (q.points[optKey] || 0) : 0;
+          const pt = qPts ? (qPts[optKey] || 0) : 0;
           if (optKey === selectedAnswer) {
             optItem.classList.add('selected');
             badgeHtml = `<span class="option-study-badge ${pt === 5 ? 'badge-correct' : 'badge-tkp-pts'}">Pilihan Anda: <strong>${pt} Poin</strong></span>`;
@@ -871,10 +1216,10 @@
       if (isStudyMode && hasAnswered) {
         el.studyExpCard.style.display = 'block';
         if (el.studyCorrectBadge) {
-          el.studyCorrectBadge.textContent = isTkp ? `Poin 5: ${bestTkpKey}` : `Kunci: ${q.answer}`;
+          el.studyCorrectBadge.textContent = isTkp ? `Poin 5: ${bestTkpKey}` : `Kunci: ${qAns}`;
         }
         if (el.studyExpContent) {
-          el.studyExpContent.innerHTML = formatExplanationText(q.explanation);
+          el.studyExpContent.innerHTML = formatExplanationText(qExp);
         }
       } else {
         el.studyExpCard.style.display = 'none';
@@ -1027,7 +1372,9 @@
 
     questions.forEach((q) => {
       const userAns = state.answers[q.id];
-      const pts = userAns ? (q.points ? q.points[userAns] || 0 : (userAns === q.answer ? 5 : 0)) : 0;
+      const qAns = getQuestionAnswer(q);
+      const qPts = getQuestionPoints(q);
+      const pts = userAns ? (qPts ? qPts[userAns] || 0 : (userAns === qAns ? 5 : 0)) : 0;
 
       if (isSkd) {
         if (q.category === 'TWK') {
@@ -1062,13 +1409,15 @@
 
       questions.forEach((q) => {
         const userAns = state.answers[q.id];
+        const qAns = getQuestionAnswer(q);
+        const qPts = getQuestionPoints(q);
         if (userAns) {
           if (q.category === 'TKP') {
-            const pt = q.points ? (q.points[userAns] || 0) : 0;
+            const pt = qPts ? (qPts[userAns] || 0) : 0;
             if (pt >= 4) correctCount++;
             else wrongCount++;
           } else {
-            if (userAns === q.answer) correctCount++;
+            if (userAns === qAns) correctCount++;
             else wrongCount++;
           }
         }
@@ -1307,8 +1656,11 @@
 
     let filtered = questions.filter((q) => {
       const userAns = state.answers[q.id];
+      const qAns = getQuestionAnswer(q);
+      const qPts = getQuestionPoints(q);
+      const qExp = getQuestionExplanation(q);
       const isTkp = q.category === 'TKP';
-      const isCorrect = isTkp ? (userAns && q.points[userAns] === 5) : (userAns === q.answer);
+      const isCorrect = isTkp ? (userAns && qPts && qPts[userAns] === 5) : (userAns === qAns);
       const isDoubt = state.doubts.has(q.id);
 
       if (state.reviewFilter === 'wrong' && isCorrect) return false;
@@ -1316,7 +1668,7 @@
       if (state.reviewFilter === 'doubt' && !isDoubt) return false;
 
       if (state.reviewSearchQuery) {
-        const textToMatch = `${q.question} ${q.instansi || ''} ${q.category} ${q.subcategory || ''} ${q.explanation || ''}`.toLowerCase();
+        const textToMatch = `${q.question} ${q.instansi || ''} ${q.category} ${q.subcategory || ''} ${qExp}`.toLowerCase();
         if (!textToMatch.includes(state.reviewSearchQuery)) return false;
       }
 
@@ -1332,8 +1684,11 @@
     filtered.forEach((q) => {
       const origIdx = questions.findIndex((item) => item.id === q.id);
       const userAns = state.answers[q.id];
+      const qAns = getQuestionAnswer(q);
+      const qPts = getQuestionPoints(q);
+      const qExp = getQuestionExplanation(q);
       const isTkp = q.category === 'TKP';
-      const isCorrect = isTkp ? (userAns && q.points[userAns] === 5) : (userAns === q.answer);
+      const isCorrect = isTkp ? (userAns && qPts && qPts[userAns] === 5) : (userAns === qAns);
 
       const itemClass = isCorrect ? 'is-correct' : 'is-wrong';
 
@@ -1355,20 +1710,20 @@
               <strong>Jawaban Anda:</strong> 
               <span style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'}; font-weight:700;">
                 ${userAns ? `${userAns}. ${q.options[userAns]}` : '(Tidak menjawab)'}
-                ${isTkp && userAns ? ` (Poin: ${q.points[userAns]})` : ''}
+                ${isTkp && userAns && qPts ? ` (Poin: ${qPts[userAns]})` : ''}
               </span>
             </div>
             <div>
               <strong>Kunci Jawaban Terbaik:</strong> 
               <span style="color: var(--success); font-weight:700;">
-                ${q.answer ? `${q.answer}. ${q.options[q.answer]}` : '(Cek rincian poin opsi)'}
+                ${qAns ? `${qAns}. ${q.options[qAns]}` : '(Cek rincian poin opsi)'}
               </span>
             </div>
           </div>
 
           <div class="review-explanation">
             <strong>Pembahasan:</strong><br>
-            ${q.explanation || 'Belum ada penjelasan tambahan.'}
+            ${qExp || 'Belum ada penjelasan tambahan.'}
           </div>
         </div>
       `;
@@ -1547,8 +1902,9 @@
         explanation: el.inputExplanation.value.trim()
       };
 
-      // Simpan ke memory aktif
+      // Simpan ke memory aktif dengan enkripsi proteksi
       if (window.BANK_SOAL && window.BANK_SOAL[targetPacket]) {
+        protectBankSoal({ temp: { questions: [newQ] } });
         window.BANK_SOAL[targetPacket].questions.push(newQ);
       }
 
@@ -1569,9 +1925,24 @@
   }
 
   function setupImportExport() {
-    // Ekspor JSON
+    // Ekspor JSON (Didecode ke format standar terbuka untuk backup)
     el.btnExportJson.addEventListener('click', () => {
-      const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(window.BANK_SOAL, null, 2));
+      const exportData = JSON.parse(JSON.stringify(window.BANK_SOAL));
+      Object.keys(exportData).forEach((k) => {
+        const pkt = exportData[k];
+        if (pkt && Array.isArray(pkt.questions)) {
+          pkt.questions.forEach((q) => {
+            q.answer = getQuestionAnswer(q);
+            q.explanation = getQuestionExplanation(q);
+            q.points = getQuestionPoints(q);
+            delete q._secAns;
+            delete q._secExp;
+            delete q._secPts;
+          });
+        }
+      });
+
+      const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(exportData, null, 2));
       const downloadAnchor = document.createElement('a');
       downloadAnchor.setAttribute('href', dataStr);
       downloadAnchor.setAttribute('download', `bank_soal_multi_instansi_${Date.now()}.json`);
@@ -1580,7 +1951,7 @@
       downloadAnchor.remove();
     });
 
-    // Impor JSON
+    // Impor JSON (Otomatis diamankan kembali)
     el.inputImportJson.addEventListener('change', (e) => {
       const file = e.target.files[0];
       if (!file) return;
@@ -1590,6 +1961,7 @@
         try {
           const imported = JSON.parse(event.target.result);
           if (imported && typeof imported === 'object') {
+            protectBankSoal(imported);
             Object.assign(window.BANK_SOAL, imported);
             renderBankSummary();
             alert('Bank soal multi-instansi berhasil diimpor!');

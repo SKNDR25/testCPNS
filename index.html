@@ -26,6 +26,7 @@
         <button id="btn-font-inc" class="btn-tool" title="Perbesar Teks">A+</button>
         <button id="btn-fullscreen" class="btn-tool" title="Mode Layar Penuh">⛶ Layar Penuh</button>
         <button id="btn-theme-toggle" class="btn-tool" title="Ganti Mode Gelap / Terang">🌙 Mode Gelap</button>
+        <button id="btn-lock-session" class="btn-tool" title="Kunci Akses Portal (PIN)">🔒 Kunci</button>
       </div>
 
       <div id="timer-container" class="timer-box" style="display: none;">
@@ -294,6 +295,26 @@
             <!-- Rendered by JS -->
           </ul>
         </div>
+
+        <!-- Pengaturan Keamanan & PIN Akses Portal -->
+        <div class="security-settings-card" style="margin-top: 20px; background: #f8fafc; border: 1px solid var(--border); border-radius: 10px; padding: 18px;">
+          <h4 style="font-size: 0.95rem; color: var(--primary); margin-bottom: 8px; display:flex; align-items:center; gap:8px;">
+            <span>🔐</span> Pengaturan Keamanan & PIN Akses Portal
+          </h4>
+          <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 14px;">
+            Atur PIN khusus untuk mengunci akses simulasi, proteksi DevTools/F12, dan enkripsi bank soal saat di-deploy ke Vercel.
+          </p>
+          <div style="display:flex; gap:10px; align-items:flex-end; flex-wrap:wrap;">
+            <div style="flex:1; min-width:200px;">
+              <label for="input-custom-pin" style="font-size:0.8rem; font-weight:600; color:var(--text-main); display:block; margin-bottom:4px;">PIN Akses Portal Baru:</label>
+              <input type="text" id="input-custom-pin" class="form-control" placeholder="Contoh: CPNS2026 atau 123456" style="margin-top:0;">
+            </div>
+            <div>
+              <button type="button" id="btn-save-custom-pin" class="btn-nav" style="background:var(--primary); color:#fff; border:none; height:40px; padding:0 18px;">Simpan PIN Baru</button>
+            </div>
+          </div>
+          <div id="pin-change-status" style="font-size:0.82rem; margin-top:10px; display:none; padding:8px 12px; border-radius:6px;"></div>
+        </div>
       </div>
 
     </section>
@@ -301,7 +322,8 @@
     <!-- Screen 2: Exam View -->
     <section id="screen-exam" class="exam-layout" style="display: none;">
       <!-- Left: Question & Options -->
-      <div class="question-card">
+      <div class="question-card" style="position: relative; overflow: hidden;">
+        <div class="exam-watermark" aria-hidden="true">CAT BKN • SECURE EXAM SESSION</div>
         <div class="question-meta-bar">
           <span id="q-index-badge" class="question-number-badge">Soal No. 1</span>
           <div class="question-tags">
@@ -543,6 +565,69 @@
       </form>
     </div>
   </div>
+
+  <!-- SECURITY GATE: Access PIN Lock Screen -->
+  <div id="gate-lock-overlay" class="gate-lock-overlay" style="display: none;">
+    <div class="gate-lock-card">
+      <div class="gate-lock-icon-wrap">
+        <div class="gate-lock-shield">🛡️</div>
+      </div>
+      <div class="gate-badge-label">CAT CPNS BKN • SECURE ACCESS GATE</div>
+      <h2 class="gate-lock-title">Portal Ujian Terproteksi</h2>
+      <p class="gate-lock-desc">
+        Aplikasi simulasi ini dilindungi dengan sistem verifikasi PIN & enkripsi sesi CAT BKN. Masukkan PIN akses untuk membuka portal.
+      </p>
+
+      <form id="form-gate-pin" class="gate-form">
+        <div class="gate-input-wrapper">
+          <input type="password" id="input-gate-pin" class="gate-pin-input" placeholder="Masukkan PIN Akses..." autocomplete="off">
+          <button type="button" id="btn-toggle-gate-pwd" class="gate-toggle-pwd" title="Lihat/Sembunyikan PIN">👁️</button>
+        </div>
+        <div id="gate-pin-error" class="gate-pin-error" style="display: none;">
+          ⚠️ PIN yang Anda masukkan salah. Silakan coba lagi.
+        </div>
+        <button type="submit" id="btn-submit-gate-pin" class="btn-gate-unlock">
+          Buka Simulasi CAT CPNS »
+        </button>
+      </form>
+
+      <div class="gate-footer-hint">
+        <span>💡 PIN Standar: <strong id="hint-default-pin">CPNS2026</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DEVTOOLS / F12 SECURITY LOCK OVERLAY -->
+  <div id="devtools-lock-overlay" class="devtools-lock-overlay" style="display: none;">
+    <div class="devtools-lock-card">
+      <div class="devtools-alert-icon">🚨</div>
+      <div class="devtools-alert-tag">INTEGRITAS UJIAN TERDETEKSI</div>
+      <h2 class="devtools-lock-title">Mode DevTools / F12 Terdeteksi!</h2>
+      <p class="devtools-lock-desc">
+        Sistem mendeteksi jendela <strong>Developer Tools / Inspect Element</strong> terbuka. Demi menjaga kerahasiaan bank soal dan integritas ujian CAT BKN, layar ujian dikunci.
+      </p>
+      <div class="devtools-steps-box">
+        <strong>Tindakan yang Diperlukan:</strong>
+        <ol>
+          <li>Tutup jendela DevTools / Inspect Element di browser Anda.</li>
+          <li>Atau masukkan <strong>PIN Akses Administrator</strong> di bawah ini untuk membuka kunci layar:</li>
+        </ol>
+      </div>
+
+      <form id="form-devtools-unlock" class="devtools-unlock-form">
+        <div style="display:flex; gap:8px;">
+          <input type="password" id="input-devtools-pin" class="gate-pin-input" placeholder="Masukkan PIN Admin..." style="margin-bottom:0; font-size:1rem; padding:10px 14px;">
+          <button type="submit" class="btn-gate-unlock" style="margin-top:0; width:auto; padding:0 22px; font-size:0.95rem;">Buka</button>
+        </div>
+        <div id="devtools-pin-error" class="gate-pin-error" style="display: none; margin-top:8px;">
+          ⚠️ PIN salah.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Security Toast Container -->
+  <div id="security-toast-container" class="security-toast-container"></div>
 
   <!-- Scripts -->
   <script src="data_soal.js"></script>
