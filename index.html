@@ -16,9 +16,6 @@
         <h1 id="exam-title">Simulasi Computer Assisted Test (CAT) BKN</h1>
         <p>Seleksi Calon Pegawai Negeri Sipil • Kemampuan Dasar & Bidang Spesifik Instansi</p>
       </div>
-      <div id="user-display-badge" class="user-display-badge" style="display: none;">
-        <span>👤</span> <strong id="current-user-name">Peserta</strong>
-      </div>
     </div>
     <div class="topbar-right">
       <!-- Tools Font Zoom, Fullscreen & Dark Mode -->
@@ -318,24 +315,6 @@
           </div>
           <div id="pin-change-status" style="font-size:0.82rem; margin-top:10px; display:none; padding:8px 12px; border-radius:6px;"></div>
         </div>
-
-        <!-- Buku Tamu & Riwayat Kunjungan Pengunjung -->
-        <div class="guestbook-card" style="margin-top: 20px; background: #f8fafc; border: 1px solid var(--border); border-radius: 10px; padding: 18px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 8px; flex-wrap:wrap; gap:8px;">
-            <h4 style="font-size: 0.95rem; color: var(--primary); display:flex; align-items:center; gap:8px; margin:0;">
-              <span>📖</span> Buku Tamu & Riwayat Kunjungan Pengunjung
-            </h4>
-            <span style="font-size:0.75rem; color:var(--success); font-weight:700; background:rgba(16,185,129,0.12); padding:3px 8px; border-radius:999px;">
-              ⚡ Realtime Notifikasi ke Telegram
-            </span>
-          </div>
-          <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 14px;">
-            Daftar sesi pengunjung yang pernah masuk ke portal ini. Setiap kunjungan baru otomatis terkirim langsung ke akun Telegram pribadi Anda.
-          </p>
-          <div id="guestbook-table-container">
-            <!-- Rendered by JS -->
-          </div>
-        </div>
       </div>
 
     </section>
@@ -600,9 +579,6 @@
       </p>
 
       <form id="form-gate-pin" class="gate-form">
-        <div class="gate-input-wrapper">
-          <input type="text" id="input-gate-name" class="gate-pin-input" placeholder="Nama / Panggilan Anda..." style="font-size: 1rem; letter-spacing: normal; text-align: left; padding: 12px 16px;" required>
-        </div>
         <div class="gate-input-wrapper">
           <input type="password" id="input-gate-pin" class="gate-pin-input" placeholder="Masukkan PIN Akses..." autocomplete="off" required>
           <button type="button" id="btn-toggle-gate-pwd" class="gate-toggle-pwd" title="Lihat/Sembunyikan PIN">👁️</button>

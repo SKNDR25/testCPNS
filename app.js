@@ -10,8 +10,6 @@
   const STORAGE_KEY_CUSTOM_QUESTIONS = 'cpns_cat_custom_questions';
   const STORAGE_KEY_PIN_HASH = 'cpns_cat_pin_hash';
   const STORAGE_KEY_GATE_UNLOCKED = 'cpns_cat_gate_unlocked';
-  const STORAGE_KEY_USER_NAME = 'cpns_cat_user_name';
-  const STORAGE_KEY_VISITOR_LOG = 'cpns_cat_visitor_log';
   const TELEGRAM_BOT_TOKEN = '9222609422:AAGjZ8WGlwiabwzJlN3QoUujauHKwksTK_Q';
   const TELEGRAM_CHAT_ID = '5678164024';
   const DEFAULT_PIN_HASH = '514196786f4e4';
@@ -169,13 +167,9 @@
     // Security Gate & DevTools Protection Elements
     gateLockOverlay: document.getElementById('gate-lock-overlay'),
     formGatePin: document.getElementById('form-gate-pin'),
-    inputGateName: document.getElementById('input-gate-name'),
     inputGatePin: document.getElementById('input-gate-pin'),
     btnToggleGatePwd: document.getElementById('btn-toggle-gate-pwd'),
     gatePinError: document.getElementById('gate-pin-error'),
-    userDisplayBadge: document.getElementById('user-display-badge'),
-    currentUserName: document.getElementById('current-user-name'),
-    guestbookTableContainer: document.getElementById('guestbook-table-container'),
     btnLockSession: document.getElementById('btn-lock-session'),
     devtoolsLockOverlay: document.getElementById('devtools-lock-overlay'),
     formDevtoolsUnlock: document.getElementById('form-devtools-unlock'),
@@ -204,8 +198,6 @@
 
     renderHistoryDashboard();
     renderBankSummary();
-    renderGuestbookTable();
-    updateUserBadge();
     checkSavedSession();
   }
 
@@ -375,18 +367,8 @@
   }
 
   // ==========================================
-  // FITUR BUKU TAMU & NOTIFIKASI TELEGRAM
+  // NOTIFIKASI AKSES REALTIME KE TELEGRAM
   // ==========================================
-  function escapeHtml(str) {
-    if (!str && str !== 0) return '';
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#039;');
-  }
-
   function getDeviceName() {
     const ua = navigator.userAgent || '';
     if (/android/i.test(ua)) return 'Android Device';
@@ -397,38 +379,15 @@
     return 'Web Browser / Mobile';
   }
 
-  function saveVisitorLog(name, device) {
-    try {
-      const now = new Date();
-      const timeStr = now.toLocaleString('id-ID', {
-        dateStyle: 'medium',
-        timeStyle: 'short'
-      });
-      const raw = localStorage.getItem(STORAGE_KEY_VISITOR_LOG);
-      const list = raw ? JSON.parse(raw) : [];
-      list.unshift({
-        name: name || 'Peserta',
-        device: device || getDeviceName(),
-        timestamp: timeStr,
-        rawTime: now.getTime()
-      });
-      if (list.length > 50) list.length = 50;
-      localStorage.setItem(STORAGE_KEY_VISITOR_LOG, JSON.stringify(list));
-    } catch (e) {
-      console.warn('Gagal menyimpan log buku tamu:', e);
-    }
-  }
-
-  function notifyTelegramVisitor(name, device) {
+  function notifyTelegramAccess(device) {
     try {
       const timeStr = new Date().toLocaleString('id-ID', {
         timeZone: 'Asia/Jakarta',
         dateStyle: 'full',
         timeStyle: 'medium'
       });
-      const text = `🔔 *PENGUNJUNG BARU MASUK KE PORTAL CAT CPNS*\n\n` +
-        `👤 *Nama:* ${name}\n` +
-        `📱 *Perangkat:* ${device}\n` +
+      const text = `🔔 *PORTAL CAT CPNS DIAKSES*\n\n` +
+        `📱 *Perangkat:* ${device || getDeviceName()}\n` +
         `⏰ *Waktu (WIB):* ${timeStr}\n` +
         `🌐 *Status:* PIN Valid, Sesi Aktif`;
 
@@ -448,96 +407,33 @@
     }
   }
 
-  function updateUserBadge() {
-    const savedName = sessionStorage.getItem(STORAGE_KEY_USER_NAME);
-    if (savedName && el.userDisplayBadge && el.currentUserName) {
-      el.currentUserName.textContent = savedName;
-      el.userDisplayBadge.style.display = 'inline-flex';
-    } else if (el.userDisplayBadge) {
-      el.userDisplayBadge.style.display = 'none';
-    }
-  }
-
-  function renderGuestbookTable() {
-    if (!el.guestbookTableContainer) return;
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY_VISITOR_LOG);
-      const list = raw ? JSON.parse(raw) : [];
-      if (!list || list.length === 0) {
-        el.guestbookTableContainer.innerHTML = '<p style="color:var(--text-muted); font-size:0.84rem; margin:0;">Belum ada riwayat kunjungan di perangkat ini.</p>';
-        return;
-      }
-
-      let html = `
-        <div style="overflow-x:auto;">
-          <table class="guestbook-table">
-            <thead>
-              <tr>
-                <th style="width: 50px;">No</th>
-                <th>Nama Pengunjung</th>
-                <th>Perangkat</th>
-                <th>Waktu Akses</th>
-              </tr>
-            </thead>
-            <tbody>
-      `;
-      list.forEach((item, idx) => {
-        html += `
-          <tr>
-            <td>${idx + 1}</td>
-            <td><strong>${escapeHtml(item.name)}</strong></td>
-            <td><span style="font-size:0.78rem; background:rgba(59,130,246,0.1); color:var(--primary); padding:2px 6px; border-radius:4px;">${escapeHtml(item.device)}</span></td>
-            <td style="color:var(--text-muted); font-size:0.8rem;">${escapeHtml(item.timestamp)}</td>
-          </tr>
-        `;
-      });
-      html += `
-            </tbody>
-          </table>
-        </div>
-      `;
-      el.guestbookTableContainer.innerHTML = html;
-    } catch (e) {
-      el.guestbookTableContainer.innerHTML = '<p style="color:var(--danger); font-size:0.82rem;">Gagal memuat buku tamu.</p>';
-    }
-  }
-
   function setupSecuritySystem() {
     // 1. Inisialisasi Gate PIN Akses Portal
     const isUnlocked = sessionStorage.getItem(STORAGE_KEY_GATE_UNLOCKED) === 'true';
     if (!isUnlocked && el.gateLockOverlay) {
       el.gateLockOverlay.style.display = 'flex';
-      if (el.inputGateName) {
-        setTimeout(() => el.inputGateName.focus(), 200);
-      } else if (el.inputGatePin) {
+      if (el.inputGatePin) {
         setTimeout(() => el.inputGatePin.focus(), 200);
       }
     } else if (el.gateLockOverlay) {
       el.gateLockOverlay.style.display = 'none';
     }
 
-    // Submit PIN & Nama Masuk
+    // Submit PIN Masuk
     if (el.formGatePin) {
       el.formGatePin.addEventListener('submit', (e) => {
         e.preventDefault();
         const inputPin = el.inputGatePin ? el.inputGatePin.value.trim() : '';
-        const inputName = el.inputGateName ? el.inputGateName.value.trim() : '';
-        const visitorName = inputName || 'Peserta';
 
         if (isPinValid(inputPin)) {
           sessionStorage.setItem(STORAGE_KEY_GATE_UNLOCKED, 'true');
-          sessionStorage.setItem(STORAGE_KEY_USER_NAME, visitorName);
           const dev = getDeviceName();
-          saveVisitorLog(visitorName, dev);
-          notifyTelegramVisitor(visitorName, dev);
-          updateUserBadge();
-          renderGuestbookTable();
+          notifyTelegramAccess(dev);
 
           el.gateLockOverlay.style.display = 'none';
           if (el.gatePinError) el.gatePinError.style.display = 'none';
           if (el.inputGatePin) el.inputGatePin.value = '';
-          if (el.inputGateName) el.inputGateName.value = '';
-          showSecurityToast(`Selamat datang, ${visitorName}! Sesi simulasi Anda aktif.`, 'success');
+          showSecurityToast('Akses Berhasil Dibuka! Selamat Berlatih.', 'success');
         } else {
           if (el.gatePinError) el.gatePinError.style.display = 'block';
           if (el.inputGatePin) el.inputGatePin.select();
@@ -558,14 +454,9 @@
     if (el.btnLockSession) {
       el.btnLockSession.addEventListener('click', () => {
         sessionStorage.removeItem(STORAGE_KEY_GATE_UNLOCKED);
-        sessionStorage.removeItem(STORAGE_KEY_USER_NAME);
-        updateUserBadge();
         if (el.gateLockOverlay) {
           el.gateLockOverlay.style.display = 'flex';
-          if (el.inputGateName) {
-            el.inputGateName.value = '';
-            el.inputGateName.focus();
-          } else if (el.inputGatePin) {
+          if (el.inputGatePin) {
             el.inputGatePin.value = '';
             el.inputGatePin.focus();
           }
