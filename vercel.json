@@ -26,7 +26,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self' 'unsafe-inline' data: blob:;"
+          "value": "default-src 'self' 'unsafe-inline' data: blob:; connect-src 'self' https://api.telegram.org;"
         }
       ]
     }

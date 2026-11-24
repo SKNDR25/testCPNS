@@ -2658,3 +2658,57 @@ textarea.form-control {
   from { opacity: 1; transform: translateY(0); }
   to { opacity: 0; transform: translateY(-8px); }
 }
+
+/* User Display Badge di Topbar */
+.user-display-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.user-display-badge strong {
+  color: #93c5fd;
+}
+
+/* Buku Tamu Table */
+.guestbook-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  margin-top: 8px;
+}
+
+.guestbook-table th,
+.guestbook-table td {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.guestbook-table th {
+  background: #f1f5f9;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+[data-theme="dark"] .guestbook-table th {
+  background: #1e293b;
+  color: #93c5fd;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .guestbook-table td {
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .guestbook-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
