@@ -10,8 +10,6 @@
   const STORAGE_KEY_CUSTOM_QUESTIONS = 'cpns_cat_custom_questions';
   const STORAGE_KEY_PIN_HASH = 'cpns_cat_pin_hash';
   const STORAGE_KEY_GATE_UNLOCKED = 'cpns_cat_gate_unlocked';
-  const TELEGRAM_BOT_TOKEN = '9222609422:AAGjZ8WGlwiabwzJlN3QoUujauHKwksTK_Q';
-  const TELEGRAM_CHAT_ID = '5678164024';
   const DEFAULT_PIN_HASH = '514196786f4e4';
 
   // State Aplikasi
@@ -366,46 +364,7 @@
     }
   }
 
-  // ==========================================
-  // NOTIFIKASI AKSES REALTIME KE TELEGRAM
-  // ==========================================
-  function getDeviceName() {
-    const ua = navigator.userAgent || '';
-    if (/android/i.test(ua)) return 'Android Device';
-    if (/iphone|ipad|ipod/i.test(ua)) return 'iOS (iPhone/iPad)';
-    if (/windows nt 10/i.test(ua) || /windows nt 11/i.test(ua) || /windows/i.test(ua)) return 'Windows PC/Laptop';
-    if (/macintosh|mac os x/i.test(ua)) return 'Mac / Apple Device';
-    if (/linux/i.test(ua)) return 'Linux Device';
-    return 'Web Browser / Mobile';
-  }
 
-  function notifyTelegramAccess(device) {
-    try {
-      const timeStr = new Date().toLocaleString('id-ID', {
-        timeZone: 'Asia/Jakarta',
-        dateStyle: 'full',
-        timeStyle: 'medium'
-      });
-      const text = `🔔 *PORTAL CAT CPNS DIAKSES*\n\n` +
-        `📱 *Perangkat:* ${device || getDeviceName()}\n` +
-        `⏰ *Waktu (WIB):* ${timeStr}\n` +
-        `🌐 *Status:* PIN Valid, Sesi Aktif`;
-
-      fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          chat_id: TELEGRAM_CHAT_ID,
-          text: text,
-          parse_mode: 'Markdown'
-        })
-      }).catch(err => {
-        console.warn('Gagal kirim notifikasi Telegram:', err);
-      });
-    } catch (e) {
-      console.warn('Telegram notify error:', e);
-    }
-  }
 
   function setupSecuritySystem() {
     // 1. Inisialisasi Gate PIN Akses Portal
@@ -427,8 +386,6 @@
 
         if (isPinValid(inputPin)) {
           sessionStorage.setItem(STORAGE_KEY_GATE_UNLOCKED, 'true');
-          const dev = getDeviceName();
-          notifyTelegramAccess(dev);
 
           el.gateLockOverlay.style.display = 'none';
           if (el.gatePinError) el.gatePinError.style.display = 'none';
